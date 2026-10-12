@@ -19,10 +19,12 @@ def main():
     parser.add_argument("--device", default="cpu")
     parser.add_argument("--epochs", type=int, default=200)
     parser.add_argument("--threads", type=int, default=1)
+    parser.add_argument("--milp-time-limit", type=float, default=30.0)
     parser.add_argument("--seeds", nargs="+", type=int, default=[0, 1, 2])
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     from .neural import solve_neural
+    from .reference import solve_highs
     import torch
 
     if args.threads < 1:
@@ -40,6 +42,7 @@ def main():
         records.append({"method": name, "selected": selected, "size": len(selected),
                         "feasible": problem.feasible(selected, args.definition),
                         "total_seconds": time.perf_counter() - start})
+    records.append(solve_highs(problem, args.definition, args.milp_time_limit))
     for seed in args.seeds:
         result = solve_neural(problem, args.definition, seed=seed,
                               epochs=args.epochs, device=args.device)
