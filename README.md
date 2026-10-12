@@ -33,7 +33,7 @@ python -m mis.run --instance instances/toy_overlap.json --definition strong --de
 
 没有可用 CUDA 时可以显式改为 `--device cpu`。请求 CUDA 失败会报错，不会悄悄回退 CPU。Windows 项目虚拟环境可用 `.venv\Scripts\python.exe` 替换上述 `python`。
 
-原仓库 environment.yaml 和 pyproject.toml 保留作历史参考，不应直接用其 CUDA 11.7 配置安装 RTX 50 系列环境。当前环境验证记录将在设备验证完成后保存到 docs/environment.md。
+原仓库 environment.yaml 和 pyproject.toml 保留作历史参考，不应直接用其 CUDA 11.7 配置安装 RTX 50 系列环境。具体配置与 DHG 版本限制见 [环境说明](docs/environment.md)。
 
 ## 后续工作
 

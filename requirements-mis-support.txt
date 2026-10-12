@@ -1,0 +1,8 @@
+# Supporting packages for the MIS entry point, separate from upstream's legacy environment.
+# Install torch/torchvision from the CUDA index, then this file, then dhg with --no-deps.
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.9.4
+optuna==4.9.0
+requests==2.32.5
+scikit-learn==1.6.1

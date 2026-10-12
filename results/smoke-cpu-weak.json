@@ -1,0 +1,328 @@
+{
+  "purpose": "small-instance pipeline verification, not a formal benchmark",
+  "created_at_utc": "2026-10-12T14:32:06.176380+00:00",
+  "definition": "weak",
+  "instance": {
+    "name": "toy_overlap.json",
+    "n": 12,
+    "edges": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        8,
+        9
+      ],
+      [
+        1,
+        4,
+        7,
+        9
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        7,
+        8
+      ]
+    ],
+    "sha256": "58db78be833a2bbb2cac55519b7b94106882cc685af69eca6bf964f9a805993f"
+  },
+  "environment": {
+    "python": "3.9.23",
+    "torch": "2.8.0+cpu",
+    "torch_cuda": null,
+    "dhg": "0.9.5",
+    "cpu_threads": 1,
+    "gpu": null
+  },
+  "git_commit": "708c10a95a50fb2b06dd35bf1604e65a6ec5ebe5",
+  "git_dirty": true,
+  "source_sha256": {
+    "__init__.py": "718a72f9661c7d859f7f850ee73a35d1a3a8aa9bdda89ad062f388a3a02a1f66",
+    "neural.py": "e71f9325496246128f93c124ae2a2c2a34bf19b97cacb2b77c785ed88c8159fe",
+    "problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61",
+    "run.py": "2a65e9d6f3169c44c2137ec346485c44aa9bda2786d289570cdfa97656f90966"
+  },
+  "records": [
+    {
+      "method": "degree_greedy",
+      "selected": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "feasible": true,
+      "total_seconds": 9.370000000030743e-05
+    },
+    {
+      "method": "exact_enumeration",
+      "selected": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11
+      ],
+      "size": 9,
+      "feasible": true,
+      "total_seconds": 0.000944300000000009
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 0,
+      "definition": "weak",
+      "selected": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "feasible": true,
+      "raw_selected": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        9,
+        10,
+        11
+      ],
+      "raw_size": 8,
+      "raw_feasible": true,
+      "scores": [
+        0.99998939037323,
+        1.0,
+        1.6398631487390958e-05,
+        0.9999940395355225,
+        7.709493729635142e-06,
+        1.0,
+        5.629812616092522e-09,
+        0.9999780654907227,
+        3.406631003599614e-05,
+        0.9999896287918091,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -7.9998931884765625,
+      "total_seconds": 3.2921055,
+      "peak_allocated_bytes": null,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cpu"
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": -4.643515586853027
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -7.101468563079834
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -7.999685764312744
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -7.999819278717041
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -7.999849319458008
+        }
+      ]
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 1,
+      "definition": "weak",
+      "selected": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "feasible": true,
+      "raw_selected": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "raw_size": 9,
+      "raw_feasible": true,
+      "scores": [
+        0.1439155787229538,
+        0.9970418810844421,
+        0.9999955892562866,
+        1.0,
+        0.1439155787229538,
+        0.9999778270721436,
+        0.1439155787229538,
+        0.9999964237213135,
+        0.9692112803459167,
+        0.9999074935913086,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -7.9367828369140625,
+      "total_seconds": 0.1641079999999997,
+      "peak_allocated_bytes": null,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cpu"
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": -4.361203670501709
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -6.047006607055664
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -6.733969211578369
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -6.9350762367248535
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -7.741370677947998
+        }
+      ]
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 2,
+      "definition": "weak",
+      "selected": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "feasible": true,
+      "raw_selected": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "raw_size": 9,
+      "raw_feasible": true,
+      "scores": [
+        0.23742938041687012,
+        0.999866247177124,
+        0.9998334646224976,
+        0.9999994039535522,
+        2.6683466785470955e-05,
+        0.9999691247940063,
+        0.999869704246521,
+        0.9998842477798462,
+        0.23742938041687012,
+        0.9999352693557739,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -8.411887168884277,
+      "total_seconds": 0.16523650000000067,
+      "peak_allocated_bytes": null,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cpu"
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": -4.501280307769775
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -6.36403226852417
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -6.8554792404174805
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -7.7931647300720215
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -8.25994873046875
+        }
+      ]
+    }
+  ]
+}

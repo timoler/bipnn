@@ -1,0 +1,300 @@
+{
+  "purpose": "small-instance pipeline verification, not a formal benchmark",
+  "created_at_utc": "2026-10-12T14:32:21.874267+00:00",
+  "definition": "strong",
+  "instance": {
+    "name": "toy_overlap.json",
+    "n": 12,
+    "edges": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        8,
+        9
+      ],
+      [
+        1,
+        4,
+        7,
+        9
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        7,
+        8
+      ]
+    ],
+    "sha256": "58db78be833a2bbb2cac55519b7b94106882cc685af69eca6bf964f9a805993f"
+  },
+  "environment": {
+    "python": "3.9.23",
+    "torch": "2.8.0+cpu",
+    "torch_cuda": null,
+    "dhg": "0.9.5",
+    "cpu_threads": 1,
+    "gpu": null
+  },
+  "git_commit": "708c10a95a50fb2b06dd35bf1604e65a6ec5ebe5",
+  "git_dirty": true,
+  "source_sha256": {
+    "__init__.py": "718a72f9661c7d859f7f850ee73a35d1a3a8aa9bdda89ad062f388a3a02a1f66",
+    "neural.py": "e71f9325496246128f93c124ae2a2c2a34bf19b97cacb2b77c785ed88c8159fe",
+    "problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61",
+    "run.py": "2a65e9d6f3169c44c2137ec346485c44aa9bda2786d289570cdfa97656f90966"
+  },
+  "records": [
+    {
+      "method": "degree_greedy",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "total_seconds": 6.379999999994723e-05
+    },
+    {
+      "method": "exact_enumeration",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "total_seconds": 0.006632000000000193
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 0,
+      "definition": "strong",
+      "selected": [
+        1,
+        3,
+        5,
+        8,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "raw_selected": [
+        3,
+        5,
+        8,
+        10,
+        11
+      ],
+      "raw_size": 5,
+      "raw_feasible": true,
+      "scores": [
+        4.762385970025207e-07,
+        1.1435589888225683e-12,
+        1.107320568571879e-09,
+        0.9999685287475586,
+        1.7337603352984843e-08,
+        0.999961256980896,
+        2.523653529351577e-05,
+        3.225564526587732e-08,
+        0.9999353885650635,
+        1.4965011132517247e-06,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -4.9997878074646,
+      "total_seconds": 3.4201114999999995,
+      "peak_allocated_bytes": null,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cpu"
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": 4.262653827667236
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -3.9819464683532715
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -4.000472545623779
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -4.933294773101807
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -4.99971866607666
+        }
+      ]
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 1,
+      "definition": "strong",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "raw_selected": [
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "raw_size": 5,
+      "raw_feasible": true,
+      "scores": [
+        0.003174446290358901,
+        0.00019639583479147404,
+        0.0006067348876968026,
+        1.0,
+        3.062320175217792e-08,
+        0.9999018907546997,
+        2.435638535303042e-08,
+        0.9995699524879456,
+        0.0007709225174039602,
+        0.00024322589160874486,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -5.000817775726318,
+      "total_seconds": 0.17331620000000036,
+      "peak_allocated_bytes": null,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cpu"
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": 3.040654420852661
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -3.992581844329834
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -4.0038743019104
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -4.090226650238037
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -4.997586250305176
+        }
+      ]
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 2,
+      "definition": "strong",
+      "selected": [
+        1,
+        3,
+        6,
+        10,
+        11
+      ],
+      "size": 5,
+      "feasible": true,
+      "raw_selected": [
+        3,
+        6,
+        10,
+        11
+      ],
+      "raw_size": 4,
+      "raw_feasible": true,
+      "scores": [
+        1.320858960401905e-11,
+        8.390776407019018e-10,
+        1.4757890767214121e-06,
+        0.999984860420227,
+        5.644349432287754e-09,
+        0.0001995745551539585,
+        0.9997929930686951,
+        6.801193376304582e-05,
+        9.859805140877143e-05,
+        9.155637402738503e-13,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -3.9994101524353027,
+      "total_seconds": 0.17154500000000006,
+      "peak_allocated_bytes": null,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cpu"
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": 4.139754772186279
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -2.7386062145233154
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -3.959576368331909
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -3.998687267303467
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -3.9991672039031982
+        }
+      ]
+    }
+  ]
+}
