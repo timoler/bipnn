@@ -1,0 +1,321 @@
+{
+  "purpose": "small-instance pipeline verification, not a formal benchmark",
+  "created_at_utc": "2026-10-12T14:51:39.938711+00:00",
+  "definition": "strong",
+  "instance": {
+    "name": "toy_overlap.json",
+    "n": 12,
+    "edges": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        8,
+        9
+      ],
+      [
+        1,
+        4,
+        7,
+        9
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        7,
+        8
+      ]
+    ],
+    "sha256": "58db78be833a2bbb2cac55519b7b94106882cc685af69eca6bf964f9a805993f"
+  },
+  "environment": {
+    "python": "3.9.23",
+    "torch": "2.8.0+cu128",
+    "torch_cuda": "12.8",
+    "dhg": "0.9.5",
+    "cpu_threads": 1,
+    "gpu": "NVIDIA GeForce RTX 5070 Ti"
+  },
+  "git_commit": "721dd69e0d362370443f2dd40f2064b1605e74a3",
+  "git_dirty": true,
+  "source_sha256": {
+    "__init__.py": "718a72f9661c7d859f7f850ee73a35d1a3a8aa9bdda89ad062f388a3a02a1f66",
+    "neural.py": "e71f9325496246128f93c124ae2a2c2a34bf19b97cacb2b77c785ed88c8159fe",
+    "problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61",
+    "reference.py": "129da845a467028ff67af530edfaab449139896140626db4f1f5b073bec7ecce",
+    "run.py": "62409dad7f3c1a487a9676e8572121f4c4ab69a9ccb067448d25d92c2354c0de",
+    "verify_report.py": "af7c80abdc784165464a0c79b241b367c1d9722022bcf5f59ebd2d9a36c51997"
+  },
+  "records": [
+    {
+      "method": "degree_greedy",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "total_seconds": 6.389999999978357e-05
+    },
+    {
+      "method": "exact_enumeration",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "total_seconds": 0.00642160000000036
+    },
+    {
+      "method": "highs_milp",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "total_seconds": 0.002082999999999835,
+      "status": 0,
+      "optimality_proven": true,
+      "mip_gap": 0.0,
+      "time_limit_seconds": 30.0
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 0,
+      "definition": "strong",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "raw_selected": [
+        0,
+        5,
+        10,
+        11
+      ],
+      "raw_size": 4,
+      "raw_feasible": true,
+      "scores": [
+        0.999934196472168,
+        3.895124245900661e-05,
+        8.074441575445235e-05,
+        4.736925802717451e-06,
+        7.681097713430063e-07,
+        0.9999547004699707,
+        1.8755485143628903e-05,
+        1.6036253214224416e-08,
+        2.9128157621016726e-05,
+        2.11931110243313e-05,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -3.999704122543335,
+      "total_seconds": 5.4873936,
+      "peak_allocated_bytes": 18155008,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cuda"
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": 3.9963607788085938
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -3.760444402694702
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -3.999188184738159
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -3.999450445175171
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -3.9995789527893066
+        }
+      ]
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 1,
+      "definition": "strong",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "raw_selected": [
+        0,
+        3,
+        5,
+        10,
+        11
+      ],
+      "raw_size": 5,
+      "raw_feasible": true,
+      "scores": [
+        0.9999719858169556,
+        2.7592062679104856e-07,
+        2.1153393390704878e-05,
+        0.9999278783798218,
+        7.66608354751952e-06,
+        0.9999678134918213,
+        1.5689389556428068e-06,
+        2.0907817144255603e-10,
+        6.365775789163308e-06,
+        4.303350124246208e-06,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -4.9997687339782715,
+      "total_seconds": 1.6550738999999997,
+      "peak_allocated_bytes": 18155008,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cuda"
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": 3.255131959915161
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -3.8215930461883545
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -4.999500274658203
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -4.999637126922607
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -4.999698162078857
+        }
+      ]
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 2,
+      "definition": "strong",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "raw_selected": [
+        0,
+        3,
+        5,
+        10,
+        11
+      ],
+      "raw_size": 5,
+      "raw_feasible": true,
+      "scores": [
+        0.9999717473983765,
+        3.027913635378354e-07,
+        5.002718171454035e-05,
+        0.999920129776001,
+        4.3004311578442866e-07,
+        0.9999896287918091,
+        6.894235411891714e-06,
+        3.215055812688661e-07,
+        0.00025521047064103186,
+        1.0377623766544275e-05,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -4.999457836151123,
+      "total_seconds": 1.9436356999999997,
+      "peak_allocated_bytes": 18155008,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cuda"
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": 6.046647548675537
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -3.3715574741363525
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -4.996181488037109
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -4.9988179206848145
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -4.999274253845215
+        }
+      ]
+    }
+  ]
+}

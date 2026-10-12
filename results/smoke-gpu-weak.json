@@ -1,0 +1,351 @@
+{
+  "purpose": "small-instance pipeline verification, not a formal benchmark",
+  "created_at_utc": "2026-10-12T14:51:08.601080+00:00",
+  "definition": "weak",
+  "instance": {
+    "name": "toy_overlap.json",
+    "n": 12,
+    "edges": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        8,
+        9
+      ],
+      [
+        1,
+        4,
+        7,
+        9
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        7,
+        8
+      ]
+    ],
+    "sha256": "58db78be833a2bbb2cac55519b7b94106882cc685af69eca6bf964f9a805993f"
+  },
+  "environment": {
+    "python": "3.9.23",
+    "torch": "2.8.0+cu128",
+    "torch_cuda": "12.8",
+    "dhg": "0.9.5",
+    "cpu_threads": 1,
+    "gpu": "NVIDIA GeForce RTX 5070 Ti"
+  },
+  "git_commit": "721dd69e0d362370443f2dd40f2064b1605e74a3",
+  "git_dirty": false,
+  "source_sha256": {
+    "__init__.py": "718a72f9661c7d859f7f850ee73a35d1a3a8aa9bdda89ad062f388a3a02a1f66",
+    "neural.py": "e71f9325496246128f93c124ae2a2c2a34bf19b97cacb2b77c785ed88c8159fe",
+    "problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61",
+    "reference.py": "129da845a467028ff67af530edfaab449139896140626db4f1f5b073bec7ecce",
+    "run.py": "62409dad7f3c1a487a9676e8572121f4c4ab69a9ccb067448d25d92c2354c0de",
+    "verify_report.py": "af7c80abdc784165464a0c79b241b367c1d9722022bcf5f59ebd2d9a36c51997"
+  },
+  "records": [
+    {
+      "method": "degree_greedy",
+      "selected": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "feasible": true,
+      "total_seconds": 6.470000000025067e-05
+    },
+    {
+      "method": "exact_enumeration",
+      "selected": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11
+      ],
+      "size": 9,
+      "feasible": true,
+      "total_seconds": 0.0007818000000003877
+    },
+    {
+      "method": "highs_milp",
+      "selected": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "feasible": true,
+      "total_seconds": 0.01059650000000012,
+      "status": 0,
+      "optimality_proven": true,
+      "mip_gap": 0.0,
+      "time_limit_seconds": 30.0
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 0,
+      "definition": "weak",
+      "selected": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "feasible": true,
+      "raw_selected": [
+        1,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "raw_size": 8,
+      "raw_feasible": true,
+      "scores": [
+        0.0001410984550602734,
+        0.9999688863754272,
+        0.00038104027044028044,
+        0.9999850988388062,
+        8.284545037895441e-05,
+        0.9999822378158569,
+        1.5062279089761432e-05,
+        1.0,
+        0.9999905824661255,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -8.000068664550781,
+      "total_seconds": 7.6484939,
+      "peak_allocated_bytes": 18149376,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cuda"
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": -4.540122032165527
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -7.948175430297852
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -7.999671936035156
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -7.999751567840576
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -7.999788761138916
+        }
+      ]
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 1,
+      "definition": "weak",
+      "selected": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "feasible": true,
+      "raw_selected": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "raw_size": 9,
+      "raw_feasible": true,
+      "scores": [
+        2.3258258806890808e-05,
+        0.999913215637207,
+        0.9999997615814209,
+        1.0,
+        1.81271734618349e-05,
+        0.9999908208847046,
+        5.6172750191763043e-05,
+        1.0,
+        0.9999716281890869,
+        0.9999969005584717,
+        0.9999984502792358,
+        1.0
+      ],
+      "continuous_energy": -8.999691009521484,
+      "total_seconds": 2.1630667999999993,
+      "peak_allocated_bytes": 18149376,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cuda"
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": -4.41939640045166
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -6.0228424072265625
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -7.994511127471924
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -8.998260498046875
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -8.999595642089844
+        }
+      ]
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 2,
+      "definition": "weak",
+      "selected": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "feasible": true,
+      "raw_selected": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "raw_size": 9,
+      "raw_feasible": true,
+      "scores": [
+        8.53639176057186e-06,
+        0.9999915361404419,
+        1.0,
+        1.0,
+        1.9441081349214073e-06,
+        1.0,
+        2.1308499853489593e-08,
+        0.9999998807907104,
+        0.9999992847442627,
+        0.9999856948852539,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -8.999944686889648,
+      "total_seconds": 1.732296400000001,
+      "peak_allocated_bytes": 18149376,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cuda"
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": -4.724186897277832
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -8.99620532989502
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -8.999881744384766
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -8.999913215637207
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -8.999931335449219
+        }
+      ]
+    }
+  ]
+}

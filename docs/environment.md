@@ -12,7 +12,7 @@
 
 项目 .venv 从现有 Python 创建，复用已有的第三方支持包，在项目目录内单独安装 CUDA 版 torch 和 torchvision。该环境没有修改系统 Python 包，但它依赖基环境中的支持库，并非完全隔离的可移植环境。
 
-目标 CUDA 包为 torch 2.8.0+cu128、torchvision 0.23.0+cu128。正式 GPU 验证结果以 results 中保存的运行环境和结果为准。
+已在项目 .venv 安装 torch 2.8.0+cu128、torchvision 0.23.0+cu128。CUDA 张量前向和反向计算通过，使用该环境的 10 项单元测试全部通过。GPU 小实例结果保存在 results 中。
 
 PyTorch 官方说明从 2.7 开始提供 Blackwell 与 CUDA 12.8 支持：
 https://pytorch.org/blog/pytorch-2-7/
@@ -38,12 +38,14 @@ https://pytorch.org/blog/pytorch-2-7/
 
 - results/smoke-cpu-weak.json：CPU 弱独立集小实例。
 - results/smoke-cpu-strong.json：CPU 强独立集小实例。
-- GPU 文件在显卡运行成功后另行保存。
+- results/smoke-gpu-weak.json：GPU 弱独立集小实例。
+- results/smoke-gpu-strong.json：GPU 强独立集小实例。
 
 独立检查已保存结果的命令：
 
 ```powershell
 python -m mis.verify_report results/smoke-cpu-weak.json results/smoke-cpu-strong.json
+python -m mis.verify_report results/smoke-gpu-weak.json results/smoke-gpu-strong.json
 ```
 
 结果用于验证程序和记录流程，不能作为不同设备的性能基准；首次调用开销和初始化差异尚未做严格控制。
