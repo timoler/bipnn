@@ -4,6 +4,14 @@ from mis.reference import solve_highs, solve_scip
 
 
 class ReferenceTests(unittest.TestCase):
+    def test_scip_total_budget_retains_feasible_warm_start(self):
+        p = HypergraphProblem(32, tuple((2*i, 2*i+1) for i in range(15)))
+        r = solve_scip(p, "weak", time_limit=0.001, total_budget=True)
+        self.assertTrue(p.feasible(r["selected"], "weak"))
+        self.assertGreaterEqual(r["size"], r["warm_start_size"])
+        self.assertGreaterEqual(r["build_seconds"], 0)
+        self.assertGreaterEqual(r["solver_time_limit_seconds"], 0.001)
+
     def test_scip_matches_enumeration_and_preserves_warm_start(self):
         p = HypergraphProblem(7, ((0,1,2), (2,3,4), (4,5)))
         for mode in ["weak", "strong"]:

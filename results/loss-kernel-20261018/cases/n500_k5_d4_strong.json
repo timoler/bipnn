@@ -1,0 +1,65 @@
+{
+  "n": 500,
+  "k": 5,
+  "density_m_over_n": 4,
+  "instance_seed": 20261018,
+  "definition": "strong",
+  "number_hyperedges": 2000,
+  "number_terms": 19058,
+  "probabilities_sha256": "aa6a20ae689fd840d25b418041daba945f111ba6e75a7611303d953803c348b0",
+  "term_order_sha256": "f295dd7310297cf5ebe8d1571617f81afa28c57ae863b73bc0717d8c50388606",
+  "dense_matrix_shape": [
+    500,
+    19058
+  ],
+  "indexed_shape": [
+    19058,
+    2
+  ],
+  "dense_matrix_storage_bytes": 38116000,
+  "indexed_storage_bytes": 304928,
+  "coefficient_storage_bytes_per_kernel": 76232,
+  "agreement": {
+    "dense_loss": 9240.71875,
+    "indexed_loss": 9240.71875,
+    "absolute_loss_difference": 0.0,
+    "maximum_absolute_gradient_difference": 3.814697265625e-05,
+    "float32_tolerances": {
+      "loss_rtol": 5e-05,
+      "loss_atol": 0.001,
+      "gradient_rtol": 0.0005,
+      "gradient_atol": 5e-05
+    }
+  },
+  "dense": {
+    "forward_backward_seconds_per_iteration": [
+      0.003693999999999775,
+      0.0035195599999997993,
+      0.00230472000000006,
+      0.0024654200000000515,
+      0.0019133000000000067
+    ],
+    "median_seconds": 0.0024654200000000515,
+    "mean_seconds": 0.0027793999999999384,
+    "baseline_allocated_bytes": 38578176,
+    "peak_allocated_bytes": 162762752,
+    "incremental_peak_allocated_bytes": 124184576
+  },
+  "indexed": {
+    "forward_backward_seconds_per_iteration": [
+      0.004478080000000162,
+      0.00150269999999999,
+      0.0013763199999999643,
+      0.0012266000000000332,
+      0.0012851200000000063
+    ],
+    "median_seconds": 0.0013763199999999643,
+    "mean_seconds": 0.001973764000000031,
+    "baseline_allocated_bytes": 38578176,
+    "peak_allocated_bytes": 40578560,
+    "incremental_peak_allocated_bytes": 2000384
+  },
+  "median_speedup_dense_over_indexed": 1.7913130667287516,
+  "matrix_to_index_storage_ratio": 125.0,
+  "status": "ok"
+}

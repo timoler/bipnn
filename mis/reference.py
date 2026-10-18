@@ -40,7 +40,7 @@ def solve_highs(problem, definition, time_limit=30.0):
             "time_limit_seconds": time_limit}
 
 
-def solve_scip(problem, definition, time_limit=2.0):
+def solve_scip(problem, definition, time_limit=2.0, *, total_budget=False):
     """Direct MILP with an explicitly disclosed degree-greedy warm start."""
     from pyscipopt import Model, quicksum
     from .problem import degree_greedy
@@ -51,7 +51,6 @@ def solve_scip(problem, definition, time_limit=2.0):
     initial = set(degree_greedy(problem, definition))
     model = Model("hypergraph_mis")
     model.hideOutput()
-    model.setRealParam("limits/time", time_limit)
     model.setIntParam("parallel/maxnthreads", 1)
     model.setIntParam("randomization/randomseedshift", 0)
     x = [model.addVar(vtype="B", name=f"x_{i}") for i in range(problem.n)]
@@ -63,6 +62,9 @@ def solve_scip(problem, definition, time_limit=2.0):
         model.setSolVal(warm, x[i], float(i in initial))
     if not model.addSol(warm, free=True):
         raise RuntimeError("SCIP rejected a verified feasible warm start")
+    construction_seconds = time.perf_counter() - start
+    solver_budget = max(0.001, time_limit - construction_seconds) if total_budget else time_limit
+    model.setRealParam("limits/time", solver_budget)
     model.optimize()
     selected = [i for i in range(problem.n) if model.getVal(x[i]) >= 0.5]
     if not problem.feasible(selected, definition):
@@ -74,5 +76,8 @@ def solve_scip(problem, definition, time_limit=2.0):
               "mip_gap": float(model.getGap()), "time_limit_seconds": time_limit,
               "solver_seconds": float(model.getSolvingTime()),
               "warm_start": "degree_greedy", "warm_start_size": len(initial), "threads": 1}
+    if total_budget:
+        result.update({"budget_policy": "total target minus Python model and warm-start construction; minimum 1ms solver",
+                       "build_seconds": construction_seconds, "solver_time_limit_seconds": solver_budget})
     model.freeProb()
     return result

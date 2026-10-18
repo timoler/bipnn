@@ -1,0 +1,52 @@
+{
+  "created_at_utc": "2026-10-18T13:28:45.065074+00:00",
+  "purpose": "Loss-kernel forward/backward microbenchmark; not end-to-end training",
+  "settings": {
+    "output": "C:\\Users\\陈佳政\\Documents\\Codex\\2026-10-12\\new-chat\\outputs\\bipnn-public\\results\\loss-kernel-20261018",
+    "sizes": [
+      200,
+      500,
+      1000
+    ],
+    "orders": [
+      3,
+      5
+    ],
+    "density": 4,
+    "seed": 20261018,
+    "warmup": 5,
+    "blocks": 5,
+    "iterations": 5,
+    "device": "cuda"
+  },
+  "git_commit": "f4b32102d28c35b070f40c3cb01741f20247737d",
+  "source_sha256": {
+    "mis/indexed_loss.py": "9f0ce92bd3002d1d9243dd21a2ac959a0b7d1845636e1fccbc74d1b6f31e66d3",
+    "mis/neural.py": "79a61d59047f487dabee4934b9fa1fb488a004992bcfb5daeabbf92ae9d3d16b",
+    "mis/problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61",
+    "scripts/benchmark_loss.py": "5186fac203b11a58f50d319003a024cfcb4eb4e05a20685f9a31f57da03546d2"
+  },
+  "environment": {
+    "python": "3.9.23",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "torch_cpu_threads": 1
+  },
+  "timing": "5 warmups and 5 blocks x 5 forward+backward iterations by default; synchronized before/after each block; both representations resident; allocation peak subtracts resident baseline",
+  "limitations": "Float32 reduction roundoff can differ; no claim of identical training trajectories. Dense measured before indexed in each case; no temperature or power controls.",
+  "cases": [
+    "n200_k3_d4_weak",
+    "n200_k3_d4_strong",
+    "n200_k5_d4_weak",
+    "n200_k5_d4_strong",
+    "n500_k3_d4_weak",
+    "n500_k3_d4_strong",
+    "n500_k5_d4_weak",
+    "n500_k5_d4_strong",
+    "n1000_k3_d4_weak",
+    "n1000_k3_d4_strong",
+    "n1000_k5_d4_weak",
+    "n1000_k5_d4_strong"
+  ]
+}

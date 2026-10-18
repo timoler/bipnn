@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "purpose": "configuration selection on new validation graphs, followed by locked held-out evaluation",
+  "development": "All synthetic-20261018 and public-preset-20261018 graphs are development data; do not report them as unseen test data.",
+  "budget_seconds": 5.0,
+  "validation": {
+    "sizes": [200], "orders": [3, 5], "densities_m_over_n": [2, 4],
+    "instance_seeds": [20261020], "model_seeds": [0, 1],
+    "configs": ["w256_cra", "w256_none", "w1024_cra", "w1024_none"]
+  },
+  "test": {
+    "sizes": [200, 500], "orders": [3, 5], "densities_m_over_n": [2, 4],
+    "instance_seeds": [20261021, 20261022], "model_seeds": [0, 1, 2]
+  },
+  "definitions": ["weak", "strong"],
+  "selection": "Select separately per definition by mean over validation instances of (mean seed solution size / degree-greedy size); ties within 1e-12 choose narrower width, then CRA. Never inspect test outcomes to select.",
+  "baselines": ["degree_greedy", "random_score_same_decoder", "random_restart_same_decoder", "scip_milp_greedy_start"],
+  "timing": "5s approximate wall-time target for setup+training neural, final decoder extra; random restart checks between completed trials; SCIP solver target subtracts Python model and warm-start construction time. Save actual total, setup, solver and decode time; no strict hard-deadline or speed superiority claim.",
+  "architecture": "Unmodified public src.models wrapper, hidden widths w and w/2, BN on, effective dropout zero, uniform node features, Adam 1e-4, weight decay 5e-8, penalty 2. Only width and CRA on/off varied.",
+  "schedule": "CRA = -1 + 1.6 * elapsed setup+training / target seconds; no-CRA = 0. Retain last pre-update training-mode outputs, consistent with public preset's output convention.",
+  "evidence": "Save threshold, repaired, extended and first-forward untrained outputs with same decoder; fixed seeds repeat within instance, not independent samples. Report descriptive instance-level paired effects; no p-values. Dense/indexed kernel comparison is a separate numerical/performance experiment, not a new mathematical objective."
+}
