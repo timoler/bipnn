@@ -1,0 +1,19 @@
+{
+  "question": "Does trained HGNN+ outperform degree greedy, and does training outperform random scores under the same decoder?",
+  "archetype": "quantitative grid",
+  "backend": "Python matplotlib",
+  "dimensions_mm": [
+    180,
+    75
+  ],
+  "target": "graduate thesis experimental report",
+  "panel_a": "matched comparison against a simple deterministic baseline",
+  "panel_b": "matched control for the contribution of training rather than decoding",
+  "observations": "all 48 definition-instance combinations; no outcomes excluded",
+  "center": "mean across 8 configuration-instance combinations per size and definition, after averaging 3 seeds within each instance",
+  "uncertainty": "descriptive sample SD across 8 case-level values; not a confidence interval or significance test",
+  "dots": "all case-level paired percentage changes; horizontal offsets only for legibility",
+  "statistics": "no p values; related density configurations may share edges",
+  "training": "per-instance optimization, no cross-instance train/test claim",
+  "source": "complete audited summary and source-data.json"
+}

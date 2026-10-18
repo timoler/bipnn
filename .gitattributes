@@ -1,0 +1,3 @@
+# Matplotlib writes multiline SVG path data with insignificant trailing spaces.
+# Preserve generated geometry; source and report whitespace checks stay enabled.
+results/**/figures/*.svg -whitespace

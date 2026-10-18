@@ -1,0 +1,138 @@
+{
+  "cases": [
+    {
+      "name": "n200_k3_d2_s20261018",
+      "n": 200,
+      "definition": "strong",
+      "greedy_size": 54,
+      "small_preset_mean_size": 51.666666666666664,
+      "public_preset_mean_size": 60.333333333333336,
+      "public_preset_sizes": [
+        60,
+        61,
+        60
+      ],
+      "public_preset_raw_sizes": [
+        60,
+        61,
+        60
+      ],
+      "public_preset_raw_feasible_rate": 1,
+      "public_preset_mean_seconds": 13.001817700000004,
+      "public_vs_greedy_percent": 11.728395061728403,
+      "proven_optimum": null
+    },
+    {
+      "name": "n200_k3_d2_s20261018",
+      "n": 200,
+      "definition": "weak",
+      "greedy_size": 116,
+      "small_preset_mean_size": 110.33333333333333,
+      "public_preset_mean_size": 122,
+      "public_preset_sizes": [
+        122,
+        122,
+        122
+      ],
+      "public_preset_raw_sizes": [
+        122,
+        122,
+        122
+      ],
+      "public_preset_raw_feasible_rate": 1,
+      "public_preset_mean_seconds": 12.640057200000001,
+      "public_vs_greedy_percent": 5.1724137931034475,
+      "proven_optimum": null
+    },
+    {
+      "name": "n500_k3_d2_s20261018",
+      "n": 500,
+      "definition": "strong",
+      "greedy_size": 135,
+      "small_preset_mean_size": 123,
+      "public_preset_mean_size": 144.33333333333334,
+      "public_preset_sizes": [
+        145,
+        144,
+        144
+      ],
+      "public_preset_raw_sizes": [
+        145,
+        144,
+        144
+      ],
+      "public_preset_raw_feasible_rate": 1,
+      "public_preset_mean_seconds": 72.9109381,
+      "public_vs_greedy_percent": 6.913580246913598,
+      "proven_optimum": null
+    },
+    {
+      "name": "n500_k3_d2_s20261018",
+      "n": 500,
+      "definition": "weak",
+      "greedy_size": 287,
+      "small_preset_mean_size": 266,
+      "public_preset_mean_size": 303,
+      "public_preset_sizes": [
+        303,
+        303,
+        303
+      ],
+      "public_preset_raw_sizes": [
+        303,
+        303,
+        303
+      ],
+      "public_preset_raw_feasible_rate": 1,
+      "public_preset_mean_seconds": 35.3534364,
+      "public_vs_greedy_percent": 5.574912891986061,
+      "proven_optimum": null
+    },
+    {
+      "name": "n50_k3_d2_s20261018",
+      "n": 50,
+      "definition": "strong",
+      "greedy_size": 14,
+      "small_preset_mean_size": 13,
+      "public_preset_mean_size": 15.666666666666666,
+      "public_preset_sizes": [
+        16,
+        16,
+        15
+      ],
+      "public_preset_raw_sizes": [
+        16,
+        16,
+        15
+      ],
+      "public_preset_raw_feasible_rate": 1,
+      "public_preset_mean_seconds": 12.67952366666667,
+      "public_vs_greedy_percent": 11.904761904761907,
+      "proven_optimum": 16
+    },
+    {
+      "name": "n50_k3_d2_s20261018",
+      "n": 50,
+      "definition": "weak",
+      "greedy_size": 29,
+      "small_preset_mean_size": 28.666666666666668,
+      "public_preset_mean_size": 30,
+      "public_preset_sizes": [
+        30,
+        30,
+        30
+      ],
+      "public_preset_raw_sizes": [
+        30,
+        30,
+        30
+      ],
+      "public_preset_raw_feasible_rate": 1,
+      "public_preset_mean_seconds": 12.675861233333332,
+      "public_vs_greedy_percent": 3.4482758620689724,
+      "proven_optimum": 31
+    }
+  ],
+  "training_runs": 18,
+  "limits": "fixed subset, altered combined configuration and longer budget; not equal-time evidence or complete paper reproduction"
+}

@@ -1,0 +1,51 @@
+{
+  "created_at_utc": "2026-10-18T12:52:09.944930+00:00",
+  "settings": {
+    "output": "results\\pilot-20261018",
+    "sizes": [
+      500
+    ],
+    "orders": [
+      5
+    ],
+    "densities": [
+      4
+    ],
+    "instance_seeds": [
+      20261018
+    ],
+    "model_seeds": [
+      0
+    ],
+    "definitions": [
+      "weak",
+      "strong"
+    ],
+    "budget": 2.0,
+    "device": "cuda"
+  },
+  "git_commit": "4c0869f0ef6c709ea99d55a63101bb3dba38dcbe",
+  "source_sha256": {
+    "__init__.py": "718a72f9661c7d859f7f850ee73a35d1a3a8aa9bdda89ad062f388a3a02a1f66",
+    "benchmark.py": "4d99b213c7bd0e0f1cc4b878891a55bebbf6dc87723b661a36c7f88d5a7e10c4",
+    "neural.py": "79a61d59047f487dabee4934b9fa1fb488a004992bcfb5daeabbf92ae9d3d16b",
+    "problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61",
+    "reference.py": "87668bea1867a50e7d5b78182066b8888e7c794b0f7c407eb998d1541b808917",
+    "run.py": "62409dad7f3c1a487a9676e8572121f4c4ab69a9ccb067448d25d92c2354c0de",
+    "verify_report.py": "af7c80abdc784165464a0c79b241b367c1d9722022bcf5f59ebd2d9a36c51997"
+  },
+  "environment": {
+    "python": "3.9.23",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "scipy": "1.13.1",
+    "dhg": "0.9.5",
+    "torch_cpu_threads": 1
+  },
+  "timing": "2-second target by default; setup+training neural budget, final decoding extra; HiGHS solver budget; random restart stops between completed trials. Actual wall times saved. No aggregate best-of-three versus single-run claims.",
+  "cases": [
+    "n500_k5_d4_s20261018_weak.json",
+    "n500_k5_d4_s20261018_strong.json"
+  ]
+}

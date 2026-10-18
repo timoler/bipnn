@@ -1,0 +1,14 @@
+{
+  "preset_source": "public example/desc.ipynb Max-Cut configuration",
+  "upstream_commit": "708c10a95a50fb2b06dd35bf1604e65a6ec5ebe5",
+  "selection_rule": "one k=3,m=2n,seed=20261018 instance per scale, both definitions, all three seeds",
+  "limits": "different training budget from first suite; configuration diagnostic, not equal-time superiority evidence",
+  "torch": "2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "script_sha256": "8df624cd1f87fa51d8f2de2d58baa3de6f9e26b6dfc6a1ea01cec9d8bc5d1ed6",
+  "public_source_sha256": {
+    "src/models.py": "9e74af6add5c7940bfd95466543f10085ae49b42060802599da78271b1d29d79",
+    "src/train.py": "2ce090b16f8331a4f2571787846a11fd79b4a44e8d6caecae2b82065e7a37dde",
+    "src/loss.py": "e70a6da66f70cf3b772598115493b4492f4e5cc65905478520c42e5119b0300a"
+  }
+}
