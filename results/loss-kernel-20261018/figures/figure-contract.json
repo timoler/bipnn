@@ -1,0 +1,21 @@
+{
+  "question": "Does indexed polynomial evaluation reduce memory and execution time across every measured MIS case?",
+  "conclusion": "Indexed evaluation consistently reduces additional peak memory, while execution time improves in only part of the strong-MIS cases and is slower in every weak-MIS case by the measured median.",
+  "archetype": "quantitative grid",
+  "backend": "python-matplotlib",
+  "panels": {
+    "a": "Boundary evidence: all 12 dense/indexed forward-backward time ratios, with observed timing-range envelopes, prevent a blanket speedup claim.",
+    "b": "Primary resource evidence: additional peak allocated-memory ratios establish the consistent memory reduction across all 12 cases."
+  },
+  "data_policy": "All 12 requested configurations are retained; no observation or timing block is excluded. Raw values are copied to source-data.json.",
+  "statistics": {
+    "time_center": "Median dense block mean divided by median indexed block mean; five blocks of five iterations per kernel.",
+    "time_interval": "Descriptive envelope from minimum dense block mean / maximum indexed block mean to maximum dense block mean / minimum indexed block mean; not a confidence interval or paired-block interval.",
+    "memory_center": "Peak additional allocated bytes above the resident baseline, dense divided by indexed.",
+    "memory_interval": "Not applicable: one peak measurement per kernel over the measured iterations.",
+    "replicate_unit": "One fixed generated graph per n,k pair; weak and strong definitions share that graph. Timing blocks are technical repetitions, not independent graph samples.",
+    "tests": "No hypothesis tests or p-values."
+  },
+  "export": {"width_mm": 180, "height_mm": 88, "formats": ["pdf", "svg", "png"], "png_dpi": 400, "minimum_glyph_pt": 5},
+  "limitations": ["Microkernel forward/backward only, not end-to-end neural training or solver timing.", "Sequential dense-then-indexed measurements without temperature or power controls.", "Float32 reduction roundoff differs; no claim of identical training trajectories.", "Both representations remain resident; memory ratios use additional peak above that shared baseline."]
+}
