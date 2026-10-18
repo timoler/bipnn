@@ -1,3 +1,24 @@
 # Matplotlib writes multiline SVG path data with insignificant trailing spaces.
 # Preserve generated geometry; source and report whitespace checks stay enabled.
 results/**/figures/*.svg -whitespace
+
+# Frozen manifests bind exact working-file bytes, including line endings.
+# Match the measured checkout on Windows and other platforms.
+mis/anytime.py text eol=lf
+mis/benchmark.py text eol=lf
+mis/controlled.py text eol=lf
+mis/datasets.py text eol=lf
+mis/fast_baselines.py text eol=lf
+mis/fast_decode.py text eol=lf
+mis/indexed_loss.py text eol=lf
+mis/problem.py text eol=lf
+mis/reference.py text eol=lf
+scripts/check_controlled_protocol.py text eol=lf
+scripts/run_anytime.py text eol=lf
+scripts/run_controlled.py text eol=lf
+src/models.py text eol=crlf
+src/train.py text eol=crlf
+results/controlled-validation-20261018/selection.json text eol=crlf
+data/cora_hypergraph.txt text eol=crlf
+data/high_hypergraph.txt text eol=crlf
+data/primary_hypergraph.txt text eol=crlf

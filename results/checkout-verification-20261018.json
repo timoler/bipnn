@@ -1,0 +1,37 @@
+{
+  "manifest_binding": "99e81de97b6f7ad15e05a0ddd186aef4c4ec4df054c0898b4e5472d6330aad49",
+  "scope": "Staged-index checkout exact-byte verification; not a clean environment or full training rerun",
+  "checks": [
+    {
+      "core.autocrlf": "false",
+      "files_checked": 18,
+      "all_exact_byte_hashes_match": true
+    },
+    {
+      "core.autocrlf": "true",
+      "files_checked": 18,
+      "all_exact_byte_hashes_match": true
+    }
+  ],
+  "expected_sha256": {
+    "data/cora_hypergraph.txt": "58f8fbc5c7fc0118f6d8f222400f6d61ad3c9467362a2211bd7925441c6a8ae2",
+    "data/high_hypergraph.txt": "34bd8752f971efd1e96339529891a6fd86ed9a7279e95c2e17f63221f7c74595",
+    "data/primary_hypergraph.txt": "4fb1423a5f110aa5462087056769931af3f95cdd1ec17aace5be22eec6c68936",
+    "mis/anytime.py": "ddf70a15d14645252107bd722268c7836d29799dce6622965e05b36fa456043f",
+    "mis/benchmark.py": "7d2b745b1ce14542663fda99be12b6e7eed153ee9aca82ba6ee4a6ce70475a10",
+    "mis/controlled.py": "03f5906d16707ead676f729f457744c27508304626aa94bb8d1cdd6238d7f3a9",
+    "mis/datasets.py": "d83557abd969bec00c524916f121752ce1355b365ea85901bca96d994d1b34af",
+    "mis/fast_baselines.py": "c630644a608cc268edee3f506b2ac0c488575be85b9a161b16584b517a512d6b",
+    "mis/fast_decode.py": "d999e0a6b9133cb0a1655c136cb762dac782ffbf2f1181ece04a8778bc2a1f94",
+    "mis/indexed_loss.py": "9f0ce92bd3002d1d9243dd21a2ac959a0b7d1845636e1fccbc74d1b6f31e66d3",
+    "mis/problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61",
+    "mis/reference.py": "41f7161a91ee002a51fc99a8ed19950b0a05cf65e03a0f43dc4c6d0694600953",
+    "results/controlled-validation-20261018/selection.json": "92347225938b6b36e8b8e2b0d7dd7cc35873c7ff3b8f5d00f0c19b2f0c8bca30",
+    "scripts/check_controlled_protocol.py": "54a7d5bfb516b40615800df553759e27f17b416081fad288f542e02ef07350bc",
+    "scripts/run_anytime.py": "8bba4a085d17e46a8c328099263b9dc9996bbdeb5f12cf1a58026dba1300bebf",
+    "scripts/run_controlled.py": "1cd1b42440b60079e0c658403bf4ecd2d618133bb458de30c5cd9f9203bc22dd",
+    "src/models.py": "9e74af6add5c7940bfd95466543f10085ae49b42060802599da78271b1d29d79",
+    "src/train.py": "2ce090b16f8331a4f2571787846a11fd79b4a44e8d6caecae2b82065e7a37dde"
+  },
+  "analysis_scripts_syntax": "passed before report serialization"
+}

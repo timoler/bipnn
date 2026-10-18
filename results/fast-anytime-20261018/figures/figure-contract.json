@@ -1,0 +1,28 @@
+{
+  "question": "How does weak-hypergraph independent-set quality available by a strict wall-clock cutoff vary with time and instance scale under two predeclared structures?",
+  "conclusion": "On these six synthetic instances, BIPNN's 30-second mean feasible-set fraction exceeds all shown baselines, while SCIP leads BIPNN at the 5-second cutoff on both 2000-node instances and one seed at the dense 30-second case remains below SCIP; the advantage is conditional on time, instance and seed.",
+  "archetype": "quantitative grid",
+  "backend": "python-matplotlib",
+  "figure_width_mm": 180,
+  "figure_height_mm": 132,
+  "panel_map": {
+    "a": "k=3,m/n=2,n=2000: 5/15/30-second strict-cutoff quality for BIPNN, same-decoder random restart, SCIP and degree greedy.",
+    "b": "k=3,m/n=2: 30-second strict-cutoff quality across n=500/1000/2000 for the same four methods.",
+    "c": "k=5,m/n=4,n=2000: 5/15/30-second strict-cutoff quality for the same four methods.",
+    "d": "k=5,m/n=4: 30-second strict-cutoff quality across n=500/1000/2000 for the same four methods."
+  },
+  "selection": "Both synthetic structures and every size/budget in the panel map are predeclared. Largest-n time curves are selected by size, never by outcome. Six real-data/definition cases are separately tabulated in the accompanying report. All raw case results are preserved in source data.",
+  "statistics": {
+    "metric": "Feasible independent-set size divided by explicit total node count, including isolated nodes.",
+    "stochastic_center": "Mean of model seeds 0,1,2 within one graph at a cutoff.",
+    "stochastic_spread": "Minimum to maximum over the same three seeds; technical descriptive range, not a confidence interval or independent-graph uncertainty.",
+    "neural_and_random": "Each seed supplies one 30-second trajectory, with prefix-best checkpoints at 5/15/30 seconds. Checkpoints are not independent training runs.",
+    "scip": "Each cutoff is a separate solver run; display its strict cutoff snapshot. Nonmonotonicity across independent budgets is retained.",
+    "degree": "One deterministic feasible solution, shown only after its measured completion time.",
+    "sample_scope": "One graph per size/structure, with seed 20261023 at n500 and 20261024 at n1000/n2000; descriptive comparisons only, no p-values."
+  },
+  "timing": "Quality uses only candidates completely decoded or extracted before the cutoff. Online decoding and construction are charged. Snapshot emission and final completion may overshoot; neither late solutions nor late optimality proofs are substituted.",
+  "export": {"formats": ["pdf", "svg", "png"], "png_dpi": 400, "minimum_glyph_pt": 5, "editable_text": true},
+  "qa": "Render-time panel alignment with 1.5pt tolerance; source, PDF glyph and collision audits; full-figure and panel-wise visual inspection.",
+  "limitations": ["Previously examined real datasets are re-evaluations, not unseen test data.", "This protocol changes the decoder, CRA horizon and best-history selection together relative to earlier results; do not assign every improvement to decoding.", "The two size/structure sweeps are descriptive examples and cannot establish broad scale or speed superiority."]
+}

@@ -1,0 +1,5662 @@
+{
+  "summary_source": "../summary.json",
+  "summary_sha256": "efc71723c5888af88f9222ccfd4d3663bb2177f75fdd1bcce81c5bcc5dff2d7f",
+  "manifest_binding": "99e81de97b6f7ad15e05a0ddd186aef4c4ec4df054c0898b4e5472d6330aad49",
+  "excluded_summary_rows": 0,
+  "all_case_summary": [
+    {
+      "case_id": "n500_k3_d2_s20261023_weak",
+      "name": "n500_k3_d2_s20261023",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 500,
+      "m": 1000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 3,
+        "density_m_over_n": 2,
+        "seed": 20261023
+      },
+      "budget_seconds": 5.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 283,
+      "neural_sizes": [
+        293,
+        294,
+        294
+      ],
+      "neural_mean_size": 293.6666666666667,
+      "random_sizes": [
+        272,
+        275,
+        274
+      ],
+      "random_mean_size": 273.6666666666667,
+      "random_single_sizes": [
+        256,
+        259,
+        257
+      ],
+      "scip_size": 291,
+      "scip_upper_bound": 333.20849958103065,
+      "scip_optimality_proven": false,
+      "scip_status": "timelimit",
+      "scip_completion_size": 291,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 283.0,
+        "random_score_same_decoder": 257.3333333333333,
+        "random_restart_same_decoder": 273.6666666666667,
+        "bipnn_fast_anytime": 293.6666666666667,
+        "scip_milp_greedy_start": 291.0
+      },
+      "paired_percent": {
+        "degree_greedy": 3.769140164899887,
+        "random_score_same_decoder": 14.119170984455964,
+        "random_restart_same_decoder": 7.308160779537154,
+        "scip_milp_greedy_start": 0.9163802978235935
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 152,
+        "repaired_size_mean": 151,
+        "final_size_mean": 293.6666666666667,
+        "removed_mean": 1,
+        "added_mean": 142.66666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 159.33333333333334,
+        "repaired_size_mean": 158.33333333333334,
+        "final_size_mean": 293,
+        "removed_mean": 1,
+        "added_mean": 134.66666666666666
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 265,
+      "best_minus_initial_mean": 28.666666666666668,
+      "latest_mean_size": 293,
+      "best_minus_latest_mean": 0.6666666666666666,
+      "neural_epochs_at_emission": [
+        472,
+        532,
+        466
+      ],
+      "neural_latest_decoded_epochs": [
+        460,
+        520,
+        458
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          5.006965700000002,
+          5.0041135000000025,
+          5.003958799999992
+        ],
+        "random_restart_same_decoder": [
+          5.001085900000007,
+          5.0004098,
+          5.000135099999994
+        ],
+        "scip_milp_greedy_start": [
+          4.3586966
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.006965700000002073,
+          0.004113500000002546,
+          0.0039587999999923795
+        ],
+        "random_restart_same_decoder": [
+          0.0010859000000067454,
+          0.0004097999999999047,
+          0.00013509999999428146
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        4369,
+        4452,
+        4622
+      ],
+      "neural_best_available_seconds": [
+        4.907758000000001,
+        4.00144139999999,
+        4.905410399999994
+      ]
+    },
+    {
+      "case_id": "n500_k3_d2_s20261023_weak",
+      "name": "n500_k3_d2_s20261023",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 500,
+      "m": 1000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 3,
+        "density_m_over_n": 2,
+        "seed": 20261023
+      },
+      "budget_seconds": 15.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 283,
+      "neural_sizes": [
+        303,
+        304,
+        304
+      ],
+      "neural_mean_size": 303.6666666666667,
+      "random_sizes": [
+        277,
+        278,
+        274
+      ],
+      "random_mean_size": 276.3333333333333,
+      "random_single_sizes": [
+        256,
+        259,
+        257
+      ],
+      "scip_size": 293,
+      "scip_upper_bound": 331.7117619714475,
+      "scip_optimality_proven": false,
+      "scip_status": "deadline_snapshot",
+      "scip_completion_size": 293,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 283.0,
+        "random_score_same_decoder": 257.3333333333333,
+        "random_restart_same_decoder": 276.3333333333333,
+        "bipnn_fast_anytime": 303.6666666666667,
+        "scip_milp_greedy_start": 293.0
+      },
+      "paired_percent": {
+        "degree_greedy": 7.302709069493529,
+        "random_score_same_decoder": 18.005181347150277,
+        "random_restart_same_decoder": 9.891435464414977,
+        "scip_milp_greedy_start": 3.640500568828231
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 315.3333333333333,
+        "repaired_size_mean": 300,
+        "final_size_mean": 303.6666666666667,
+        "removed_mean": 15.333333333333334,
+        "added_mean": 3.6666666666666665
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 321.3333333333333,
+        "repaired_size_mean": 303.6666666666667,
+        "final_size_mean": 303.6666666666667,
+        "removed_mean": 17.666666666666668,
+        "added_mean": 0
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 265,
+      "best_minus_initial_mean": 38.666666666666664,
+      "latest_mean_size": 303.6666666666667,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        1553,
+        1728,
+        1549
+      ],
+      "neural_latest_decoded_epochs": [
+        1542,
+        1715,
+        1541
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          15.007221399999999,
+          15.00607930000001,
+          15.004684300000008
+        ],
+        "random_restart_same_decoder": [
+          15.000341000000006,
+          15.000576599999988,
+          15.000875499999978
+        ],
+        "scip_milp_greedy_start": [
+          15.0140159
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.007221399999998823,
+          0.006079300000010335,
+          0.004684300000008079
+        ],
+        "random_restart_same_decoder": [
+          0.0003410000000059199,
+          0.0005765999999880478,
+          0.0008754999999780466
+        ],
+        "scip_milp_greedy_start": [
+          0.014015900000000414
+        ]
+      },
+      "random_completed_trials": [
+        13296,
+        13626,
+        13182
+      ],
+      "neural_best_available_seconds": [
+        11.008457999999997,
+        12.001417900000007,
+        13.002645599999994
+      ]
+    },
+    {
+      "case_id": "n500_k3_d2_s20261023_weak",
+      "name": "n500_k3_d2_s20261023",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 500,
+      "m": 1000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 3,
+        "density_m_over_n": 2,
+        "seed": 20261023
+      },
+      "budget_seconds": 30.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 283,
+      "neural_sizes": [
+        304,
+        304,
+        304
+      ],
+      "neural_mean_size": 304,
+      "random_sizes": [
+        277,
+        278,
+        274
+      ],
+      "random_mean_size": 276.3333333333333,
+      "random_single_sizes": [
+        256,
+        259,
+        257
+      ],
+      "scip_size": 296,
+      "scip_upper_bound": 330.21767824881783,
+      "scip_optimality_proven": false,
+      "scip_status": "timelimit",
+      "scip_completion_size": 296,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 283.0,
+        "random_score_same_decoder": 257.3333333333333,
+        "random_restart_same_decoder": 276.3333333333333,
+        "bipnn_fast_anytime": 304,
+        "scip_milp_greedy_start": 296.0
+      },
+      "paired_percent": {
+        "degree_greedy": 7.420494699646651,
+        "random_score_same_decoder": 18.134715025906733,
+        "random_restart_same_decoder": 10.012062726176119,
+        "scip_milp_greedy_start": 2.7027027027026973
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 318,
+        "repaired_size_mean": 303.3333333333333,
+        "final_size_mean": 304,
+        "removed_mean": 14.666666666666666,
+        "added_mean": 0.6666666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 304,
+        "repaired_size_mean": 304,
+        "final_size_mean": 304,
+        "removed_mean": 0,
+        "added_mean": 0
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 265,
+      "best_minus_initial_mean": 39,
+      "latest_mean_size": 304,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        3292,
+        3386,
+        3288
+      ],
+      "neural_latest_decoded_epochs": [
+        3283,
+        3377,
+        3277
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          30.00450870000001,
+          30.000377200000003,
+          30.00640149999998
+        ],
+        "random_restart_same_decoder": [
+          30.00084360000001,
+          30.000085799999994,
+          30.00040469999999
+        ],
+        "scip_milp_greedy_start": [
+          29.9893273
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.004508700000009469,
+          0.000377200000002631,
+          0.006401499999981297
+        ],
+        "random_restart_same_decoder": [
+          0.0008436000000102695,
+          8.579999999369647e-05,
+          0.0004046999999900436
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        25754,
+        25850,
+        25868
+      ],
+      "neural_best_available_seconds": [
+        16.00391030000001,
+        12.001417900000007,
+        13.002645599999994
+      ]
+    },
+    {
+      "case_id": "n500_k5_d4_s20261023_weak",
+      "name": "n500_k5_d4_s20261023",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 500,
+      "m": 2000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 5,
+        "density_m_over_n": 4,
+        "seed": 20261023
+      },
+      "budget_seconds": 5.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 305,
+      "neural_sizes": [
+        309,
+        309,
+        309
+      ],
+      "neural_mean_size": 309,
+      "random_sizes": [
+        295,
+        294,
+        294
+      ],
+      "random_mean_size": 294.3333333333333,
+      "random_single_sizes": [
+        280,
+        283,
+        275
+      ],
+      "scip_size": 318,
+      "scip_upper_bound": 399.29276687889205,
+      "scip_optimality_proven": false,
+      "scip_status": "timelimit",
+      "scip_completion_size": 318,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 305.0,
+        "random_score_same_decoder": 279.3333333333333,
+        "random_restart_same_decoder": 294.3333333333333,
+        "bipnn_fast_anytime": 309,
+        "scip_milp_greedy_start": 318.0
+      },
+      "paired_percent": {
+        "degree_greedy": 1.3114754098360715,
+        "random_score_same_decoder": 10.620525059665887,
+        "random_restart_same_decoder": 4.983012457531144,
+        "scip_milp_greedy_start": -2.8301886792452824
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 51.333333333333336,
+        "repaired_size_mean": 51.333333333333336,
+        "final_size_mean": 309,
+        "removed_mean": 0,
+        "added_mean": 257.6666666666667
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 75,
+        "repaired_size_mean": 75,
+        "final_size_mean": 307,
+        "removed_mean": 0,
+        "added_mean": 232
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 278.3333333333333,
+      "best_minus_initial_mean": 30.666666666666668,
+      "latest_mean_size": 307,
+      "best_minus_latest_mean": 2,
+      "neural_epochs_at_emission": [
+        411,
+        451,
+        337
+      ],
+      "neural_latest_decoded_epochs": [
+        401,
+        441,
+        330
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          5.010687300000029,
+          5.00249690000004,
+          5.008584499999984
+        ],
+        "random_restart_same_decoder": [
+          5.001854000000037,
+          5.001406100000054,
+          5.000078500000029
+        ],
+        "scip_milp_greedy_start": [
+          4.238254100000006
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.010687300000029154,
+          0.002496900000039659,
+          0.008584499999983564
+        ],
+        "random_restart_same_decoder": [
+          0.0018540000000371037,
+          0.0014061000000538115,
+          7.850000002918023e-05
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        2377,
+        2368,
+        2294
+      ],
+      "neural_best_available_seconds": [
+        1.0134312999999793,
+        2.0114227000000255,
+        1.0167217999999707
+      ]
+    },
+    {
+      "case_id": "n500_k5_d4_s20261023_weak",
+      "name": "n500_k5_d4_s20261023",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 500,
+      "m": 2000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 5,
+        "density_m_over_n": 4,
+        "seed": 20261023
+      },
+      "budget_seconds": 15.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 305,
+      "neural_sizes": [
+        331,
+        329,
+        331
+      ],
+      "neural_mean_size": 330.3333333333333,
+      "random_sizes": [
+        295,
+        296,
+        295
+      ],
+      "random_mean_size": 295.3333333333333,
+      "random_single_sizes": [
+        280,
+        283,
+        275
+      ],
+      "scip_size": 318,
+      "scip_upper_bound": 399.1417916514573,
+      "scip_optimality_proven": false,
+      "scip_status": "timelimit",
+      "scip_completion_size": 318,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 305.0,
+        "random_score_same_decoder": 279.3333333333333,
+        "random_restart_same_decoder": 295.3333333333333,
+        "bipnn_fast_anytime": 330.3333333333333,
+        "scip_milp_greedy_start": 318.0
+      },
+      "paired_percent": {
+        "degree_greedy": 8.306010928961749,
+        "random_score_same_decoder": 18.25775656324582,
+        "random_restart_same_decoder": 11.851015801354393,
+        "scip_milp_greedy_start": 3.8784067085953833
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 334.6666666666667,
+        "repaired_size_mean": 330.3333333333333,
+        "final_size_mean": 330.3333333333333,
+        "removed_mean": 4.333333333333333,
+        "added_mean": 0
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 335,
+        "repaired_size_mean": 330.3333333333333,
+        "final_size_mean": 330.3333333333333,
+        "removed_mean": 4.666666666666667,
+        "added_mean": 0
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 278.3333333333333,
+      "best_minus_initial_mean": 52,
+      "latest_mean_size": 330.3333333333333,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        1340,
+        1406,
+        1171
+      ],
+      "neural_latest_decoded_epochs": [
+        1332,
+        1395,
+        1160
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          15.013564400000007,
+          15.008795899999996,
+          15.00790619999998
+        ],
+        "random_restart_same_decoder": [
+          15.000448600000027,
+          15.00030860000004,
+          15.00164380000001
+        ],
+        "scip_milp_greedy_start": [
+          14.979831899999965
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.013564400000007026,
+          0.008795899999995527,
+          0.007906199999979435
+        ],
+        "random_restart_same_decoder": [
+          0.0004486000000269996,
+          0.00030860000003940513,
+          0.0016438000000107422
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        6854,
+        6828,
+        6840
+      ],
+      "neural_best_available_seconds": [
+        14.00779190000003,
+        14.003889000000015,
+        14.904614900000013
+      ]
+    },
+    {
+      "case_id": "n500_k5_d4_s20261023_weak",
+      "name": "n500_k5_d4_s20261023",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 500,
+      "m": 2000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 5,
+        "density_m_over_n": 4,
+        "seed": 20261023
+      },
+      "budget_seconds": 30.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 305,
+      "neural_sizes": [
+        331,
+        329,
+        331
+      ],
+      "neural_mean_size": 330.3333333333333,
+      "random_sizes": [
+        297,
+        296,
+        296
+      ],
+      "random_mean_size": 296.3333333333333,
+      "random_single_sizes": [
+        280,
+        283,
+        275
+      ],
+      "scip_size": 318,
+      "scip_upper_bound": 399.1417916514573,
+      "scip_optimality_proven": false,
+      "scip_status": "timelimit",
+      "scip_completion_size": 318,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 305.0,
+        "random_score_same_decoder": 279.3333333333333,
+        "random_restart_same_decoder": 296.3333333333333,
+        "bipnn_fast_anytime": 330.3333333333333,
+        "scip_milp_greedy_start": 318.0
+      },
+      "paired_percent": {
+        "degree_greedy": 8.306010928961749,
+        "random_score_same_decoder": 18.25775656324582,
+        "random_restart_same_decoder": 11.473565804274477,
+        "scip_milp_greedy_start": 3.8784067085953833
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 334.6666666666667,
+        "repaired_size_mean": 330.3333333333333,
+        "final_size_mean": 330.3333333333333,
+        "removed_mean": 4.333333333333333,
+        "added_mean": 0
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 330.3333333333333,
+        "repaired_size_mean": 330.3333333333333,
+        "final_size_mean": 330.3333333333333,
+        "removed_mean": 0,
+        "added_mean": 0
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 278.3333333333333,
+      "best_minus_initial_mean": 52,
+      "latest_mean_size": 330.3333333333333,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        2986,
+        3017,
+        2753
+      ],
+      "neural_latest_decoded_epochs": [
+        2975,
+        3006,
+        2742
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          30.003483899999992,
+          30.002773500000046,
+          30.00778439999999
+        ],
+        "random_restart_same_decoder": [
+          30.000642500000026,
+          30.001578800000004,
+          30.000157100000024
+        ],
+        "scip_milp_greedy_start": [
+          29.982910600000025
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.0034838999999919906,
+          0.0027735000000461696,
+          0.007784399999991365
+        ],
+        "random_restart_same_decoder": [
+          0.0006425000000263026,
+          0.0015788000000043212,
+          0.00015710000002400193
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        13309,
+        13388,
+        13386
+      ],
+      "neural_best_available_seconds": [
+        14.00779190000003,
+        14.003889000000015,
+        14.904614900000013
+      ]
+    },
+    {
+      "case_id": "n1000_k3_d2_s20261024_weak",
+      "name": "n1000_k3_d2_s20261024",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 1000,
+      "m": 2000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 3,
+        "density_m_over_n": 2,
+        "seed": 20261024
+      },
+      "budget_seconds": 5.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 569,
+      "neural_sizes": [
+        585,
+        587,
+        587
+      ],
+      "neural_mean_size": 586.3333333333334,
+      "random_sizes": [
+        539,
+        535,
+        537
+      ],
+      "random_mean_size": 537,
+      "random_single_sizes": [
+        520,
+        519,
+        526
+      ],
+      "scip_size": 590,
+      "scip_upper_bound": 667.3922273273072,
+      "scip_optimality_proven": false,
+      "scip_status": "timelimit",
+      "scip_completion_size": 590,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 569.0,
+        "random_score_same_decoder": 521.6666666666666,
+        "random_restart_same_decoder": 537,
+        "bipnn_fast_anytime": 586.3333333333334,
+        "scip_milp_greedy_start": 590.0
+      },
+      "paired_percent": {
+        "degree_greedy": 3.0462800234329235,
+        "random_score_same_decoder": 12.396166134185327,
+        "random_restart_same_decoder": 9.186840471756685,
+        "scip_milp_greedy_start": -0.6214689265536699
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 300.6666666666667,
+        "repaired_size_mean": 299.6666666666667,
+        "final_size_mean": 586.3333333333334,
+        "removed_mean": 1,
+        "added_mean": 286.6666666666667
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 319.6666666666667,
+        "repaired_size_mean": 318.6666666666667,
+        "final_size_mean": 586.3333333333334,
+        "removed_mean": 1,
+        "added_mean": 267.6666666666667
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 524.6666666666666,
+      "best_minus_initial_mean": 61.666666666666664,
+      "latest_mean_size": 586.3333333333334,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        386,
+        471,
+        397
+      ],
+      "neural_latest_decoded_epochs": [
+        377,
+        460,
+        390
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          5.009140099999968,
+          5.0051149000000805,
+          5.008885899999996
+        ],
+        "random_restart_same_decoder": [
+          5.000976299999934,
+          5.001688700000045,
+          5.002021099999979
+        ],
+        "scip_milp_greedy_start": [
+          4.561009000000013
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.009140099999967788,
+          0.0051149000000805245,
+          0.008885899999995672
+        ],
+        "random_restart_same_decoder": [
+          0.0009762999999338717,
+          0.0016887000000451735,
+          0.0020210999999790147
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        2136,
+        2185,
+        2032
+      ],
+      "neural_best_available_seconds": [
+        3.010858899999903,
+        4.904497100000071,
+        4.913977400000022
+      ]
+    },
+    {
+      "case_id": "n1000_k3_d2_s20261024_weak",
+      "name": "n1000_k3_d2_s20261024",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 1000,
+      "m": 2000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 3,
+        "density_m_over_n": 2,
+        "seed": 20261024
+      },
+      "budget_seconds": 15.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 569,
+      "neural_sizes": [
+        610,
+        607,
+        609
+      ],
+      "neural_mean_size": 608.6666666666666,
+      "random_sizes": [
+        539,
+        541,
+        539
+      ],
+      "random_mean_size": 539.6666666666666,
+      "random_single_sizes": [
+        520,
+        519,
+        526
+      ],
+      "scip_size": 590,
+      "scip_upper_bound": 667.3922273273072,
+      "scip_optimality_proven": false,
+      "scip_status": "deadline_snapshot",
+      "scip_completion_size": 590,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 569.0,
+        "random_score_same_decoder": 521.6666666666666,
+        "random_restart_same_decoder": 539.6666666666666,
+        "bipnn_fast_anytime": 608.6666666666666,
+        "scip_milp_greedy_start": 590.0
+      },
+      "paired_percent": {
+        "degree_greedy": 6.971294669009942,
+        "random_score_same_decoder": 16.67731629392972,
+        "random_restart_same_decoder": 12.785670166769613,
+        "scip_milp_greedy_start": 3.1638418079096065
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 638,
+        "repaired_size_mean": 606.6666666666666,
+        "final_size_mean": 608.6666666666666,
+        "removed_mean": 31.333333333333332,
+        "added_mean": 2
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 646,
+        "repaired_size_mean": 608.3333333333334,
+        "final_size_mean": 608.6666666666666,
+        "removed_mean": 37.666666666666664,
+        "added_mean": 0.3333333333333333
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 524.6666666666666,
+      "best_minus_initial_mean": 84,
+      "latest_mean_size": 608.6666666666666,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        1233,
+        1268,
+        1316
+      ],
+      "neural_latest_decoded_epochs": [
+        1226,
+        1261,
+        1306
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          15.016422299999931,
+          15.007355500000017,
+          15.00308199999995
+        ],
+        "random_restart_same_decoder": [
+          15.000570799999991,
+          15.001659000000018,
+          15.000685599999997
+        ],
+        "scip_milp_greedy_start": [
+          15.011702200000002
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.016422299999931056,
+          0.007355500000016946,
+          0.003081999999949403
+        ],
+        "random_restart_same_decoder": [
+          0.0005707999999913227,
+          0.0016590000000178406,
+          0.0006855999999970663
+        ],
+        "scip_milp_greedy_start": [
+          0.011702200000001994
+        ]
+      },
+      "random_completed_trials": [
+        6010,
+        6611,
+        6199
+      ],
+      "neural_best_available_seconds": [
+        12.006550699999934,
+        14.909561300000064,
+        12.002568300000007
+      ]
+    },
+    {
+      "case_id": "n1000_k3_d2_s20261024_weak",
+      "name": "n1000_k3_d2_s20261024",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 1000,
+      "m": 2000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 3,
+        "density_m_over_n": 2,
+        "seed": 20261024
+      },
+      "budget_seconds": 30.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 569,
+      "neural_sizes": [
+        610,
+        607,
+        609
+      ],
+      "neural_mean_size": 608.6666666666666,
+      "random_sizes": [
+        540,
+        549,
+        539
+      ],
+      "random_mean_size": 542.6666666666666,
+      "random_single_sizes": [
+        520,
+        519,
+        526
+      ],
+      "scip_size": 590,
+      "scip_upper_bound": 667.3922273273072,
+      "scip_optimality_proven": false,
+      "scip_status": "deadline_snapshot",
+      "scip_completion_size": 590,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 569.0,
+        "random_score_same_decoder": 521.6666666666666,
+        "random_restart_same_decoder": 542.6666666666666,
+        "bipnn_fast_anytime": 608.6666666666666,
+        "scip_milp_greedy_start": 590.0
+      },
+      "paired_percent": {
+        "degree_greedy": 6.971294669009942,
+        "random_score_same_decoder": 16.67731629392972,
+        "random_restart_same_decoder": 12.162162162162172,
+        "scip_milp_greedy_start": 3.1638418079096065
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 638,
+        "repaired_size_mean": 606.6666666666666,
+        "final_size_mean": 608.6666666666666,
+        "removed_mean": 31.333333333333332,
+        "added_mean": 2
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 608.3333333333334,
+        "repaired_size_mean": 608.3333333333334,
+        "final_size_mean": 608.3333333333334,
+        "removed_mean": 0,
+        "added_mean": 0
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 524.6666666666666,
+      "best_minus_initial_mean": 84,
+      "latest_mean_size": 608.3333333333334,
+      "best_minus_latest_mean": 0.3333333333333333,
+      "neural_epochs_at_emission": [
+        2534,
+        2803,
+        2725
+      ],
+      "neural_latest_decoded_epochs": [
+        2527,
+        2793,
+        2716
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          30.00121249999995,
+          30.00611850000007,
+          30.002561499999956
+        ],
+        "random_restart_same_decoder": [
+          30.000252299999943,
+          30.00047870000003,
+          30.00186819999999
+        ],
+        "scip_milp_greedy_start": [
+          30.00142119999998
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.001212499999951433,
+          0.006118500000070526,
+          0.0025614999999561405
+        ],
+        "random_restart_same_decoder": [
+          0.0002522999999428066,
+          0.0004787000000305852,
+          0.0018681999999898835
+        ],
+        "scip_milp_greedy_start": [
+          0.0014211999999815816
+        ]
+      },
+      "random_completed_trials": [
+        12476,
+        12726,
+        12590
+      ],
+      "neural_best_available_seconds": [
+        12.006550699999934,
+        14.909561300000064,
+        12.002568300000007
+      ]
+    },
+    {
+      "case_id": "n1000_k5_d4_s20261024_weak",
+      "name": "n1000_k5_d4_s20261024",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 1000,
+      "m": 4000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 5,
+        "density_m_over_n": 4,
+        "seed": 20261024
+      },
+      "budget_seconds": 5.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 599,
+      "neural_sizes": [
+        611,
+        611,
+        611
+      ],
+      "neural_mean_size": 611,
+      "random_sizes": [
+        577,
+        579,
+        577
+      ],
+      "random_mean_size": 577.6666666666666,
+      "random_single_sizes": [
+        570,
+        560,
+        552
+      ],
+      "scip_size": 635,
+      "scip_upper_bound": 799.5159970793759,
+      "scip_optimality_proven": false,
+      "scip_status": "timelimit",
+      "scip_completion_size": 635,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 599.0,
+        "random_score_same_decoder": 560.6666666666666,
+        "random_restart_same_decoder": 577.6666666666666,
+        "bipnn_fast_anytime": 611,
+        "scip_milp_greedy_start": 635.0
+      },
+      "paired_percent": {
+        "degree_greedy": 2.003338898163598,
+        "random_score_same_decoder": 8.977407847800256,
+        "random_restart_same_decoder": 5.770340450086553,
+        "scip_milp_greedy_start": -3.779527559055118
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 114.66666666666667,
+        "repaired_size_mean": 114.66666666666667,
+        "final_size_mean": 611,
+        "removed_mean": 0,
+        "added_mean": 496.3333333333333
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 128.33333333333334,
+        "repaired_size_mean": 128.33333333333334,
+        "final_size_mean": 610,
+        "removed_mean": 0,
+        "added_mean": 481.6666666666667
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 558,
+      "best_minus_initial_mean": 53,
+      "latest_mean_size": 610,
+      "best_minus_latest_mean": 1,
+      "neural_epochs_at_emission": [
+        418,
+        403,
+        381
+      ],
+      "neural_latest_decoded_epochs": [
+        409,
+        394,
+        374
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          5.005222500000059,
+          5.0149920000000066,
+          5.016786000000025
+        ],
+        "random_restart_same_decoder": [
+          5.004103299999997,
+          5.019141999999988,
+          5.002443000000085
+        ],
+        "scip_milp_greedy_start": [
+          4.604015900000036
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.005222500000058972,
+          0.014992000000006556,
+          0.016786000000024615
+        ],
+        "random_restart_same_decoder": [
+          0.004103299999997034,
+          0.019141999999988002,
+          0.002443000000084794
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        1077,
+        1129,
+        1023
+      ],
+      "neural_best_available_seconds": [
+        4.011385200000063,
+        4.010635900000011,
+        4.010210099999995
+      ]
+    },
+    {
+      "case_id": "n1000_k5_d4_s20261024_weak",
+      "name": "n1000_k5_d4_s20261024",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 1000,
+      "m": 4000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 5,
+        "density_m_over_n": 4,
+        "seed": 20261024
+      },
+      "budget_seconds": 15.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 599,
+      "neural_sizes": [
+        654,
+        654,
+        654
+      ],
+      "neural_mean_size": 654,
+      "random_sizes": [
+        579,
+        579,
+        582
+      ],
+      "random_mean_size": 580,
+      "random_single_sizes": [
+        570,
+        560,
+        552
+      ],
+      "scip_size": 635,
+      "scip_upper_bound": 1000.0,
+      "scip_optimality_proven": false,
+      "scip_status": "deadline_snapshot",
+      "scip_completion_size": 635,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 599.0,
+        "random_score_same_decoder": 560.6666666666666,
+        "random_restart_same_decoder": 580,
+        "bipnn_fast_anytime": 654,
+        "scip_milp_greedy_start": 635.0
+      },
+      "paired_percent": {
+        "degree_greedy": 9.181969949916535,
+        "random_score_same_decoder": 16.64684898929847,
+        "random_restart_same_decoder": 12.758620689655164,
+        "scip_milp_greedy_start": 2.9921259842519587
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 667.6666666666666,
+        "repaired_size_mean": 653.3333333333334,
+        "final_size_mean": 654,
+        "removed_mean": 14.333333333333334,
+        "added_mean": 0.6666666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 667.6666666666666,
+        "repaired_size_mean": 653.3333333333334,
+        "final_size_mean": 654,
+        "removed_mean": 14.333333333333334,
+        "added_mean": 0.6666666666666666
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 558,
+      "best_minus_initial_mean": 96,
+      "latest_mean_size": 654,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        1238,
+        1192,
+        1187
+      ],
+      "neural_latest_decoded_epochs": [
+        1231,
+        1183,
+        1178
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          15.010340400000018,
+          15.011900099999934,
+          15.00604480000004
+        ],
+        "random_restart_same_decoder": [
+          15.004211000000055,
+          15.00230600000009,
+          15.00362210000003
+        ],
+        "scip_milp_greedy_start": [
+          15.166639200000077
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.010340400000018235,
+          0.011900099999934355,
+          0.0060448000000405955
+        ],
+        "random_restart_same_decoder": [
+          0.00421100000005481,
+          0.0023060000000896252,
+          0.0036221000000296044
+        ],
+        "scip_milp_greedy_start": [
+          0.16663920000007693
+        ]
+      },
+      "random_completed_trials": [
+        3229,
+        3374,
+        3299
+      ],
+      "neural_best_available_seconds": [
+        14.906092300000068,
+        14.910137500000019,
+        14.908118599999966
+      ]
+    },
+    {
+      "case_id": "n1000_k5_d4_s20261024_weak",
+      "name": "n1000_k5_d4_s20261024",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 1000,
+      "m": 4000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 5,
+        "density_m_over_n": 4,
+        "seed": 20261024
+      },
+      "budget_seconds": 30.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 599,
+      "neural_sizes": [
+        654,
+        654,
+        655
+      ],
+      "neural_mean_size": 654.3333333333334,
+      "random_sizes": [
+        582,
+        579,
+        584
+      ],
+      "random_mean_size": 581.6666666666666,
+      "random_single_sizes": [
+        570,
+        560,
+        552
+      ],
+      "scip_size": 635,
+      "scip_upper_bound": 799.1823507728079,
+      "scip_optimality_proven": false,
+      "scip_status": "timelimit",
+      "scip_completion_size": 635,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 599.0,
+        "random_score_same_decoder": 560.6666666666666,
+        "random_restart_same_decoder": 581.6666666666666,
+        "bipnn_fast_anytime": 654.3333333333334,
+        "scip_milp_greedy_start": 635.0
+      },
+      "paired_percent": {
+        "degree_greedy": 9.237618252643308,
+        "random_score_same_decoder": 16.706302021403108,
+        "random_restart_same_decoder": 12.492836676217788,
+        "scip_milp_greedy_start": 3.0446194225721923
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 669,
+        "repaired_size_mean": 653.6666666666666,
+        "final_size_mean": 654.3333333333334,
+        "removed_mean": 15.333333333333334,
+        "added_mean": 0.6666666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 654,
+        "repaired_size_mean": 654,
+        "final_size_mean": 654,
+        "removed_mean": 0,
+        "added_mean": 0
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 558,
+      "best_minus_initial_mean": 96.33333333333333,
+      "latest_mean_size": 654,
+      "best_minus_latest_mean": 0.3333333333333333,
+      "neural_epochs_at_emission": [
+        2327,
+        2324,
+        2397
+      ],
+      "neural_latest_decoded_epochs": [
+        2320,
+        2315,
+        2389
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          30.005288500000006,
+          30.005170399999997,
+          30.007746200000042
+        ],
+        "random_restart_same_decoder": [
+          30.00371590000009,
+          30.00189160000002,
+          30.002131400000053
+        ],
+        "scip_milp_greedy_start": [
+          29.792970500000024
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.0052885000000060245,
+          0.005170399999997244,
+          0.007746200000042336
+        ],
+        "random_restart_same_decoder": [
+          0.003715900000088368,
+          0.0018916000000217537,
+          0.002131400000052963
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        6604,
+        6792,
+        6550
+      ],
+      "neural_best_available_seconds": [
+        14.906092300000068,
+        14.910137500000019,
+        16.01203799999996
+      ]
+    },
+    {
+      "case_id": "n2000_k3_d2_s20261024_weak",
+      "name": "n2000_k3_d2_s20261024",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 2000,
+      "m": 4000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 3,
+        "density_m_over_n": 2,
+        "seed": 20261024
+      },
+      "budget_seconds": 5.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 1144,
+      "neural_sizes": [
+        1163,
+        1166,
+        1159
+      ],
+      "neural_mean_size": 1162.6666666666667,
+      "random_sizes": [
+        1068,
+        1063,
+        1063
+      ],
+      "random_mean_size": 1064.6666666666667,
+      "random_single_sizes": [
+        1052,
+        1051,
+        1038
+      ],
+      "scip_size": 1171,
+      "scip_upper_bound": 2000.0,
+      "scip_optimality_proven": false,
+      "scip_status": "timelimit",
+      "scip_completion_size": 1171,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 1144.0,
+        "random_score_same_decoder": 1047,
+        "random_restart_same_decoder": 1064.6666666666667,
+        "bipnn_fast_anytime": 1162.6666666666667,
+        "scip_milp_greedy_start": 1171.0
+      },
+      "paired_percent": {
+        "degree_greedy": 1.631701631701632,
+        "random_score_same_decoder": 11.0474371219357,
+        "random_restart_same_decoder": 9.204758922980583,
+        "scip_milp_greedy_start": -0.7116424708226488
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 607.6666666666666,
+        "repaired_size_mean": 604.6666666666666,
+        "final_size_mean": 1162.6666666666667,
+        "removed_mean": 3,
+        "added_mean": 558
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 607.6666666666666,
+        "repaired_size_mean": 604.6666666666666,
+        "final_size_mean": 1162.6666666666667,
+        "removed_mean": 3,
+        "added_mean": 558
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 1062.6666666666667,
+      "best_minus_initial_mean": 100,
+      "latest_mean_size": 1162.6666666666667,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        397,
+        384,
+        403
+      ],
+      "neural_latest_decoded_epochs": [
+        389,
+        375,
+        394
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          5.0080524999999625,
+          5.006992200000013,
+          5.011849800000164
+        ],
+        "random_restart_same_decoder": [
+          5.000490099999979,
+          5.049018899999965,
+          5.000399000000016
+        ],
+        "scip_milp_greedy_start": [
+          4.990671899999938
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.008052499999962492,
+          0.006992200000013327,
+          0.011849800000163668
+        ],
+        "random_restart_same_decoder": [
+          0.0004900999999790656,
+          0.04901889999996456,
+          0.0003990000000158034
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        800,
+        987,
+        922
+      ],
+      "neural_best_available_seconds": [
+        4.904965299999958,
+        4.906853500000125,
+        4.908573800000113
+      ]
+    },
+    {
+      "case_id": "n2000_k3_d2_s20261024_weak",
+      "name": "n2000_k3_d2_s20261024",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 2000,
+      "m": 4000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 3,
+        "density_m_over_n": 2,
+        "seed": 20261024
+      },
+      "budget_seconds": 15.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 1144,
+      "neural_sizes": [
+        1210,
+        1213,
+        1213
+      ],
+      "neural_mean_size": 1212,
+      "random_sizes": [
+        1068,
+        1081,
+        1065
+      ],
+      "random_mean_size": 1071.3333333333333,
+      "random_single_sizes": [
+        1052,
+        1051,
+        1038
+      ],
+      "scip_size": 1171,
+      "scip_upper_bound": 1335.0931987460194,
+      "scip_optimality_proven": false,
+      "scip_status": "timelimit",
+      "scip_completion_size": 1171,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 1144.0,
+        "random_score_same_decoder": 1047,
+        "random_restart_same_decoder": 1071.3333333333333,
+        "bipnn_fast_anytime": 1212,
+        "scip_milp_greedy_start": 1171.0
+      },
+      "paired_percent": {
+        "degree_greedy": 5.944055944055937,
+        "random_score_same_decoder": 15.759312320916896,
+        "random_restart_same_decoder": 13.130056004978229,
+        "scip_milp_greedy_start": 3.5012809564474834
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 1274,
+        "repaired_size_mean": 1208.6666666666667,
+        "final_size_mean": 1212,
+        "removed_mean": 65.33333333333333,
+        "added_mean": 3.3333333333333335
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 1290.3333333333333,
+        "repaired_size_mean": 1211.3333333333333,
+        "final_size_mean": 1211.3333333333333,
+        "removed_mean": 79,
+        "added_mean": 0
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 1062.6666666666667,
+      "best_minus_initial_mean": 149.33333333333334,
+      "latest_mean_size": 1211.3333333333333,
+      "best_minus_latest_mean": 0.6666666666666666,
+      "neural_epochs_at_emission": [
+        1213,
+        1228,
+        1165
+      ],
+      "neural_latest_decoded_epochs": [
+        1206,
+        1220,
+        1158
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          15.008521900000005,
+          15.005574600000045,
+          15.017604900000151
+        ],
+        "random_restart_same_decoder": [
+          15.00081380000006,
+          15.000356300000021,
+          15.0004899999999
+        ],
+        "scip_milp_greedy_start": [
+          14.977028300000029
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.00852190000000519,
+          0.005574600000045393,
+          0.017604900000151247
+        ],
+        "random_restart_same_decoder": [
+          0.0008138000000599277,
+          0.00035630000002129236,
+          0.0004899999998997373
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        2638,
+        2915,
+        2911
+      ],
+      "neural_best_available_seconds": [
+        13.011598599999957,
+        12.004016500000034,
+        14.009151200000133
+      ]
+    },
+    {
+      "case_id": "n2000_k3_d2_s20261024_weak",
+      "name": "n2000_k3_d2_s20261024",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 2000,
+      "m": 4000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 3,
+        "density_m_over_n": 2,
+        "seed": 20261024
+      },
+      "budget_seconds": 30.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 1144,
+      "neural_sizes": [
+        1211,
+        1213,
+        1213
+      ],
+      "neural_mean_size": 1212.3333333333333,
+      "random_sizes": [
+        1074,
+        1081,
+        1065
+      ],
+      "random_mean_size": 1073.3333333333333,
+      "random_single_sizes": [
+        1052,
+        1051,
+        1038
+      ],
+      "scip_size": 1171,
+      "scip_upper_bound": 1334.714955234179,
+      "scip_optimality_proven": false,
+      "scip_status": "timelimit",
+      "scip_completion_size": 1171,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 1144.0,
+        "random_score_same_decoder": 1047,
+        "random_restart_same_decoder": 1073.3333333333333,
+        "bipnn_fast_anytime": 1212.3333333333333,
+        "scip_milp_greedy_start": 1171.0
+      },
+      "paired_percent": {
+        "degree_greedy": 5.973193473193472,
+        "random_score_same_decoder": 15.791149315504605,
+        "random_restart_same_decoder": 12.950310559006217,
+        "scip_milp_greedy_start": 3.529746655280386
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0.3333333333333333,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 1251,
+        "repaired_size_mean": 1209,
+        "final_size_mean": 1212.3333333333333,
+        "removed_mean": 42,
+        "added_mean": 3.3333333333333335
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 1211.6666666666667,
+        "repaired_size_mean": 1211.6666666666667,
+        "final_size_mean": 1212,
+        "removed_mean": 0,
+        "added_mean": 0.3333333333333333
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 1062.6666666666667,
+      "best_minus_initial_mean": 149.66666666666666,
+      "latest_mean_size": 1212,
+      "best_minus_latest_mean": 0.3333333333333333,
+      "neural_epochs_at_emission": [
+        2310,
+        2226,
+        2218
+      ],
+      "neural_latest_decoded_epochs": [
+        2304,
+        2219,
+        2213
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          30.0173446,
+          30.006879200000185,
+          30.003957000000128
+        ],
+        "random_restart_same_decoder": [
+          30.004859399999987,
+          30.001535599999897,
+          30.002846999999974
+        ],
+        "scip_milp_greedy_start": [
+          29.968907700000045
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.017344600000001265,
+          0.006879200000184937,
+          0.003957000000127664
+        ],
+        "random_restart_same_decoder": [
+          0.0048593999999866355,
+          0.0015355999998973857,
+          0.0028469999999742868
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        5715,
+        5958,
+        5858
+      ],
+      "neural_best_available_seconds": [
+        17.016551700000036,
+        12.004016500000034,
+        14.009151200000133
+      ]
+    },
+    {
+      "case_id": "n2000_k5_d4_s20261024_weak",
+      "name": "n2000_k5_d4_s20261024",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 2000,
+      "m": 8000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 5,
+        "density_m_over_n": 4,
+        "seed": 20261024
+      },
+      "budget_seconds": 5.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 1208,
+      "neural_sizes": [
+        1230,
+        1230,
+        1228
+      ],
+      "neural_mean_size": 1229.3333333333333,
+      "random_sizes": [
+        1143,
+        1142,
+        1141
+      ],
+      "random_mean_size": 1142,
+      "random_single_sizes": [
+        1124,
+        1124,
+        1128
+      ],
+      "scip_size": 1267,
+      "scip_upper_bound": 2000.0,
+      "scip_optimality_proven": false,
+      "scip_status": "timelimit",
+      "scip_completion_size": 1267,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 1208.0,
+        "random_score_same_decoder": 1125.3333333333333,
+        "random_restart_same_decoder": 1142,
+        "bipnn_fast_anytime": 1229.3333333333333,
+        "scip_milp_greedy_start": 1267.0
+      },
+      "paired_percent": {
+        "degree_greedy": 1.7660044150110243,
+        "random_score_same_decoder": 9.241706161137442,
+        "random_restart_same_decoder": 7.647402218330401,
+        "scip_milp_greedy_start": -2.9729018679295005
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 262.6666666666667,
+        "repaired_size_mean": 262.6666666666667,
+        "final_size_mean": 1229.3333333333333,
+        "removed_mean": 0,
+        "added_mean": 966.6666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 271.6666666666667,
+        "repaired_size_mean": 271.6666666666667,
+        "final_size_mean": 1229,
+        "removed_mean": 0,
+        "added_mean": 957.3333333333334
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 1115.3333333333333,
+      "best_minus_initial_mean": 114,
+      "latest_mean_size": 1229,
+      "best_minus_latest_mean": 0.3333333333333333,
+      "neural_epochs_at_emission": [
+        160,
+        160,
+        176
+      ],
+      "neural_latest_decoded_epochs": [
+        158,
+        158,
+        174
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          5.096799200000078,
+          5.104699100000062,
+          5.062205100000028
+        ],
+        "random_restart_same_decoder": [
+          5.002658899999915,
+          5.013523500000019,
+          5.004593999999997
+        ],
+        "scip_milp_greedy_start": [
+          4.4729571000000306
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.09679920000007769,
+          0.10469910000006166,
+          0.062205100000028324
+        ],
+        "random_restart_same_decoder": [
+          0.0026588999999148655,
+          0.01352350000001934,
+          0.0045939999999973224
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        186,
+        248,
+        128
+      ],
+      "neural_best_available_seconds": [
+        2.0399892000000364,
+        4.937003400000094,
+        4.936413100000209
+      ]
+    },
+    {
+      "case_id": "n2000_k5_d4_s20261024_weak",
+      "name": "n2000_k5_d4_s20261024",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 2000,
+      "m": 8000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 5,
+        "density_m_over_n": 4,
+        "seed": 20261024
+      },
+      "budget_seconds": 15.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 1208,
+      "neural_sizes": [
+        1264,
+        1276,
+        1258
+      ],
+      "neural_mean_size": 1266,
+      "random_sizes": [
+        1147,
+        1145,
+        1143
+      ],
+      "random_mean_size": 1145,
+      "random_single_sizes": [
+        1124,
+        1124,
+        1128
+      ],
+      "scip_size": 1267,
+      "scip_upper_bound": 2000.0,
+      "scip_optimality_proven": false,
+      "scip_status": "deadline_snapshot",
+      "scip_completion_size": 1267,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 1208.0,
+        "random_score_same_decoder": 1125.3333333333333,
+        "random_restart_same_decoder": 1145,
+        "bipnn_fast_anytime": 1266,
+        "scip_milp_greedy_start": 1267.0
+      },
+      "paired_percent": {
+        "degree_greedy": 4.801324503311255,
+        "random_score_same_decoder": 12.5,
+        "random_restart_same_decoder": 10.567685589519659,
+        "scip_milp_greedy_start": -0.07892659826361781
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 953.6666666666666,
+        "repaired_size_mean": 948.6666666666666,
+        "final_size_mean": 1266,
+        "removed_mean": 5,
+        "added_mean": 317.3333333333333
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 953.6666666666666,
+        "repaired_size_mean": 948.6666666666666,
+        "final_size_mean": 1266,
+        "removed_mean": 5,
+        "added_mean": 317.3333333333333
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 1115.3333333333333,
+      "best_minus_initial_mean": 150.66666666666666,
+      "latest_mean_size": 1266,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        464,
+        489,
+        476
+      ],
+      "neural_latest_decoded_epochs": [
+        463,
+        485,
+        461
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          15.085235999999895,
+          15.037395800000013,
+          15.002775600000177
+        ],
+        "random_restart_same_decoder": [
+          15.013210200000003,
+          15.004973800000016,
+          15.00125049999997
+        ],
+        "scip_milp_greedy_start": [
+          15.014334200000121
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.08523599999989528,
+          0.03739580000001297,
+          0.002775600000177292
+        ],
+        "random_restart_same_decoder": [
+          0.01321020000000317,
+          0.004973800000016126,
+          0.001250499999969179
+        ],
+        "scip_milp_greedy_start": [
+          0.0143342000001212
+        ]
+      },
+      "random_completed_trials": [
+        454,
+        785,
+        456
+      ],
+      "neural_best_available_seconds": [
+        14.977716899999905,
+        14.931201300000112,
+        14.080053500000076
+      ]
+    },
+    {
+      "case_id": "n2000_k5_d4_s20261024_weak",
+      "name": "n2000_k5_d4_s20261024",
+      "scope": "synthetic_new",
+      "definition": "weak",
+      "n": 2000,
+      "m": 8000,
+      "generator": {
+        "family": "uniform_fixed_edge_count",
+        "k": 5,
+        "density_m_over_n": 4,
+        "seed": 20261024
+      },
+      "budget_seconds": 30.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 1208,
+      "neural_sizes": [
+        1274,
+        1296,
+        1260
+      ],
+      "neural_mean_size": 1276.6666666666667,
+      "random_sizes": [
+        1147,
+        1145,
+        1147
+      ],
+      "random_mean_size": 1146.3333333333333,
+      "random_single_sizes": [
+        1124,
+        1124,
+        1128
+      ],
+      "scip_size": 1267,
+      "scip_upper_bound": 2000.0,
+      "scip_optimality_proven": false,
+      "scip_status": "timelimit",
+      "scip_completion_size": 1267,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 1208.0,
+        "random_score_same_decoder": 1125.3333333333333,
+        "random_restart_same_decoder": 1146.3333333333333,
+        "bipnn_fast_anytime": 1276.6666666666667,
+        "scip_milp_greedy_start": 1267.0
+      },
+      "paired_percent": {
+        "degree_greedy": 5.684326710816778,
+        "random_score_same_decoder": 13.44786729857821,
+        "random_restart_same_decoder": 11.369584181448111,
+        "scip_milp_greedy_start": 0.7629571165482796
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 1152.6666666666667,
+        "repaired_size_mean": 1149.6666666666667,
+        "final_size_mean": 1276.6666666666667,
+        "removed_mean": 3,
+        "added_mean": 127
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 1270.3333333333333,
+        "repaired_size_mean": 1270.3333333333333,
+        "final_size_mean": 1274.6666666666667,
+        "removed_mean": 0,
+        "added_mean": 4.333333333333333
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 1115.3333333333333,
+      "best_minus_initial_mean": 161.33333333333334,
+      "latest_mean_size": 1274.6666666666667,
+      "best_minus_latest_mean": 2,
+      "neural_epochs_at_emission": [
+        970,
+        1010,
+        857
+      ],
+      "neural_latest_decoded_epochs": [
+        968,
+        1008,
+        856
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          30.061468099999956,
+          30.05166630000008,
+          30.040744800000084
+        ],
+        "random_restart_same_decoder": [
+          30.01882429999978,
+          30.036014999999907,
+          30.0054662
+        ],
+        "scip_milp_greedy_start": [
+          29.909829800000125
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.061468099999956394,
+          0.05166630000007899,
+          0.04074480000008407
+        ],
+        "random_restart_same_decoder": [
+          0.018824299999778304,
+          0.03601499999990665,
+          0.005466200000000754
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        1040,
+        1323,
+        854
+      ],
+      "neural_best_available_seconds": [
+        18.03695679999987,
+        17.020716300000004,
+        16.06247170000006
+      ]
+    },
+    {
+      "case_id": "cora_weak",
+      "name": "cora-upstream",
+      "scope": "real_seen",
+      "definition": "weak",
+      "n": 1330,
+      "m": 1413,
+      "generator": null,
+      "budget_seconds": 5.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 1024,
+      "neural_sizes": [
+        1026,
+        1027,
+        1027
+      ],
+      "neural_mean_size": 1026.6666666666667,
+      "random_sizes": [
+        984,
+        983,
+        988
+      ],
+      "random_mean_size": 985,
+      "random_single_sizes": [
+        972,
+        959,
+        947
+      ],
+      "scip_size": 1030,
+      "scip_upper_bound": 1030.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 1030,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 1024.0,
+        "random_score_same_decoder": 959.3333333333334,
+        "random_restart_same_decoder": 985,
+        "bipnn_fast_anytime": 1026.6666666666667,
+        "scip_milp_greedy_start": 1030.0
+      },
+      "paired_percent": {
+        "degree_greedy": 0.26041666666667407,
+        "random_score_same_decoder": 7.018763029881869,
+        "random_restart_same_decoder": 4.230118443316422,
+        "scip_milp_greedy_start": -0.3236245954692518
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 964,
+        "repaired_size_mean": 936.6666666666666,
+        "final_size_mean": 1026.6666666666667,
+        "removed_mean": 27.333333333333332,
+        "added_mean": 90
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 1012.3333333333334,
+        "repaired_size_mean": 974,
+        "final_size_mean": 1026.6666666666667,
+        "removed_mean": 38.333333333333336,
+        "added_mean": 52.666666666666664
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 996,
+      "best_minus_initial_mean": 30.666666666666668,
+      "latest_mean_size": 1026.6666666666667,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        186,
+        240,
+        220
+      ],
+      "neural_latest_decoded_epochs": [
+        181,
+        236,
+        216
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          5.011400399999957,
+          5.026183800000126,
+          5.011008899999979
+        ],
+        "random_restart_same_decoder": [
+          5.009918900000002,
+          5.001097500000014,
+          5.001613299999917
+        ],
+        "scip_milp_greedy_start": [
+          0.12923190000014984
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.01140039999995679,
+          0.02618380000012621,
+          0.011008899999978894
+        ],
+        "random_restart_same_decoder": [
+          0.009918900000002395,
+          0.0010975000000144064,
+          0.001613299999917217
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        571,
+        487,
+        708
+      ],
+      "neural_best_available_seconds": [
+        2.008340500000031,
+        3.015583900000138,
+        4.018043099999886
+      ]
+    },
+    {
+      "case_id": "cora_weak",
+      "name": "cora-upstream",
+      "scope": "real_seen",
+      "definition": "weak",
+      "n": 1330,
+      "m": 1413,
+      "generator": null,
+      "budget_seconds": 15.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 1024,
+      "neural_sizes": [
+        1029,
+        1029,
+        1029
+      ],
+      "neural_mean_size": 1029,
+      "random_sizes": [
+        988,
+        994,
+        990
+      ],
+      "random_mean_size": 990.6666666666666,
+      "random_single_sizes": [
+        972,
+        959,
+        947
+      ],
+      "scip_size": 1030,
+      "scip_upper_bound": 1030.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 1030,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 1024.0,
+        "random_score_same_decoder": 959.3333333333334,
+        "random_restart_same_decoder": 990.6666666666666,
+        "bipnn_fast_anytime": 1029,
+        "scip_milp_greedy_start": 1030.0
+      },
+      "paired_percent": {
+        "degree_greedy": 0.48828125,
+        "random_score_same_decoder": 7.261987491313415,
+        "random_restart_same_decoder": 3.869448183041735,
+        "scip_milp_greedy_start": -0.0970873786407811
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 1041,
+        "repaired_size_mean": 993.6666666666666,
+        "final_size_mean": 1029,
+        "removed_mean": 47.333333333333336,
+        "added_mean": 35.333333333333336
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 1069,
+        "repaired_size_mean": 1026.3333333333333,
+        "final_size_mean": 1028.6666666666667,
+        "removed_mean": 42.666666666666664,
+        "added_mean": 2.3333333333333335
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 996,
+      "best_minus_initial_mean": 33,
+      "latest_mean_size": 1028.6666666666667,
+      "best_minus_latest_mean": 0.3333333333333333,
+      "neural_epochs_at_emission": [
+        632,
+        693,
+        669
+      ],
+      "neural_latest_decoded_epochs": [
+        630,
+        689,
+        666
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          15.022336700000096,
+          15.012876400000096,
+          15.318990900000017
+        ],
+        "random_restart_same_decoder": [
+          15.013819000000012,
+          15.014868100000058,
+          15.00680710000006
+        ],
+        "scip_milp_greedy_start": [
+          0.12050859999999375
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.022336700000096243,
+          0.0128764000000956,
+          0.31899090000001706
+        ],
+        "random_restart_same_decoder": [
+          0.013819000000012238,
+          0.014868100000057893,
+          0.006807100000060018
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        1921,
+        1664,
+        2088
+      ],
+      "neural_best_available_seconds": [
+        10.00819660000002,
+        10.013400500000216,
+        8.028816399999869
+      ]
+    },
+    {
+      "case_id": "cora_weak",
+      "name": "cora-upstream",
+      "scope": "real_seen",
+      "definition": "weak",
+      "n": 1330,
+      "m": 1413,
+      "generator": null,
+      "budget_seconds": 30.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 1024,
+      "neural_sizes": [
+        1029,
+        1029,
+        1029
+      ],
+      "neural_mean_size": 1029,
+      "random_sizes": [
+        990,
+        994,
+        990
+      ],
+      "random_mean_size": 991.3333333333334,
+      "random_single_sizes": [
+        972,
+        959,
+        947
+      ],
+      "scip_size": 1030,
+      "scip_upper_bound": 1030.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 1030,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 1024.0,
+        "random_score_same_decoder": 959.3333333333334,
+        "random_restart_same_decoder": 991.3333333333334,
+        "bipnn_fast_anytime": 1029,
+        "scip_milp_greedy_start": 1030.0
+      },
+      "paired_percent": {
+        "degree_greedy": 0.48828125,
+        "random_score_same_decoder": 7.261987491313415,
+        "random_restart_same_decoder": 3.7995965030262147,
+        "scip_milp_greedy_start": -0.0970873786407811
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 1041,
+        "repaired_size_mean": 993.6666666666666,
+        "final_size_mean": 1029,
+        "removed_mean": 47.333333333333336,
+        "added_mean": 35.333333333333336
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 1028.6666666666667,
+        "repaired_size_mean": 1028.6666666666667,
+        "final_size_mean": 1029,
+        "removed_mean": 0,
+        "added_mean": 0.3333333333333333
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 996,
+      "best_minus_initial_mean": 33,
+      "latest_mean_size": 1029,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        1358,
+        1463,
+        1366
+      ],
+      "neural_latest_decoded_epochs": [
+        1354,
+        1458,
+        1360
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          30.004017400000066,
+          30.003226799999993,
+          30.004090399999995
+        ],
+        "random_restart_same_decoder": [
+          30.006154100000003,
+          30.002492699999948,
+          30.000444400000106
+        ],
+        "scip_milp_greedy_start": [
+          0.1810637000000952
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.004017400000066118,
+          0.0032267999999930908,
+          0.004090399999995498
+        ],
+        "random_restart_same_decoder": [
+          0.006154100000003382,
+          0.002492699999947945,
+          0.0004444000001058157
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        3942,
+        3710,
+        4137
+      ],
+      "neural_best_available_seconds": [
+        10.00819660000002,
+        10.013400500000216,
+        8.028816399999869
+      ]
+    },
+    {
+      "case_id": "cora_strong",
+      "name": "cora-upstream",
+      "scope": "real_seen",
+      "definition": "strong",
+      "n": 1330,
+      "m": 1413,
+      "generator": null,
+      "budget_seconds": 5.0,
+      "config": "w1024_none",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 607,
+      "neural_sizes": [
+        606,
+        606,
+        605
+      ],
+      "neural_mean_size": 605.6666666666666,
+      "random_sizes": [
+        558,
+        557,
+        554
+      ],
+      "random_mean_size": 556.3333333333334,
+      "random_single_sizes": [
+        535,
+        520,
+        520
+      ],
+      "scip_size": 612,
+      "scip_upper_bound": 612.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 612,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 607.0,
+        "random_score_same_decoder": 525,
+        "random_restart_same_decoder": 556.3333333333334,
+        "bipnn_fast_anytime": 605.6666666666666,
+        "scip_milp_greedy_start": 612.0
+      },
+      "paired_percent": {
+        "degree_greedy": -0.21965952773201902,
+        "random_score_same_decoder": 15.36507936507936,
+        "random_restart_same_decoder": 8.867585380467325,
+        "scip_milp_greedy_start": -1.0348583877995754
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 459.6666666666667,
+        "repaired_size_mean": 445,
+        "final_size_mean": 605.6666666666666,
+        "removed_mean": 14.666666666666666,
+        "added_mean": 160.66666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 589.3333333333334,
+        "repaired_size_mean": 589.3333333333334,
+        "final_size_mean": 604.6666666666666,
+        "removed_mean": 0,
+        "added_mean": 15.333333333333334
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 572.6666666666666,
+      "best_minus_initial_mean": 33,
+      "latest_mean_size": 604.6666666666666,
+      "best_minus_latest_mean": 1,
+      "neural_epochs_at_emission": [
+        179,
+        184,
+        245
+      ],
+      "neural_latest_decoded_epochs": [
+        175,
+        179,
+        241
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          5.012351999999964,
+          5.033450899999934,
+          5.004321599999912
+        ],
+        "random_restart_same_decoder": [
+          5.000816399999849,
+          5.002278800000113,
+          5.000487900000053
+        ],
+        "scip_milp_greedy_start": [
+          0.12218209999991814
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.012351999999964391,
+          0.033450899999934336,
+          0.004321599999911996
+        ],
+        "random_restart_same_decoder": [
+          0.000816399999848727,
+          0.002278800000112824,
+          0.0004879000000528322
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        686,
+        613,
+        701
+      ],
+      "neural_best_available_seconds": [
+        2.01784889999999,
+        3.018420299999889,
+        2.011120699999992
+      ]
+    },
+    {
+      "case_id": "cora_strong",
+      "name": "cora-upstream",
+      "scope": "real_seen",
+      "definition": "strong",
+      "n": 1330,
+      "m": 1413,
+      "generator": null,
+      "budget_seconds": 15.0,
+      "config": "w1024_none",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 607,
+      "neural_sizes": [
+        606,
+        606,
+        605
+      ],
+      "neural_mean_size": 605.6666666666666,
+      "random_sizes": [
+        558,
+        557,
+        559
+      ],
+      "random_mean_size": 558,
+      "random_single_sizes": [
+        535,
+        520,
+        520
+      ],
+      "scip_size": 612,
+      "scip_upper_bound": 612.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 612,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 607.0,
+        "random_score_same_decoder": 525,
+        "random_restart_same_decoder": 558,
+        "bipnn_fast_anytime": 605.6666666666666,
+        "scip_milp_greedy_start": 612.0
+      },
+      "paired_percent": {
+        "degree_greedy": -0.21965952773201902,
+        "random_score_same_decoder": 15.36507936507936,
+        "random_restart_same_decoder": 8.542413381123048,
+        "scip_milp_greedy_start": -1.0348583877995754
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 459.6666666666667,
+        "repaired_size_mean": 445,
+        "final_size_mean": 605.6666666666666,
+        "removed_mean": 14.666666666666666,
+        "added_mean": 160.66666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 604.6666666666666,
+        "repaired_size_mean": 604.6666666666666,
+        "final_size_mean": 604.6666666666666,
+        "removed_mean": 0,
+        "added_mean": 0
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 572.6666666666666,
+      "best_minus_initial_mean": 33,
+      "latest_mean_size": 604.6666666666666,
+      "best_minus_latest_mean": 1,
+      "neural_epochs_at_emission": [
+        563,
+        560,
+        730
+      ],
+      "neural_latest_decoded_epochs": [
+        558,
+        557,
+        727
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          15.006950899999993,
+          15.032047599999942,
+          15.010142899999892
+        ],
+        "random_restart_same_decoder": [
+          15.018798299999844,
+          15.00053580000008,
+          15.000688500000024
+        ],
+        "scip_milp_greedy_start": [
+          0.1588501000001088
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.006950899999992544,
+          0.03204759999994167,
+          0.010142899999891597
+        ],
+        "random_restart_same_decoder": [
+          0.018798299999843948,
+          0.0005358000000796892,
+          0.0006885000000238506
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        1661,
+        1888,
+        2083
+      ],
+      "neural_best_available_seconds": [
+        2.01784889999999,
+        3.018420299999889,
+        2.011120699999992
+      ]
+    },
+    {
+      "case_id": "cora_strong",
+      "name": "cora-upstream",
+      "scope": "real_seen",
+      "definition": "strong",
+      "n": 1330,
+      "m": 1413,
+      "generator": null,
+      "budget_seconds": 30.0,
+      "config": "w1024_none",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 607,
+      "neural_sizes": [
+        606,
+        606,
+        605
+      ],
+      "neural_mean_size": 605.6666666666666,
+      "random_sizes": [
+        560,
+        557,
+        559
+      ],
+      "random_mean_size": 558.6666666666666,
+      "random_single_sizes": [
+        535,
+        520,
+        520
+      ],
+      "scip_size": 612,
+      "scip_upper_bound": 612.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 612,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 607.0,
+        "random_score_same_decoder": 525,
+        "random_restart_same_decoder": 558.6666666666666,
+        "bipnn_fast_anytime": 605.6666666666666,
+        "scip_milp_greedy_start": 612.0
+      },
+      "paired_percent": {
+        "degree_greedy": -0.21965952773201902,
+        "random_score_same_decoder": 15.36507936507936,
+        "random_restart_same_decoder": 8.412887828162297,
+        "scip_milp_greedy_start": -1.0348583877995754
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 459.6666666666667,
+        "repaired_size_mean": 445,
+        "final_size_mean": 605.6666666666666,
+        "removed_mean": 14.666666666666666,
+        "added_mean": 160.66666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 1,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 604.6666666666666,
+        "repaired_size_mean": 604.6666666666666,
+        "final_size_mean": 604.6666666666666,
+        "removed_mean": 0,
+        "added_mean": 0
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 572.6666666666666,
+      "best_minus_initial_mean": 33,
+      "latest_mean_size": 604.6666666666666,
+      "best_minus_latest_mean": 1,
+      "neural_epochs_at_emission": [
+        1213,
+        1237,
+        1460
+      ],
+      "neural_latest_decoded_epochs": [
+        1211,
+        1234,
+        1457
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          30.004597900000135,
+          30.0178805999999,
+          30.00568599999997
+        ],
+        "random_restart_same_decoder": [
+          30.00785619999988,
+          30.012981800000034,
+          30.004279100000076
+        ],
+        "scip_milp_greedy_start": [
+          0.17144410000014432
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.004597900000135269,
+          0.01788059999989855,
+          0.005685999999968772
+        ],
+        "random_restart_same_decoder": [
+          0.0078561999998783,
+          0.012981800000034127,
+          0.0042791000000761414
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        3051,
+        3578,
+        4254
+      ],
+      "neural_best_available_seconds": [
+        2.01784889999999,
+        3.018420299999889,
+        2.011120699999992
+      ]
+    },
+    {
+      "case_id": "high_weak",
+      "name": "high-upstream",
+      "scope": "real_seen",
+      "definition": "weak",
+      "n": 327,
+      "m": 7818,
+      "generator": null,
+      "budget_seconds": 5.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 45,
+      "neural_sizes": [
+        46,
+        46,
+        45
+      ],
+      "neural_mean_size": 45.666666666666664,
+      "random_sizes": [
+        41,
+        42,
+        45
+      ],
+      "random_mean_size": 42.666666666666664,
+      "random_single_sizes": [
+        34,
+        40,
+        39
+      ],
+      "scip_size": 50,
+      "scip_upper_bound": 327.0,
+      "scip_optimality_proven": false,
+      "scip_status": "deadline_snapshot",
+      "scip_completion_size": 50,
+      "scip_completion_status": "timelimit",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 45.0,
+        "random_score_same_decoder": 37.666666666666664,
+        "random_restart_same_decoder": 42.666666666666664,
+        "bipnn_fast_anytime": 45.666666666666664,
+        "scip_milp_greedy_start": 50.0
+      },
+      "paired_percent": {
+        "degree_greedy": 1.4814814814814836,
+        "random_score_same_decoder": 21.238938053097357,
+        "random_restart_same_decoder": 7.03125,
+        "scip_milp_greedy_start": -8.666666666666668
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 28.666666666666668,
+        "repaired_size_mean": 14,
+        "final_size_mean": 45.666666666666664,
+        "removed_mean": 14.666666666666666,
+        "added_mean": 31.666666666666668
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 14.666666666666666,
+        "repaired_size_mean": 11.666666666666666,
+        "final_size_mean": 45.666666666666664,
+        "removed_mean": 3,
+        "added_mean": 34
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 38.666666666666664,
+      "best_minus_initial_mean": 7,
+      "latest_mean_size": 45.666666666666664,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        214,
+        158,
+        155
+      ],
+      "neural_latest_decoded_epochs": [
+        212,
+        155,
+        152
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          5.038745100000142,
+          5.020353899999918,
+          5.035758500000156
+        ],
+        "random_restart_same_decoder": [
+          5.030603400000018,
+          5.016174999999976,
+          5.000322800000049
+        ],
+        "scip_milp_greedy_start": [
+          5.0689098999998805
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.038745100000141974,
+          0.020353899999918212,
+          0.035758500000156346
+        ],
+        "random_restart_same_decoder": [
+          0.030603400000018155,
+          0.016174999999975626,
+          0.0003228000000490283
+        ],
+        "scip_milp_greedy_start": [
+          0.06890989999988051
+        ]
+      },
+      "random_completed_trials": [
+        167,
+        208,
+        840
+      ],
+      "neural_best_available_seconds": [
+        2.017576100000042,
+        3.050114399999984,
+        1.095444800000223
+      ]
+    },
+    {
+      "case_id": "high_weak",
+      "name": "high-upstream",
+      "scope": "real_seen",
+      "definition": "weak",
+      "n": 327,
+      "m": 7818,
+      "generator": null,
+      "budget_seconds": 15.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 45,
+      "neural_sizes": [
+        49,
+        49,
+        46
+      ],
+      "neural_mean_size": 48,
+      "random_sizes": [
+        45,
+        44,
+        45
+      ],
+      "random_mean_size": 44.666666666666664,
+      "random_single_sizes": [
+        34,
+        40,
+        39
+      ],
+      "scip_size": 52,
+      "scip_upper_bound": 52.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 52,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 45.0,
+        "random_score_same_decoder": 37.666666666666664,
+        "random_restart_same_decoder": 44.666666666666664,
+        "bipnn_fast_anytime": 48,
+        "scip_milp_greedy_start": 52.0
+      },
+      "paired_percent": {
+        "degree_greedy": 6.666666666666665,
+        "random_score_same_decoder": 27.43362831858407,
+        "random_restart_same_decoder": 7.462686567164178,
+        "scip_milp_greedy_start": -7.692307692307687
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 19,
+        "repaired_size_mean": 16.333333333333332,
+        "final_size_mean": 48,
+        "removed_mean": 2.6666666666666665,
+        "added_mean": 31.666666666666668
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 25.666666666666668,
+        "repaired_size_mean": 23,
+        "final_size_mean": 47.666666666666664,
+        "removed_mean": 2.6666666666666665,
+        "added_mean": 24.666666666666668
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 38.666666666666664,
+      "best_minus_initial_mean": 9.333333333333334,
+      "latest_mean_size": 47.666666666666664,
+      "best_minus_latest_mean": 0.3333333333333333,
+      "neural_epochs_at_emission": [
+        619,
+        476,
+        518
+      ],
+      "neural_latest_decoded_epochs": [
+        616,
+        472,
+        515
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          15.01463949999993,
+          15.063259600000038,
+          15.021499000000176
+        ],
+        "random_restart_same_decoder": [
+          15.00601729999994,
+          15.02984379999998,
+          15.005140900000015
+        ],
+        "scip_milp_greedy_start": [
+          5.437194200000022
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.014639499999930194,
+          0.06325960000003761,
+          0.021499000000176238
+        ],
+        "random_restart_same_decoder": [
+          0.006017299999939496,
+          0.029843799999980547,
+          0.005140900000014881
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        525,
+        628,
+        2485
+      ],
+      "neural_best_available_seconds": [
+        10.013996300000144,
+        11.020581699999866,
+        7.00773520000007
+      ]
+    },
+    {
+      "case_id": "high_weak",
+      "name": "high-upstream",
+      "scope": "real_seen",
+      "definition": "weak",
+      "n": 327,
+      "m": 7818,
+      "generator": null,
+      "budget_seconds": 30.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 45,
+      "neural_sizes": [
+        49,
+        49,
+        46
+      ],
+      "neural_mean_size": 48,
+      "random_sizes": [
+        45,
+        44,
+        45
+      ],
+      "random_mean_size": 44.666666666666664,
+      "random_single_sizes": [
+        34,
+        40,
+        39
+      ],
+      "scip_size": 52,
+      "scip_upper_bound": 52.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 52,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 45.0,
+        "random_score_same_decoder": 37.666666666666664,
+        "random_restart_same_decoder": 44.666666666666664,
+        "bipnn_fast_anytime": 48,
+        "scip_milp_greedy_start": 52.0
+      },
+      "paired_percent": {
+        "degree_greedy": 6.666666666666665,
+        "random_score_same_decoder": 27.43362831858407,
+        "random_restart_same_decoder": 7.462686567164178,
+        "scip_milp_greedy_start": -7.692307692307687
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 19,
+        "repaired_size_mean": 16.333333333333332,
+        "final_size_mean": 48,
+        "removed_mean": 2.6666666666666665,
+        "added_mean": 31.666666666666668
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 38.333333333333336,
+        "repaired_size_mean": 36.333333333333336,
+        "final_size_mean": 47.666666666666664,
+        "removed_mean": 2,
+        "added_mean": 11.333333333333334
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 38.666666666666664,
+      "best_minus_initial_mean": 9.333333333333334,
+      "latest_mean_size": 47.666666666666664,
+      "best_minus_latest_mean": 0.3333333333333333,
+      "neural_epochs_at_emission": [
+        1250,
+        968,
+        1384
+      ],
+      "neural_latest_decoded_epochs": [
+        1247,
+        966,
+        1377
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          30.031382300000132,
+          30.032923199999914,
+          30.010717100000193
+        ],
+        "random_restart_same_decoder": [
+          30.007024300000012,
+          30.002409100000023,
+          30.003198700000212
+        ],
+        "scip_milp_greedy_start": [
+          5.961218099999996
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.03138230000013209,
+          0.03292319999991378,
+          0.010717100000192659
+        ],
+        "random_restart_same_decoder": [
+          0.007024300000011863,
+          0.0024091000000225904,
+          0.0031987000002118293
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        1071,
+        1326,
+        4961
+      ],
+      "neural_best_available_seconds": [
+        10.013996300000144,
+        11.020581699999866,
+        7.00773520000007
+      ]
+    },
+    {
+      "case_id": "high_strong",
+      "name": "high-upstream",
+      "scope": "real_seen",
+      "definition": "strong",
+      "n": 327,
+      "m": 7818,
+      "generator": null,
+      "budget_seconds": 5.0,
+      "config": "w1024_none",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 45,
+      "neural_sizes": [
+        47,
+        46,
+        47
+      ],
+      "neural_mean_size": 46.666666666666664,
+      "random_sizes": [
+        44,
+        42,
+        42
+      ],
+      "random_mean_size": 42.666666666666664,
+      "random_single_sizes": [
+        32,
+        39,
+        35
+      ],
+      "scip_size": 51,
+      "scip_upper_bound": 51.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 51,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 45.0,
+        "random_score_same_decoder": 35.333333333333336,
+        "random_restart_same_decoder": 42.666666666666664,
+        "bipnn_fast_anytime": 46.666666666666664,
+        "scip_milp_greedy_start": 51.0
+      },
+      "paired_percent": {
+        "degree_greedy": 3.703703703703698,
+        "random_score_same_decoder": 32.0754716981132,
+        "random_restart_same_decoder": 9.375,
+        "scip_milp_greedy_start": -8.496732026143794
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 31.666666666666668,
+        "repaired_size_mean": 20,
+        "final_size_mean": 46.666666666666664,
+        "removed_mean": 11.666666666666666,
+        "added_mean": 26.666666666666668
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 23.333333333333332,
+        "repaired_size_mean": 17.666666666666668,
+        "final_size_mean": 45.666666666666664,
+        "removed_mean": 5.666666666666667,
+        "added_mean": 28
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 37,
+      "best_minus_initial_mean": 9.666666666666666,
+      "latest_mean_size": 45.666666666666664,
+      "best_minus_latest_mean": 1,
+      "neural_epochs_at_emission": [
+        437,
+        165,
+        232
+      ],
+      "neural_latest_decoded_epochs": [
+        428,
+        161,
+        227
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          5.011638700000049,
+          5.0145404000002145,
+          5.027542799999992
+        ],
+        "random_restart_same_decoder": [
+          5.009931199999983,
+          5.0105241000001115,
+          5.0026230000003125
+        ],
+        "scip_milp_greedy_start": [
+          1.3391472000000704
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.01163870000004863,
+          0.014540400000214504,
+          0.027542799999991985
+        ],
+        "random_restart_same_decoder": [
+          0.00993119999998271,
+          0.010524100000111503,
+          0.0026230000003124587
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        393,
+        420,
+        422
+      ],
+      "neural_best_available_seconds": [
+        4.011490600000116,
+        1.021509100000003,
+        2.0210288000002947
+      ]
+    },
+    {
+      "case_id": "high_strong",
+      "name": "high-upstream",
+      "scope": "real_seen",
+      "definition": "strong",
+      "n": 327,
+      "m": 7818,
+      "generator": null,
+      "budget_seconds": 15.0,
+      "config": "w1024_none",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 45,
+      "neural_sizes": [
+        48,
+        49,
+        47
+      ],
+      "neural_mean_size": 48,
+      "random_sizes": [
+        44,
+        43,
+        43
+      ],
+      "random_mean_size": 43.333333333333336,
+      "random_single_sizes": [
+        32,
+        39,
+        35
+      ],
+      "scip_size": 51,
+      "scip_upper_bound": 51.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 51,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 45.0,
+        "random_score_same_decoder": 35.333333333333336,
+        "random_restart_same_decoder": 43.333333333333336,
+        "bipnn_fast_anytime": 48,
+        "scip_milp_greedy_start": 51.0
+      },
+      "paired_percent": {
+        "degree_greedy": 6.666666666666665,
+        "random_score_same_decoder": 35.849056603773576,
+        "random_restart_same_decoder": 10.769230769230752,
+        "scip_milp_greedy_start": -5.882352941176472
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 37.333333333333336,
+        "repaired_size_mean": 30.333333333333332,
+        "final_size_mean": 48,
+        "removed_mean": 7,
+        "added_mean": 17.666666666666668
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 42.666666666666664,
+        "repaired_size_mean": 38.333333333333336,
+        "final_size_mean": 48,
+        "removed_mean": 4.333333333333333,
+        "added_mean": 9.666666666666666
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 37,
+      "best_minus_initial_mean": 11,
+      "latest_mean_size": 48,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        1366,
+        695,
+        735
+      ],
+      "neural_latest_decoded_epochs": [
+        1357,
+        693,
+        730
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          15.011993399999938,
+          15.015365700000075,
+          15.026973800000178
+        ],
+        "random_restart_same_decoder": [
+          15.005460200000016,
+          15.012226400000145,
+          15.002816100000018
+        ],
+        "scip_milp_greedy_start": [
+          1.3107476000000133
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.011993399999937537,
+          0.015365700000074867,
+          0.026973800000178016
+        ],
+        "random_restart_same_decoder": [
+          0.005460200000015902,
+          0.012226400000145077,
+          0.0028161000000181957
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        1115,
+        1245,
+        1197
+      ],
+      "neural_best_available_seconds": [
+        9.007348699999966,
+        14.017937600000096,
+        2.0210288000002947
+      ]
+    },
+    {
+      "case_id": "high_strong",
+      "name": "high-upstream",
+      "scope": "real_seen",
+      "definition": "strong",
+      "n": 327,
+      "m": 7818,
+      "generator": null,
+      "budget_seconds": 30.0,
+      "config": "w1024_none",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 45,
+      "neural_sizes": [
+        48,
+        49,
+        47
+      ],
+      "neural_mean_size": 48,
+      "random_sizes": [
+        44,
+        43,
+        43
+      ],
+      "random_mean_size": 43.333333333333336,
+      "random_single_sizes": [
+        32,
+        39,
+        35
+      ],
+      "scip_size": 51,
+      "scip_upper_bound": 51.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 51,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 45.0,
+        "random_score_same_decoder": 35.333333333333336,
+        "random_restart_same_decoder": 43.333333333333336,
+        "bipnn_fast_anytime": 48,
+        "scip_milp_greedy_start": 51.0
+      },
+      "paired_percent": {
+        "degree_greedy": 6.666666666666665,
+        "random_score_same_decoder": 35.849056603773576,
+        "random_restart_same_decoder": 10.769230769230752,
+        "scip_milp_greedy_start": -5.882352941176472
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 37.333333333333336,
+        "repaired_size_mean": 30.333333333333332,
+        "final_size_mean": 48,
+        "removed_mean": 7,
+        "added_mean": 17.666666666666668
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0.3333333333333333,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 49,
+        "repaired_size_mean": 46.666666666666664,
+        "final_size_mean": 47.666666666666664,
+        "removed_mean": 2.3333333333333335,
+        "added_mean": 1
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 37,
+      "best_minus_initial_mean": 11,
+      "latest_mean_size": 47.666666666666664,
+      "best_minus_latest_mean": 0.3333333333333333,
+      "neural_epochs_at_emission": [
+        2576,
+        1508,
+        1460
+      ],
+      "neural_latest_decoded_epochs": [
+        2571,
+        1504,
+        1455
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          30.01537469999994,
+          30.003060400000322,
+          30.017012700000123
+        ],
+        "random_restart_same_decoder": [
+          30.00658939999994,
+          30.004697699999724,
+          30.01633300000003
+        ],
+        "scip_milp_greedy_start": [
+          1.3010173000000123
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.015374699999938457,
+          0.003060400000322261,
+          0.017012700000123004
+        ],
+        "random_restart_same_decoder": [
+          0.006589399999938905,
+          0.004697699999724136,
+          0.01633300000003146
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        1989,
+        2577,
+        2270
+      ],
+      "neural_best_available_seconds": [
+        9.007348699999966,
+        14.017937600000096,
+        2.0210288000002947
+      ]
+    },
+    {
+      "case_id": "primary_weak",
+      "name": "primary-upstream",
+      "scope": "real_seen",
+      "definition": "weak",
+      "n": 242,
+      "m": 12704,
+      "generator": null,
+      "budget_seconds": 5.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 17,
+      "neural_sizes": [
+        18,
+        17,
+        18
+      ],
+      "neural_mean_size": 17.666666666666668,
+      "random_sizes": [
+        16,
+        17,
+        16
+      ],
+      "random_mean_size": 16.333333333333332,
+      "random_single_sizes": [
+        12,
+        16,
+        13
+      ],
+      "scip_size": 19,
+      "scip_upper_bound": 19.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 19,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 17.0,
+        "random_score_same_decoder": 13.666666666666666,
+        "random_restart_same_decoder": 16.333333333333332,
+        "bipnn_fast_anytime": 17.666666666666668,
+        "scip_milp_greedy_start": 19.0
+      },
+      "paired_percent": {
+        "degree_greedy": 3.9215686274509887,
+        "random_score_same_decoder": 29.268292682926834,
+        "random_restart_same_decoder": 8.163265306122458,
+        "scip_milp_greedy_start": -7.017543859649111
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 31,
+        "repaired_size_mean": 7,
+        "final_size_mean": 17.666666666666668,
+        "removed_mean": 24,
+        "added_mean": 10.666666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 20,
+        "repaired_size_mean": 4.333333333333333,
+        "final_size_mean": 17,
+        "removed_mean": 15.666666666666666,
+        "added_mean": 12.666666666666666
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 14,
+      "best_minus_initial_mean": 3.6666666666666665,
+      "latest_mean_size": 17,
+      "best_minus_latest_mean": 0.6666666666666666,
+      "neural_epochs_at_emission": [
+        169,
+        177,
+        147
+      ],
+      "neural_latest_decoded_epochs": [
+        166,
+        174,
+        144
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          5.0290571000000455,
+          5.032701000000088,
+          5.051817200000187
+        ],
+        "random_restart_same_decoder": [
+          5.013412699999662,
+          5.018617799999902,
+          5.014099500000157
+        ],
+        "scip_milp_greedy_start": [
+          3.9451962999996795
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.029057100000045466,
+          0.03270100000008824,
+          0.05181720000018686
+        ],
+        "random_restart_same_decoder": [
+          0.013412699999662436,
+          0.018617799999901763,
+          0.014099500000156695
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        271,
+        238,
+        233
+      ],
+      "neural_best_available_seconds": [
+        1.033210500000223,
+        1.0173383000001195,
+        2.029943000000003
+      ]
+    },
+    {
+      "case_id": "primary_weak",
+      "name": "primary-upstream",
+      "scope": "real_seen",
+      "definition": "weak",
+      "n": 242,
+      "m": 12704,
+      "generator": null,
+      "budget_seconds": 15.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 17,
+      "neural_sizes": [
+        18,
+        17,
+        18
+      ],
+      "neural_mean_size": 17.666666666666668,
+      "random_sizes": [
+        16,
+        17,
+        17
+      ],
+      "random_mean_size": 16.666666666666668,
+      "random_single_sizes": [
+        12,
+        16,
+        13
+      ],
+      "scip_size": 19,
+      "scip_upper_bound": 19.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 19,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 17.0,
+        "random_score_same_decoder": 13.666666666666666,
+        "random_restart_same_decoder": 16.666666666666668,
+        "bipnn_fast_anytime": 17.666666666666668,
+        "scip_milp_greedy_start": 19.0
+      },
+      "paired_percent": {
+        "degree_greedy": 3.9215686274509887,
+        "random_score_same_decoder": 29.268292682926834,
+        "random_restart_same_decoder": 6.000000000000005,
+        "scip_milp_greedy_start": -7.017543859649111
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 31,
+        "repaired_size_mean": 7,
+        "final_size_mean": 17.666666666666668,
+        "removed_mean": 24,
+        "added_mean": 10.666666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 17.333333333333332,
+        "repaired_size_mean": 3,
+        "final_size_mean": 17,
+        "removed_mean": 14.333333333333334,
+        "added_mean": 14
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 14,
+      "best_minus_initial_mean": 3.6666666666666665,
+      "latest_mean_size": 17,
+      "best_minus_latest_mean": 0.6666666666666666,
+      "neural_epochs_at_emission": [
+        523,
+        533,
+        447
+      ],
+      "neural_latest_decoded_epochs": [
+        520,
+        530,
+        444
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          15.029295400000137,
+          15.023443800000223,
+          15.043254199999865
+        ],
+        "random_restart_same_decoder": [
+          15.018884699999944,
+          15.00214079999978,
+          15.016665699999976
+        ],
+        "scip_milp_greedy_start": [
+          3.8505724000001464
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.029295400000137306,
+          0.023443800000222836,
+          0.043254199999864795
+        ],
+        "random_restart_same_decoder": [
+          0.018884699999944132,
+          0.0021407999997791194,
+          0.016665699999975914
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        773,
+        722,
+        708
+      ],
+      "neural_best_available_seconds": [
+        1.033210500000223,
+        1.0173383000001195,
+        2.029943000000003
+      ]
+    },
+    {
+      "case_id": "primary_weak",
+      "name": "primary-upstream",
+      "scope": "real_seen",
+      "definition": "weak",
+      "n": 242,
+      "m": 12704,
+      "generator": null,
+      "budget_seconds": 30.0,
+      "config": "w1024_cra",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 17,
+      "neural_sizes": [
+        18,
+        17,
+        18
+      ],
+      "neural_mean_size": 17.666666666666668,
+      "random_sizes": [
+        16,
+        17,
+        17
+      ],
+      "random_mean_size": 16.666666666666668,
+      "random_single_sizes": [
+        12,
+        16,
+        13
+      ],
+      "scip_size": 19,
+      "scip_upper_bound": 19.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 19,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 17.0,
+        "random_score_same_decoder": 13.666666666666666,
+        "random_restart_same_decoder": 16.666666666666668,
+        "bipnn_fast_anytime": 17.666666666666668,
+        "scip_milp_greedy_start": 19.0
+      },
+      "paired_percent": {
+        "degree_greedy": 3.9215686274509887,
+        "random_score_same_decoder": 29.268292682926834,
+        "random_restart_same_decoder": 6.000000000000005,
+        "scip_milp_greedy_start": -7.017543859649111
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 31,
+        "repaired_size_mean": 7,
+        "final_size_mean": 17.666666666666668,
+        "removed_mean": 24,
+        "added_mean": 10.666666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 18,
+        "repaired_size_mean": 4,
+        "final_size_mean": 17,
+        "removed_mean": 14,
+        "added_mean": 13
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 14,
+      "best_minus_initial_mean": 3.6666666666666665,
+      "latest_mean_size": 17,
+      "best_minus_latest_mean": 0.6666666666666666,
+      "neural_epochs_at_emission": [
+        1062,
+        1054,
+        894
+      ],
+      "neural_latest_decoded_epochs": [
+        1059,
+        1051,
+        891
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          30.00906380000015,
+          30.02195090000032,
+          30.029502500000035
+        ],
+        "random_restart_same_decoder": [
+          30.00166229999968,
+          30.006496999999854,
+          30.01693350000005
+        ],
+        "scip_milp_greedy_start": [
+          3.361688200000117
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.009063800000149058,
+          0.02195090000031996,
+          0.02950250000003507
+        ],
+        "random_restart_same_decoder": [
+          0.0016622999996798171,
+          0.00649699999985387,
+          0.016933500000050117
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        1497,
+        1411,
+        1411
+      ],
+      "neural_best_available_seconds": [
+        1.033210500000223,
+        1.0173383000001195,
+        2.029943000000003
+      ]
+    },
+    {
+      "case_id": "primary_strong",
+      "name": "primary-upstream",
+      "scope": "real_seen",
+      "definition": "strong",
+      "n": 242,
+      "m": 12704,
+      "generator": null,
+      "budget_seconds": 5.0,
+      "config": "w1024_none",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 17,
+      "neural_sizes": [
+        17,
+        17,
+        17
+      ],
+      "neural_mean_size": 17,
+      "random_sizes": [
+        16,
+        15,
+        15
+      ],
+      "random_mean_size": 15.333333333333334,
+      "random_single_sizes": [
+        12,
+        14,
+        12
+      ],
+      "scip_size": 19,
+      "scip_upper_bound": 19.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 19,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 17.0,
+        "random_score_same_decoder": 12.666666666666666,
+        "random_restart_same_decoder": 15.333333333333334,
+        "bipnn_fast_anytime": 17,
+        "scip_milp_greedy_start": 19.0
+      },
+      "paired_percent": {
+        "degree_greedy": 0.0,
+        "random_score_same_decoder": 34.210526315789465,
+        "random_restart_same_decoder": 10.869565217391308,
+        "scip_milp_greedy_start": -10.526315789473683
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 43.666666666666664,
+        "repaired_size_mean": 8.333333333333334,
+        "final_size_mean": 17,
+        "removed_mean": 35.333333333333336,
+        "added_mean": 8.666666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 25,
+        "repaired_size_mean": 7.333333333333333,
+        "final_size_mean": 17,
+        "removed_mean": 17.666666666666668,
+        "added_mean": 9.666666666666666
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 14,
+      "best_minus_initial_mean": 3,
+      "latest_mean_size": 17,
+      "best_minus_latest_mean": 0,
+      "neural_epochs_at_emission": [
+        173,
+        189,
+        185
+      ],
+      "neural_latest_decoded_epochs": [
+        170,
+        186,
+        182
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          5.0201326000001245,
+          5.024820799999816,
+          5.023632500000076
+        ],
+        "random_restart_same_decoder": [
+          5.002554400000008,
+          5.005300000000261,
+          5.018209100000149
+        ],
+        "scip_milp_greedy_start": [
+          4.157270499999868
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.020132600000124512,
+          0.02482079999981579,
+          0.023632500000076107
+        ],
+        "random_restart_same_decoder": [
+          0.0025544000000081724,
+          0.005300000000261207,
+          0.018209100000149192
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        236,
+        243,
+        234
+      ],
+      "neural_best_available_seconds": [
+        1.0206436999997095,
+        1.0277836999998726,
+        1.0426235999998426
+      ]
+    },
+    {
+      "case_id": "primary_strong",
+      "name": "primary-upstream",
+      "scope": "real_seen",
+      "definition": "strong",
+      "n": 242,
+      "m": 12704,
+      "generator": null,
+      "budget_seconds": 15.0,
+      "config": "w1024_none",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 17,
+      "neural_sizes": [
+        17,
+        17,
+        17
+      ],
+      "neural_mean_size": 17,
+      "random_sizes": [
+        16,
+        15,
+        17
+      ],
+      "random_mean_size": 16,
+      "random_single_sizes": [
+        12,
+        14,
+        12
+      ],
+      "scip_size": 19,
+      "scip_upper_bound": 19.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 19,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 17.0,
+        "random_score_same_decoder": 12.666666666666666,
+        "random_restart_same_decoder": 16,
+        "bipnn_fast_anytime": 17,
+        "scip_milp_greedy_start": 19.0
+      },
+      "paired_percent": {
+        "degree_greedy": 0.0,
+        "random_score_same_decoder": 34.210526315789465,
+        "random_restart_same_decoder": 6.25,
+        "scip_milp_greedy_start": -10.526315789473683
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 43.666666666666664,
+        "repaired_size_mean": 8.333333333333334,
+        "final_size_mean": 17,
+        "removed_mean": 35.333333333333336,
+        "added_mean": 8.666666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 22.666666666666668,
+        "repaired_size_mean": 7,
+        "final_size_mean": 16.666666666666668,
+        "removed_mean": 15.666666666666666,
+        "added_mean": 9.666666666666666
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 14,
+      "best_minus_initial_mean": 3,
+      "latest_mean_size": 16.666666666666668,
+      "best_minus_latest_mean": 0.3333333333333333,
+      "neural_epochs_at_emission": [
+        563,
+        571,
+        564
+      ],
+      "neural_latest_decoded_epochs": [
+        560,
+        567,
+        561
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          15.037787199999912,
+          15.037690199999815,
+          15.0189105999998
+        ],
+        "random_restart_same_decoder": [
+          15.007057799999984,
+          15.018648500000381,
+          15.011668399999962
+        ],
+        "scip_milp_greedy_start": [
+          4.224660800000038
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.037787199999911536,
+          0.03769019999981538,
+          0.01891059999979916
+        ],
+        "random_restart_same_decoder": [
+          0.007057799999984127,
+          0.01864850000038132,
+          0.011668399999962276
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        714,
+        721,
+        701
+      ],
+      "neural_best_available_seconds": [
+        1.0206436999997095,
+        1.0277836999998726,
+        1.0426235999998426
+      ]
+    },
+    {
+      "case_id": "primary_strong",
+      "name": "primary-upstream",
+      "scope": "real_seen",
+      "definition": "strong",
+      "n": 242,
+      "m": 12704,
+      "generator": null,
+      "budget_seconds": 30.0,
+      "config": "w1024_none",
+      "model_seeds": [
+        0,
+        1,
+        2
+      ],
+      "degree_size": 17,
+      "neural_sizes": [
+        17,
+        17,
+        17
+      ],
+      "neural_mean_size": 17,
+      "random_sizes": [
+        16,
+        16,
+        17
+      ],
+      "random_mean_size": 16.333333333333332,
+      "random_single_sizes": [
+        12,
+        14,
+        12
+      ],
+      "scip_size": 19,
+      "scip_upper_bound": 19.0,
+      "scip_optimality_proven": true,
+      "scip_status": "optimal",
+      "scip_completion_size": 19,
+      "scip_completion_status": "optimal",
+      "scip_bound_kind": "scip_dual_bound",
+      "method_sizes": {
+        "degree_greedy": 17.0,
+        "random_score_same_decoder": 12.666666666666666,
+        "random_restart_same_decoder": 16.333333333333332,
+        "bipnn_fast_anytime": 17,
+        "scip_milp_greedy_start": 19.0
+      },
+      "paired_percent": {
+        "degree_greedy": 0.0,
+        "random_score_same_decoder": 34.210526315789465,
+        "random_restart_same_decoder": 4.081632653061229,
+        "scip_milp_greedy_start": -10.526315789473683
+      },
+      "neural_best_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 43.666666666666664,
+        "repaired_size_mean": 8.333333333333334,
+        "final_size_mean": 17,
+        "removed_mean": 35.333333333333336,
+        "added_mean": 8.666666666666666
+      },
+      "neural_latest_decoder": {
+        "records": 3,
+        "predicted_records": 3,
+        "empty_incumbent_rate": 0,
+        "raw_feasible_rate": 0,
+        "raw_empty_rate": 0,
+        "raw_size_mean": 25.666666666666668,
+        "repaired_size_mean": 11,
+        "final_size_mean": 16.666666666666668,
+        "removed_mean": 14.666666666666666,
+        "added_mean": 5.666666666666667
+      },
+      "initial_available_by_cutoff": 3,
+      "initial_mean_size": 14,
+      "best_minus_initial_mean": 3,
+      "latest_mean_size": 16.666666666666668,
+      "best_minus_latest_mean": 0.3333333333333333,
+      "neural_epochs_at_emission": [
+        1110,
+        1115,
+        1102
+      ],
+      "neural_latest_decoded_epochs": [
+        1107,
+        1112,
+        1099
+      ],
+      "actual_emission_seconds": {
+        "bipnn_fast_anytime": [
+          30.01076779999994,
+          30.022678799999994,
+          30.002336000000014
+        ],
+        "random_restart_same_decoder": [
+          30.000131899999815,
+          30.014780200000132,
+          30.01659460000019
+        ],
+        "scip_milp_greedy_start": [
+          4.173479399999906
+        ]
+      },
+      "overshoot_seconds": {
+        "bipnn_fast_anytime": [
+          0.010767799999939598,
+          0.022678799999994226,
+          0.0023360000000138825
+        ],
+        "random_restart_same_decoder": [
+          0.0001318999998147774,
+          0.014780200000132027,
+          0.01659460000018953
+        ],
+        "scip_milp_greedy_start": [
+          0.0
+        ]
+      },
+      "random_completed_trials": [
+        1424,
+        1429,
+        1394
+      ],
+      "neural_best_available_seconds": [
+        1.0206436999997095,
+        1.0277836999998726,
+        1.0426235999998426
+      ]
+    }
+  ],
+  "panels": {
+    "a": {
+      "structure": {
+        "k": 3,
+        "density_m_over_n": 2
+      },
+      "dimension": "time",
+      "curves": {
+        "bipnn_fast_anytime": {
+          "x": [
+            5,
+            15,
+            30
+          ],
+          "statistics": [
+            {
+              "mean": 0.5813333333333333,
+              "minimum": 0.5795,
+              "maximum": 0.583,
+              "seed_values": [
+                0.5815,
+                0.583,
+                0.5795
+              ]
+            },
+            {
+              "mean": 0.606,
+              "minimum": 0.605,
+              "maximum": 0.6065,
+              "seed_values": [
+                0.605,
+                0.6065,
+                0.6065
+              ]
+            },
+            {
+              "mean": 0.6061666666666667,
+              "minimum": 0.6055,
+              "maximum": 0.6065,
+              "seed_values": [
+                0.6055,
+                0.6065,
+                0.6065
+              ]
+            }
+          ],
+          "case_ids": [
+            "n2000_k3_d2_s20261024_weak",
+            "n2000_k3_d2_s20261024_weak",
+            "n2000_k3_d2_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            5.0,
+            15.0,
+            30.0
+          ]
+        },
+        "random_restart_same_decoder": {
+          "x": [
+            5,
+            15,
+            30
+          ],
+          "statistics": [
+            {
+              "mean": 0.5323333333333333,
+              "minimum": 0.5315,
+              "maximum": 0.534,
+              "seed_values": [
+                0.534,
+                0.5315,
+                0.5315
+              ]
+            },
+            {
+              "mean": 0.5356666666666666,
+              "minimum": 0.5325,
+              "maximum": 0.5405,
+              "seed_values": [
+                0.534,
+                0.5405,
+                0.5325
+              ]
+            },
+            {
+              "mean": 0.5366666666666667,
+              "minimum": 0.5325,
+              "maximum": 0.5405,
+              "seed_values": [
+                0.537,
+                0.5405,
+                0.5325
+              ]
+            }
+          ],
+          "case_ids": [
+            "n2000_k3_d2_s20261024_weak",
+            "n2000_k3_d2_s20261024_weak",
+            "n2000_k3_d2_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            5.0,
+            15.0,
+            30.0
+          ]
+        },
+        "scip_milp_greedy_start": {
+          "x": [
+            5,
+            15,
+            30
+          ],
+          "statistics": [
+            {
+              "mean": 0.5855,
+              "minimum": 0.5855,
+              "maximum": 0.5855,
+              "seed_values": [
+                0.5855
+              ]
+            },
+            {
+              "mean": 0.5855,
+              "minimum": 0.5855,
+              "maximum": 0.5855,
+              "seed_values": [
+                0.5855
+              ]
+            },
+            {
+              "mean": 0.5855,
+              "minimum": 0.5855,
+              "maximum": 0.5855,
+              "seed_values": [
+                0.5855
+              ]
+            }
+          ],
+          "case_ids": [
+            "n2000_k3_d2_s20261024_weak",
+            "n2000_k3_d2_s20261024_weak",
+            "n2000_k3_d2_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            5.0,
+            15.0,
+            30.0
+          ]
+        },
+        "degree_greedy": {
+          "x": [
+            5,
+            15,
+            30
+          ],
+          "statistics": [
+            {
+              "mean": 0.572,
+              "minimum": 0.572,
+              "maximum": 0.572,
+              "seed_values": [
+                0.572
+              ]
+            },
+            {
+              "mean": 0.572,
+              "minimum": 0.572,
+              "maximum": 0.572,
+              "seed_values": [
+                0.572
+              ]
+            },
+            {
+              "mean": 0.572,
+              "minimum": 0.572,
+              "maximum": 0.572,
+              "seed_values": [
+                0.572
+              ]
+            }
+          ],
+          "case_ids": [
+            "n2000_k3_d2_s20261024_weak",
+            "n2000_k3_d2_s20261024_weak",
+            "n2000_k3_d2_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            5.0,
+            15.0,
+            30.0
+          ]
+        }
+      }
+    },
+    "b": {
+      "structure": {
+        "k": 3,
+        "density_m_over_n": 2
+      },
+      "dimension": "scale",
+      "curves": {
+        "bipnn_fast_anytime": {
+          "x": [
+            500,
+            1000,
+            2000
+          ],
+          "statistics": [
+            {
+              "mean": 0.608,
+              "minimum": 0.608,
+              "maximum": 0.608,
+              "seed_values": [
+                0.608,
+                0.608,
+                0.608
+              ]
+            },
+            {
+              "mean": 0.6086666666666667,
+              "minimum": 0.607,
+              "maximum": 0.61,
+              "seed_values": [
+                0.61,
+                0.607,
+                0.609
+              ]
+            },
+            {
+              "mean": 0.6061666666666667,
+              "minimum": 0.6055,
+              "maximum": 0.6065,
+              "seed_values": [
+                0.6055,
+                0.6065,
+                0.6065
+              ]
+            }
+          ],
+          "case_ids": [
+            "n500_k3_d2_s20261023_weak",
+            "n1000_k3_d2_s20261024_weak",
+            "n2000_k3_d2_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ]
+        },
+        "random_restart_same_decoder": {
+          "x": [
+            500,
+            1000,
+            2000
+          ],
+          "statistics": [
+            {
+              "mean": 0.5526666666666668,
+              "minimum": 0.548,
+              "maximum": 0.556,
+              "seed_values": [
+                0.554,
+                0.556,
+                0.548
+              ]
+            },
+            {
+              "mean": 0.5426666666666667,
+              "minimum": 0.539,
+              "maximum": 0.549,
+              "seed_values": [
+                0.54,
+                0.549,
+                0.539
+              ]
+            },
+            {
+              "mean": 0.5366666666666667,
+              "minimum": 0.5325,
+              "maximum": 0.5405,
+              "seed_values": [
+                0.537,
+                0.5405,
+                0.5325
+              ]
+            }
+          ],
+          "case_ids": [
+            "n500_k3_d2_s20261023_weak",
+            "n1000_k3_d2_s20261024_weak",
+            "n2000_k3_d2_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ]
+        },
+        "scip_milp_greedy_start": {
+          "x": [
+            500,
+            1000,
+            2000
+          ],
+          "statistics": [
+            {
+              "mean": 0.592,
+              "minimum": 0.592,
+              "maximum": 0.592,
+              "seed_values": [
+                0.592
+              ]
+            },
+            {
+              "mean": 0.59,
+              "minimum": 0.59,
+              "maximum": 0.59,
+              "seed_values": [
+                0.59
+              ]
+            },
+            {
+              "mean": 0.5855,
+              "minimum": 0.5855,
+              "maximum": 0.5855,
+              "seed_values": [
+                0.5855
+              ]
+            }
+          ],
+          "case_ids": [
+            "n500_k3_d2_s20261023_weak",
+            "n1000_k3_d2_s20261024_weak",
+            "n2000_k3_d2_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ]
+        },
+        "degree_greedy": {
+          "x": [
+            500,
+            1000,
+            2000
+          ],
+          "statistics": [
+            {
+              "mean": 0.566,
+              "minimum": 0.566,
+              "maximum": 0.566,
+              "seed_values": [
+                0.566
+              ]
+            },
+            {
+              "mean": 0.569,
+              "minimum": 0.569,
+              "maximum": 0.569,
+              "seed_values": [
+                0.569
+              ]
+            },
+            {
+              "mean": 0.572,
+              "minimum": 0.572,
+              "maximum": 0.572,
+              "seed_values": [
+                0.572
+              ]
+            }
+          ],
+          "case_ids": [
+            "n500_k3_d2_s20261023_weak",
+            "n1000_k3_d2_s20261024_weak",
+            "n2000_k3_d2_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ]
+        }
+      }
+    },
+    "c": {
+      "structure": {
+        "k": 5,
+        "density_m_over_n": 4
+      },
+      "dimension": "time",
+      "curves": {
+        "bipnn_fast_anytime": {
+          "x": [
+            5,
+            15,
+            30
+          ],
+          "statistics": [
+            {
+              "mean": 0.6146666666666666,
+              "minimum": 0.614,
+              "maximum": 0.615,
+              "seed_values": [
+                0.615,
+                0.615,
+                0.614
+              ]
+            },
+            {
+              "mean": 0.633,
+              "minimum": 0.629,
+              "maximum": 0.638,
+              "seed_values": [
+                0.632,
+                0.638,
+                0.629
+              ]
+            },
+            {
+              "mean": 0.6383333333333333,
+              "minimum": 0.63,
+              "maximum": 0.648,
+              "seed_values": [
+                0.637,
+                0.648,
+                0.63
+              ]
+            }
+          ],
+          "case_ids": [
+            "n2000_k5_d4_s20261024_weak",
+            "n2000_k5_d4_s20261024_weak",
+            "n2000_k5_d4_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            5.0,
+            15.0,
+            30.0
+          ]
+        },
+        "random_restart_same_decoder": {
+          "x": [
+            5,
+            15,
+            30
+          ],
+          "statistics": [
+            {
+              "mean": 0.5710000000000001,
+              "minimum": 0.5705,
+              "maximum": 0.5715,
+              "seed_values": [
+                0.5715,
+                0.571,
+                0.5705
+              ]
+            },
+            {
+              "mean": 0.5724999999999999,
+              "minimum": 0.5715,
+              "maximum": 0.5735,
+              "seed_values": [
+                0.5735,
+                0.5725,
+                0.5715
+              ]
+            },
+            {
+              "mean": 0.5731666666666667,
+              "minimum": 0.5725,
+              "maximum": 0.5735,
+              "seed_values": [
+                0.5735,
+                0.5725,
+                0.5735
+              ]
+            }
+          ],
+          "case_ids": [
+            "n2000_k5_d4_s20261024_weak",
+            "n2000_k5_d4_s20261024_weak",
+            "n2000_k5_d4_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            5.0,
+            15.0,
+            30.0
+          ]
+        },
+        "scip_milp_greedy_start": {
+          "x": [
+            5,
+            15,
+            30
+          ],
+          "statistics": [
+            {
+              "mean": 0.6335,
+              "minimum": 0.6335,
+              "maximum": 0.6335,
+              "seed_values": [
+                0.6335
+              ]
+            },
+            {
+              "mean": 0.6335,
+              "minimum": 0.6335,
+              "maximum": 0.6335,
+              "seed_values": [
+                0.6335
+              ]
+            },
+            {
+              "mean": 0.6335,
+              "minimum": 0.6335,
+              "maximum": 0.6335,
+              "seed_values": [
+                0.6335
+              ]
+            }
+          ],
+          "case_ids": [
+            "n2000_k5_d4_s20261024_weak",
+            "n2000_k5_d4_s20261024_weak",
+            "n2000_k5_d4_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            5.0,
+            15.0,
+            30.0
+          ]
+        },
+        "degree_greedy": {
+          "x": [
+            5,
+            15,
+            30
+          ],
+          "statistics": [
+            {
+              "mean": 0.604,
+              "minimum": 0.604,
+              "maximum": 0.604,
+              "seed_values": [
+                0.604
+              ]
+            },
+            {
+              "mean": 0.604,
+              "minimum": 0.604,
+              "maximum": 0.604,
+              "seed_values": [
+                0.604
+              ]
+            },
+            {
+              "mean": 0.604,
+              "minimum": 0.604,
+              "maximum": 0.604,
+              "seed_values": [
+                0.604
+              ]
+            }
+          ],
+          "case_ids": [
+            "n2000_k5_d4_s20261024_weak",
+            "n2000_k5_d4_s20261024_weak",
+            "n2000_k5_d4_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            5.0,
+            15.0,
+            30.0
+          ]
+        }
+      }
+    },
+    "d": {
+      "structure": {
+        "k": 5,
+        "density_m_over_n": 4
+      },
+      "dimension": "scale",
+      "curves": {
+        "bipnn_fast_anytime": {
+          "x": [
+            500,
+            1000,
+            2000
+          ],
+          "statistics": [
+            {
+              "mean": 0.6606666666666667,
+              "minimum": 0.658,
+              "maximum": 0.662,
+              "seed_values": [
+                0.662,
+                0.658,
+                0.662
+              ]
+            },
+            {
+              "mean": 0.6543333333333333,
+              "minimum": 0.654,
+              "maximum": 0.655,
+              "seed_values": [
+                0.654,
+                0.654,
+                0.655
+              ]
+            },
+            {
+              "mean": 0.6383333333333333,
+              "minimum": 0.63,
+              "maximum": 0.648,
+              "seed_values": [
+                0.637,
+                0.648,
+                0.63
+              ]
+            }
+          ],
+          "case_ids": [
+            "n500_k5_d4_s20261023_weak",
+            "n1000_k5_d4_s20261024_weak",
+            "n2000_k5_d4_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ]
+        },
+        "random_restart_same_decoder": {
+          "x": [
+            500,
+            1000,
+            2000
+          ],
+          "statistics": [
+            {
+              "mean": 0.5926666666666667,
+              "minimum": 0.592,
+              "maximum": 0.594,
+              "seed_values": [
+                0.594,
+                0.592,
+                0.592
+              ]
+            },
+            {
+              "mean": 0.5816666666666667,
+              "minimum": 0.579,
+              "maximum": 0.584,
+              "seed_values": [
+                0.582,
+                0.579,
+                0.584
+              ]
+            },
+            {
+              "mean": 0.5731666666666667,
+              "minimum": 0.5725,
+              "maximum": 0.5735,
+              "seed_values": [
+                0.5735,
+                0.5725,
+                0.5735
+              ]
+            }
+          ],
+          "case_ids": [
+            "n500_k5_d4_s20261023_weak",
+            "n1000_k5_d4_s20261024_weak",
+            "n2000_k5_d4_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ]
+        },
+        "scip_milp_greedy_start": {
+          "x": [
+            500,
+            1000,
+            2000
+          ],
+          "statistics": [
+            {
+              "mean": 0.636,
+              "minimum": 0.636,
+              "maximum": 0.636,
+              "seed_values": [
+                0.636
+              ]
+            },
+            {
+              "mean": 0.635,
+              "minimum": 0.635,
+              "maximum": 0.635,
+              "seed_values": [
+                0.635
+              ]
+            },
+            {
+              "mean": 0.6335,
+              "minimum": 0.6335,
+              "maximum": 0.6335,
+              "seed_values": [
+                0.6335
+              ]
+            }
+          ],
+          "case_ids": [
+            "n500_k5_d4_s20261023_weak",
+            "n1000_k5_d4_s20261024_weak",
+            "n2000_k5_d4_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ]
+        },
+        "degree_greedy": {
+          "x": [
+            500,
+            1000,
+            2000
+          ],
+          "statistics": [
+            {
+              "mean": 0.61,
+              "minimum": 0.61,
+              "maximum": 0.61,
+              "seed_values": [
+                0.61
+              ]
+            },
+            {
+              "mean": 0.599,
+              "minimum": 0.599,
+              "maximum": 0.599,
+              "seed_values": [
+                0.599
+              ]
+            },
+            {
+              "mean": 0.604,
+              "minimum": 0.604,
+              "maximum": 0.604,
+              "seed_values": [
+                0.604
+              ]
+            }
+          ],
+          "case_ids": [
+            "n500_k5_d4_s20261023_weak",
+            "n1000_k5_d4_s20261024_weak",
+            "n2000_k5_d4_s20261024_weak"
+          ],
+          "budgets_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ]
+        }
+      }
+    }
+  },
+  "scope_note": "All 36 summary rows retained; plotted subset follows the predeclared panel map. Real cases are tabulated in the report.",
+  "spread": "Minimum to maximum of three technical seed trajectories; no confidence intervals or p-values"
+}

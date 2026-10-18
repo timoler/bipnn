@@ -1,0 +1,10 @@
+{
+  "pdf": "C:\\Users\\陈佳政\\Documents\\Codex\\2026-10-12\\new-chat\\outputs\\bipnn-public\\results\\fast-anytime-20261018\\figures\\strict-cutoff-quality.pdf",
+  "auditable": true,
+  "minimum_required_pt": 5.0,
+  "minimum_found_pt": 7.0,
+  "text_run_count": 13,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}
