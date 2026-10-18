@@ -1,0 +1,116 @@
+{
+  "protocol": {
+    "plan": {
+      "version": 1,
+      "purpose": "configuration selection on new validation graphs, followed by locked held-out evaluation",
+      "development": "All synthetic-20261018 and public-preset-20261018 graphs are development data; do not report them as unseen test data.",
+      "budget_seconds": 5.0,
+      "validation": {
+        "sizes": [
+          200
+        ],
+        "orders": [
+          3,
+          5
+        ],
+        "densities_m_over_n": [
+          2,
+          4
+        ],
+        "instance_seeds": [
+          20261020
+        ],
+        "model_seeds": [
+          0,
+          1
+        ],
+        "configs": [
+          "w256_cra",
+          "w256_none",
+          "w1024_cra",
+          "w1024_none"
+        ]
+      },
+      "test": {
+        "sizes": [
+          200,
+          500
+        ],
+        "orders": [
+          3,
+          5
+        ],
+        "densities_m_over_n": [
+          2,
+          4
+        ],
+        "instance_seeds": [
+          20261021,
+          20261022
+        ],
+        "model_seeds": [
+          0,
+          1,
+          2
+        ]
+      },
+      "definitions": [
+        "weak",
+        "strong"
+      ],
+      "selection": "Select separately per definition by mean over validation instances of (mean seed solution size / degree-greedy size); ties within 1e-12 choose narrower width, then CRA. Never inspect test outcomes to select.",
+      "baselines": [
+        "degree_greedy",
+        "random_score_same_decoder",
+        "random_restart_same_decoder",
+        "scip_milp_greedy_start"
+      ],
+      "timing": "5s approximate wall-time target for setup+training neural, final decoder extra; random restart checks between completed trials; SCIP solver target subtracts Python model and warm-start construction time. Save actual total, setup, solver and decode time; no strict hard-deadline or speed superiority claim.",
+      "architecture": "Unmodified public src.models wrapper, hidden widths w and w/2, BN on, effective dropout zero, uniform node features, Adam 1e-4, weight decay 5e-8, penalty 2. Only width and CRA on/off varied.",
+      "schedule": "CRA = -1 + 1.6 * elapsed setup+training / target seconds; no-CRA = 0. Retain last pre-update training-mode outputs, consistent with public preset's output convention.",
+      "evidence": "Save threshold, repaired, extended and first-forward untrained outputs with same decoder; fixed seeds repeat within instance, not independent samples. Report descriptive instance-level paired effects; no p-values. Dense/indexed kernel comparison is a separate numerical/performance experiment, not a new mathematical objective."
+    },
+    "phase": "test",
+    "selection": {
+      "plan_sha256": "12cde06341c6a98f5831544c01137f0579756f03570ed46f6e59c1190264b1a4",
+      "validation_binding": "ea64cd2f389e3b14455b1af42d617cc02e42945f8487f54fcc4a50eb4f025ccc",
+      "criterion": "Select separately per definition by mean over validation instances of (mean seed solution size / degree-greedy size); ties within 1e-12 choose narrower width, then CRA. Never inspect test outcomes to select.",
+      "validation_scores": {
+        "weak": {
+          "w256_cra": 0.9652709033977384,
+          "w256_none": 0.9748339185963413,
+          "w1024_cra": 1.0076955301623194,
+          "w1024_none": 0.9960878880080999
+        },
+        "strong": {
+          "w256_cra": 0.9874753694581281,
+          "w256_none": 0.9656773399014779,
+          "w1024_cra": 0.9989285714285714,
+          "w1024_none": 0.9999876847290641
+        }
+      },
+      "chosen": {
+        "weak": "w1024_cra",
+        "strong": "w1024_none"
+      }
+    }
+  },
+  "source_sha256": {
+    "mis/controlled.py": "03f5906d16707ead676f729f457744c27508304626aa94bb8d1cdd6238d7f3a9",
+    "mis/indexed_loss.py": "9f0ce92bd3002d1d9243dd21a2ac959a0b7d1845636e1fccbc74d1b6f31e66d3",
+    "mis/problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61",
+    "mis/benchmark.py": "7d2b745b1ce14542663fda99be12b6e7eed153ee9aca82ba6ee4a6ce70475a10",
+    "mis/reference.py": "41f7161a91ee002a51fc99a8ed19950b0a05cf65e03a0f43dc4c6d0694600953",
+    "src/models.py": "9e74af6add5c7940bfd95466543f10085ae49b42060802599da78271b1d29d79",
+    "src/train.py": "2ce090b16f8331a4f2571787846a11fd79b4a44e8d6caecae2b82065e7a37dde",
+    "scripts/run_controlled.py": "1cd1b42440b60079e0c658403bf4ecd2d618133bb458de30c5cd9f9203bc22dd"
+  },
+  "binding": "aa32cbd8265a81b441b6e4ab217011364c5f88eda8b6a4216d7e03c6053e7b65",
+  "git_commit_at_start": "e3df0f24633bdda9138ac88393e1acffa022d71b",
+  "environment": {
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "cpu_threads": 1
+  }
+}

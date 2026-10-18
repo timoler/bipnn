@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "protocol": {
+    "datasets": [
+      "cora",
+      "high",
+      "primary"
+    ],
+    "definitions": [
+      "weak",
+      "strong"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "repeats_per_method": 3,
+    "warmups_per_method": 1,
+    "scores": "random.Random(seed).random(), identical list supplied to both methods",
+    "score_reuse": "same dataset and seed reuse the same scores across weak/strong",
+    "method_order": "alternate reference-first and fast-first on each repeat; initial order alternates by case",
+    "timing": "perf_counter wall seconds and process_time CPU seconds; includes index construction on every fast call",
+    "warmup_timing": "warmups excluded from trial timing; no index or solution is reused",
+    "verification": "entire per-stage output dictionaries must match exactly on every repetition",
+    "cpu_threads": 1,
+    "gpu_used": false,
+    "scope": "implementation-only benchmark; no change to frozen neural experiment decoder"
+  },
+  "source_sha256": {
+    "mis/fast_decode.py": "d999e0a6b9133cb0a1655c136cb762dac782ffbf2f1181ece04a8778bc2a1f94",
+    "mis/problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61",
+    "mis/controlled.py": "03f5906d16707ead676f729f457744c27508304626aa94bb8d1cdd6238d7f3a9",
+    "mis/datasets.py": "d83557abd969bec00c524916f121752ce1355b365ea85901bca96d994d1b34af",
+    "scripts/benchmark_decode.py": "47785414e673053b835ad6e08a668626072d1b1a79d163552ebce0a9529ea78d"
+  },
+  "git_commit_at_start": "e3df0f24633bdda9138ac88393e1acffa022d71b",
+  "environment": {
+    "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:49:16) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "",
+    "logical_cpu_count": 20,
+    "torch": "2.8.0+cu128",
+    "torch_threads": 1,
+    "torch_interop_threads": 1,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "timing_conditions": "ordinary desktop process; CPU affinity and background workloads are not controlled"
+  },
+  "instances": {
+    "cora": {
+      "path": "instances/cora.json",
+      "sha256": "0a5033128afe77f8ae16457056e479aa5546522d5da84955dd2ed7567cc3d8de",
+      "raw_sha256": "58f8fbc5c7fc0118f6d8f222400f6d61ad3c9467362a2211bd7925441c6a8ae2",
+      "lf_normalized_sha256": "8b6632b64bd139eb2e66a20904e3acd1c7202ac214272271f182688c1e893be5"
+    },
+    "high": {
+      "path": "instances/high.json",
+      "sha256": "f6d224052bc52a29d8f9ddd2e5026646a6b4cb5dcbf1b320ffe37872467bb5cd",
+      "raw_sha256": "34bd8752f971efd1e96339529891a6fd86ed9a7279e95c2e17f63221f7c74595",
+      "lf_normalized_sha256": "81de2ca7ce7f4d00b33403241ff048359b8c8040af4fcd2697b79a481a279e60"
+    },
+    "primary": {
+      "path": "instances/primary.json",
+      "sha256": "3075811c1674bff7307cfd96b81aa1fd3f219f70b153d2ed2217f0687011840a",
+      "raw_sha256": "4fb1423a5f110aa5462087056769931af3f95cdd1ec17aace5be22eec6c68936",
+      "lf_normalized_sha256": "9cdbe0fdc2638b8ad2357b9cbe608b2219d2119535d063d14f5cdac49e752eb4"
+    }
+  }
+}

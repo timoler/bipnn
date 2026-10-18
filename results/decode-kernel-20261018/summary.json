@@ -1,0 +1,734 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "case_count": 18,
+  "timed_decode_calls": 108,
+  "all_stages_identical": true,
+  "cases": [
+    {
+      "case_id": "cora-weak-seed0",
+      "dataset": "cora",
+      "definition": "weak",
+      "seed": 0,
+      "case_file": "cases/cora-weak-seed0.json",
+      "n": 1330,
+      "edges": 1413,
+      "raw_size": 661,
+      "repaired_size": 521,
+      "size": 972,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            1.0782463999999994,
+            0.9660963999999979,
+            0.910820300000001
+          ],
+          "mean_seconds": 0.9850543666666661,
+          "median_seconds": 0.9660963999999979,
+          "min_seconds": 0.910820300000001,
+          "max_seconds": 1.0782463999999994
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.008771599999999324,
+            0.008037099999999242,
+            0.009060300000001575
+          ],
+          "mean_seconds": 0.008623000000000047,
+          "median_seconds": 0.008771599999999324,
+          "min_seconds": 0.008037099999999242,
+          "max_seconds": 0.009060300000001575
+        }
+      },
+      "median_speedup_reference_over_fast": 110.13913083132749,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "cora-weak-seed1",
+      "dataset": "cora",
+      "definition": "weak",
+      "seed": 1,
+      "case_file": "cases/cora-weak-seed1.json",
+      "n": 1330,
+      "edges": 1413,
+      "raw_size": 692,
+      "repaired_size": 543,
+      "size": 959,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.8844595999999996,
+            0.6411671999999982,
+            0.6785186000000003
+          ],
+          "mean_seconds": 0.7347151333333327,
+          "median_seconds": 0.6785186000000003,
+          "min_seconds": 0.6411671999999982,
+          "max_seconds": 0.8844595999999996
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.0035178999999985194,
+            0.0032286999999975308,
+            0.003047800000000933
+          ],
+          "mean_seconds": 0.0032647999999989943,
+          "median_seconds": 0.0032286999999975308,
+          "min_seconds": 0.003047800000000933,
+          "max_seconds": 0.0035178999999985194
+        }
+      },
+      "median_speedup_reference_over_fast": 210.1522594234581,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "cora-weak-seed2",
+      "dataset": "cora",
+      "definition": "weak",
+      "seed": 2,
+      "case_file": "cases/cora-weak-seed2.json",
+      "n": 1330,
+      "edges": 1413,
+      "raw_size": 671,
+      "repaired_size": 532,
+      "size": 947,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.6095913999999993,
+            0.5757480000000008,
+            0.5963238000000004
+          ],
+          "mean_seconds": 0.5938877333333336,
+          "median_seconds": 0.5963238000000004,
+          "min_seconds": 0.5757480000000008,
+          "max_seconds": 0.6095913999999993
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.0035050000000005355,
+            0.0037489000000014983,
+            0.0033277999999974384
+          ],
+          "mean_seconds": 0.0035272333333331574,
+          "median_seconds": 0.0035050000000005355,
+          "min_seconds": 0.0033277999999974384,
+          "max_seconds": 0.0037489000000014983
+        }
+      },
+      "median_speedup_reference_over_fast": 170.13517831666456,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "cora-strong-seed0",
+      "dataset": "cora",
+      "definition": "strong",
+      "seed": 0,
+      "case_file": "cases/cora-strong-seed0.json",
+      "n": 1330,
+      "edges": 1413,
+      "raw_size": 661,
+      "repaired_size": 257,
+      "size": 535,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            1.1815323000000006,
+            1.2929005999999994,
+            1.2632521999999966
+          ],
+          "mean_seconds": 1.2458950333333323,
+          "median_seconds": 1.2632521999999966,
+          "min_seconds": 1.1815323000000006,
+          "max_seconds": 1.2929005999999994
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.006433200000000028,
+            0.003728799999997534,
+            0.0034770000000001744
+          ],
+          "mean_seconds": 0.004546333333332579,
+          "median_seconds": 0.003728799999997534,
+          "min_seconds": 0.0034770000000001744,
+          "max_seconds": 0.006433200000000028
+        }
+      },
+      "median_speedup_reference_over_fast": 338.7825037547822,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "cora-strong-seed1",
+      "dataset": "cora",
+      "definition": "strong",
+      "seed": 1,
+      "case_file": "cases/cora-strong-seed1.json",
+      "n": 1330,
+      "edges": 1413,
+      "raw_size": 692,
+      "repaired_size": 239,
+      "size": 520,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            1.469325399999999,
+            1.1960411000000022,
+            1.2285781
+          ],
+          "mean_seconds": 1.2979815333333338,
+          "median_seconds": 1.2285781,
+          "min_seconds": 1.1960411000000022,
+          "max_seconds": 1.469325399999999
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.003811800000001142,
+            0.003779599999994332,
+            0.004053899999995281
+          ],
+          "mean_seconds": 0.003881766666663585,
+          "median_seconds": 0.003811800000001142,
+          "min_seconds": 0.003779599999994332,
+          "max_seconds": 0.004053899999995281
+        }
+      },
+      "median_speedup_reference_over_fast": 322.3091715199202,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "cora-strong-seed2",
+      "dataset": "cora",
+      "definition": "strong",
+      "seed": 2,
+      "case_file": "cases/cora-strong-seed2.json",
+      "n": 1330,
+      "edges": 1413,
+      "raw_size": 671,
+      "repaired_size": 265,
+      "size": 520,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            1.3731458999999973,
+            1.1050650999999974,
+            1.2620655999999997
+          ],
+          "mean_seconds": 1.2467588666666647,
+          "median_seconds": 1.2620655999999997,
+          "min_seconds": 1.1050650999999974,
+          "max_seconds": 1.3731458999999973
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.003569900000002235,
+            0.004035999999999262,
+            0.004084899999995173
+          ],
+          "mean_seconds": 0.0038969333333322234,
+          "median_seconds": 0.004035999999999262,
+          "min_seconds": 0.003569900000002235,
+          "max_seconds": 0.004084899999995173
+        }
+      },
+      "median_speedup_reference_over_fast": 312.7020812686398,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "high-weak-seed0",
+      "dataset": "high",
+      "definition": "weak",
+      "seed": 0,
+      "case_file": "cases/high-weak-seed0.json",
+      "n": 327,
+      "edges": 7818,
+      "raw_size": 168,
+      "repaired_size": 12,
+      "size": 34,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            2.4233981,
+            2.5477615,
+            3.501876000000003
+          ],
+          "mean_seconds": 2.824345200000001,
+          "median_seconds": 2.5477615,
+          "min_seconds": 2.4233981,
+          "max_seconds": 3.501876000000003
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.012898299999996254,
+            0.010464499999997656,
+            0.0282136999999949
+          ],
+          "mean_seconds": 0.01719216666666294,
+          "median_seconds": 0.012898299999996254,
+          "min_seconds": 0.010464499999997656,
+          "max_seconds": 0.0282136999999949
+        }
+      },
+      "median_speedup_reference_over_fast": 197.5269221525891,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "high-weak-seed1",
+      "dataset": "high",
+      "definition": "weak",
+      "seed": 1,
+      "case_file": "cases/high-weak-seed1.json",
+      "n": 327,
+      "edges": 7818,
+      "raw_size": 159,
+      "repaired_size": 14,
+      "size": 40,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            3.6562512,
+            2.8333073000000013,
+            2.6873451000000017
+          ],
+          "mean_seconds": 3.0589678666666678,
+          "median_seconds": 2.8333073000000013,
+          "min_seconds": 2.6873451000000017,
+          "max_seconds": 3.6562512
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.015808299999996223,
+            0.013382000000000005,
+            0.01923259999999516
+          ],
+          "mean_seconds": 0.016140966666663797,
+          "median_seconds": 0.015808299999996223,
+          "min_seconds": 0.013382000000000005,
+          "max_seconds": 0.01923259999999516
+        }
+      },
+      "median_speedup_reference_over_fast": 179.2290948426256,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "high-weak-seed2",
+      "dataset": "high",
+      "definition": "weak",
+      "seed": 2,
+      "case_file": "cases/high-weak-seed2.json",
+      "n": 327,
+      "edges": 7818,
+      "raw_size": 169,
+      "repaired_size": 15,
+      "size": 39,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            2.9346280999999976,
+            1.4431354000000027,
+            1.8529920999999945
+          ],
+          "mean_seconds": 2.0769185333333318,
+          "median_seconds": 1.8529920999999945,
+          "min_seconds": 1.4431354000000027,
+          "max_seconds": 2.9346280999999976
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.01095509999998967,
+            0.009608599999992862,
+            0.024526300000005108
+          ],
+          "mean_seconds": 0.01502999999999588,
+          "median_seconds": 0.01095509999998967,
+          "min_seconds": 0.009608599999992862,
+          "max_seconds": 0.024526300000005108
+        }
+      },
+      "median_speedup_reference_over_fast": 169.1442433206216,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "high-strong-seed0",
+      "dataset": "high",
+      "definition": "strong",
+      "seed": 0,
+      "case_file": "cases/high-strong-seed0.json",
+      "n": 327,
+      "edges": 7818,
+      "raw_size": 168,
+      "repaired_size": 12,
+      "size": 32,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            2.9356025999999957,
+            3.63850699999999,
+            3.9699606000000074
+          ],
+          "mean_seconds": 3.5146900666666645,
+          "median_seconds": 3.63850699999999,
+          "min_seconds": 2.9356025999999957,
+          "max_seconds": 3.9699606000000074
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.03724180000000388,
+            0.041427100000007044,
+            0.037381300000006945
+          ],
+          "mean_seconds": 0.03868340000000595,
+          "median_seconds": 0.037381300000006945,
+          "min_seconds": 0.03724180000000388,
+          "max_seconds": 0.041427100000007044
+        }
+      },
+      "median_speedup_reference_over_fast": 97.3349508978905,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "high-strong-seed1",
+      "dataset": "high",
+      "definition": "strong",
+      "seed": 1,
+      "case_file": "cases/high-strong-seed1.json",
+      "n": 327,
+      "edges": 7818,
+      "raw_size": 159,
+      "repaired_size": 14,
+      "size": 39,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            2.8930431,
+            3.415118300000003,
+            2.849615599999993
+          ],
+          "mean_seconds": 3.052592333333332,
+          "median_seconds": 2.8930431,
+          "min_seconds": 2.849615599999993,
+          "max_seconds": 3.415118300000003
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.012124900000003436,
+            0.011533499999998753,
+            0.03767359999999087
+          ],
+          "mean_seconds": 0.020443999999997686,
+          "median_seconds": 0.012124900000003436,
+          "min_seconds": 0.011533499999998753,
+          "max_seconds": 0.03767359999999087
+        }
+      },
+      "median_speedup_reference_over_fast": 238.6034606470305,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "high-strong-seed2",
+      "dataset": "high",
+      "definition": "strong",
+      "seed": 2,
+      "case_file": "cases/high-strong-seed2.json",
+      "n": 327,
+      "edges": 7818,
+      "raw_size": 169,
+      "repaired_size": 14,
+      "size": 35,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            1.8521233999999964,
+            2.7683364000000097,
+            3.187511200000003
+          ],
+          "mean_seconds": 2.602657000000003,
+          "median_seconds": 2.7683364000000097,
+          "min_seconds": 1.8521233999999964,
+          "max_seconds": 3.187511200000003
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.011603500000006761,
+            0.01605189999999368,
+            0.014498400000007905
+          ],
+          "mean_seconds": 0.014051266666669449,
+          "median_seconds": 0.014498400000007905,
+          "min_seconds": 0.011603500000006761,
+          "max_seconds": 0.01605189999999368
+        }
+      },
+      "median_speedup_reference_over_fast": 190.9408210560131,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "primary-weak-seed0",
+      "dataset": "primary",
+      "definition": "weak",
+      "seed": 0,
+      "case_file": "cases/primary-weak-seed0.json",
+      "n": 242,
+      "edges": 12704,
+      "raw_size": 128,
+      "repaired_size": 2,
+      "size": 12,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            3.2947467999999986,
+            2.8902018,
+            3.4891925000000015
+          ],
+          "mean_seconds": 3.2247137,
+          "median_seconds": 3.2947467999999986,
+          "min_seconds": 2.8902018,
+          "max_seconds": 3.4891925000000015
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.0181319000000002,
+            0.016160200000001623,
+            0.05770200000000614
+          ],
+          "mean_seconds": 0.030664700000002654,
+          "median_seconds": 0.0181319000000002,
+          "min_seconds": 0.016160200000001623,
+          "max_seconds": 0.05770200000000614
+        }
+      },
+      "median_speedup_reference_over_fast": 181.70995869158565,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "primary-weak-seed1",
+      "dataset": "primary",
+      "definition": "weak",
+      "seed": 1,
+      "case_file": "cases/primary-weak-seed1.json",
+      "n": 242,
+      "edges": 12704,
+      "raw_size": 122,
+      "repaired_size": 6,
+      "size": 16,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            3.013390599999994,
+            3.4482963000000098,
+            2.8790398000000152
+          ],
+          "mean_seconds": 3.113575566666673,
+          "median_seconds": 3.013390599999994,
+          "min_seconds": 2.8790398000000152,
+          "max_seconds": 3.4482963000000098
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.017808200000004604,
+            0.07121100000000524,
+            0.061389200000007804
+          ],
+          "mean_seconds": 0.05013613333333922,
+          "median_seconds": 0.061389200000007804,
+          "min_seconds": 0.017808200000004604,
+          "max_seconds": 0.07121100000000524
+        }
+      },
+      "median_speedup_reference_over_fast": 49.0866569363929,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "primary-weak-seed2",
+      "dataset": "primary",
+      "definition": "weak",
+      "seed": 2,
+      "case_file": "cases/primary-weak-seed2.json",
+      "n": 242,
+      "edges": 12704,
+      "raw_size": 119,
+      "repaired_size": 2,
+      "size": 13,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            2.971924999999999,
+            3.2456056000000046,
+            2.811078199999997
+          ],
+          "mean_seconds": 3.0095362666666667,
+          "median_seconds": 2.971924999999999,
+          "min_seconds": 2.811078199999997,
+          "max_seconds": 3.2456056000000046
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.02858120000001918,
+            0.05568800000000351,
+            0.021792500000003656
+          ],
+          "mean_seconds": 0.035353900000008785,
+          "median_seconds": 0.02858120000001918,
+          "min_seconds": 0.021792500000003656,
+          "max_seconds": 0.05568800000000351
+        }
+      },
+      "median_speedup_reference_over_fast": 103.98181321980898,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "primary-strong-seed0",
+      "dataset": "primary",
+      "definition": "strong",
+      "seed": 0,
+      "case_file": "cases/primary-strong-seed0.json",
+      "n": 242,
+      "edges": 12704,
+      "raw_size": 128,
+      "repaired_size": 2,
+      "size": 12,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            2.5909112999999877,
+            3.8085510000000227,
+            3.6282602999999938
+          ],
+          "mean_seconds": 3.3425742000000014,
+          "median_seconds": 3.6282602999999938,
+          "min_seconds": 2.5909112999999877,
+          "max_seconds": 3.8085510000000227
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.0156565999999998,
+            0.02703719999999521,
+            0.016474700000003395
+          ],
+          "mean_seconds": 0.0197228333333328,
+          "median_seconds": 0.016474700000003395,
+          "min_seconds": 0.0156565999999998,
+          "max_seconds": 0.02703719999999521
+        }
+      },
+      "median_speedup_reference_over_fast": 220.23225309105757,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "primary-strong-seed1",
+      "dataset": "primary",
+      "definition": "strong",
+      "seed": 1,
+      "case_file": "cases/primary-strong-seed1.json",
+      "n": 242,
+      "edges": 12704,
+      "raw_size": 122,
+      "repaired_size": 4,
+      "size": 14,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            4.029902700000008,
+            3.75218049999998,
+            3.6815317999999877
+          ],
+          "mean_seconds": 3.821204999999992,
+          "median_seconds": 3.75218049999998,
+          "min_seconds": 3.6815317999999877,
+          "max_seconds": 4.029902700000008
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.01679550000000063,
+            0.01528089999999338,
+            0.039727400000003854
+          ],
+          "mean_seconds": 0.02393459999999929,
+          "median_seconds": 0.01679550000000063,
+          "min_seconds": 0.01528089999999338,
+          "max_seconds": 0.039727400000003854
+        }
+      },
+      "median_speedup_reference_over_fast": 223.40391771604536,
+      "all_stages_identical": true
+    },
+    {
+      "case_id": "primary-strong-seed2",
+      "dataset": "primary",
+      "definition": "strong",
+      "seed": 2,
+      "case_file": "cases/primary-strong-seed2.json",
+      "n": 242,
+      "edges": 12704,
+      "raw_size": 119,
+      "repaired_size": 2,
+      "size": 12,
+      "timing": {
+        "reference_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            3.506523399999992,
+            3.3669849999999997,
+            3.8608468000000187
+          ],
+          "mean_seconds": 3.5781184000000033,
+          "median_seconds": 3.506523399999992,
+          "min_seconds": 3.3669849999999997,
+          "max_seconds": 3.8608468000000187
+        },
+        "incidence_heap_decode_stages": {
+          "trials": 3,
+          "wall_seconds": [
+            0.04016680000000861,
+            0.03817079999998896,
+            0.0330954999999733
+          ],
+          "mean_seconds": 0.03714436666665696,
+          "median_seconds": 0.03817079999998896,
+          "min_seconds": 0.0330954999999733,
+          "max_seconds": 0.04016680000000861
+        }
+      },
+      "median_speedup_reference_over_fast": 91.864026952566,
+      "all_stages_identical": true
+    }
+  ],
+  "speedup_scope": "descriptive CPU decoding times on this desktop; not neural solve speedup",
+  "speedup_median_across_cases": 186.3253898737994,
+  "speedup_geometric_mean_across_cases": 170.58963159027113,
+  "speedup_min": 49.0866569363929,
+  "speedup_max": 338.7825037547822
+}

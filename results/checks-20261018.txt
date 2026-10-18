@@ -1,0 +1,44 @@
+Local filesystem prefix in warning normalized to [project].
+test_generator_is_fixed_and_retains_declared_nodes (test_benchmark.BenchmarkTests) ... ok
+test_random_controls_save_their_actual_best_solution (test_benchmark.BenchmarkTests) ... ok
+test_time_budget_stops_and_keeps_valid_output (test_benchmark.BenchmarkTests) ... ok
+test_binding_changes_with_protocol_not_key_order (test_controlled.ControlledTests) ... ok
+test_stages_match_original_decoder_and_expose_initial_violations (test_controlled.ControlledTests) ... ok
+test_training_keeps_first_forward_and_decoder_evidence (test_controlled.ControlledTests) ... ok
+test_duplicate_edges_counted_and_removed (test_datasets.DatasetTests) ... ok
+test_explicit_header_counts_and_reversible_mapping (test_datasets.DatasetTests) ... ok
+test_isolates_require_complete_label_universe (test_datasets.DatasetTests) ... ok
+test_no_header_guessing_invalid_header_and_hash (test_datasets.DatasetTests) ... ok
+test_no_header_keeps_first_pair_and_three_node_edge (test_datasets.DatasetTests) ... ok
+test_pair_redundancy_audit_does_not_remove_higher_edges (test_datasets.DatasetTests) ... ok
+test_pinned_upstream_datasets_and_cora_discrepancy (test_datasets.DatasetTests) ... ok
+test_repeated_vertices_invalid_and_singleton_preserved (test_datasets.DatasetTests) ... ok
+test_all_small_score_assignments_and_per_stage_equivalence (test_fast_decode.FastDecodeTests) ... ok
+test_finite_scores_outside_probability_interval_still_match (test_fast_decode.FastDecodeTests) ... ok
+test_global_repair_priority_and_stale_heap_candidates (test_fast_decode.FastDecodeTests) ... ok
+test_invalid_definition_length_and_nonfinite_scores (test_fast_decode.FastDecodeTests) ... ok
+test_random_mixed_orders_with_ties_and_boundary_scores (test_fast_decode.FastDecodeTests) ... ok
+test_singletons_isolates_and_no_edges (test_fast_decode.FastDecodeTests) ... ok
+test_strong_edge_can_remain_violated_after_several_removals (test_fast_decode.FastDecodeTests) ... ok
+test_all_isolated_vertices (test_indexed_loss.IndexedLossTests) ... ok
+test_gradcheck_nonboundary (test_indexed_loss.IndexedLossTests) ... ok
+test_mixed_orders_values_and_gradients_at_boundaries (test_indexed_loss.IndexedLossTests) ... ok
+test_short_cpu_training (test_neural.NeuralTests) ... ok
+test_values_and_gradients_match_direct_polynomial (test_neural.NeuralTests) ... ok
+test_definitions_differ (test_problem.ProblemTests) ... ok
+test_exhaustive_energy_equivalence_and_repair (test_problem.ProblemTests) ... ok
+test_isolates_and_singleton (test_problem.ProblemTests) ... ok
+test_no_edges (test_problem.ProblemTests) ... ok
+test_strong_clique_equivalence (test_problem.ProblemTests) ... ok
+test_validation (test_problem.ProblemTests) ... ok
+test_larger_disjoint_pairs_with_isolates (test_reference.ReferenceTests) ... ok
+test_matches_enumeration (test_reference.ReferenceTests) ... ok
+test_scip_matches_enumeration_and_preserves_warm_start (test_reference.ReferenceTests) ... [project]/mis/reference.py:52: UserWarning: linked SCIP 9.02 is not recommended for this version of PySCIPOpt - use version 9.2.1
+  model = Model("hypergraph_mis")
+ok
+test_scip_total_budget_retains_feasible_warm_start (test_reference.ReferenceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.674s
+
+OK

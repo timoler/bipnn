@@ -1,0 +1,23 @@
+{
+  "plan_sha256": "12cde06341c6a98f5831544c01137f0579756f03570ed46f6e59c1190264b1a4",
+  "validation_binding": "ea64cd2f389e3b14455b1af42d617cc02e42945f8487f54fcc4a50eb4f025ccc",
+  "criterion": "Select separately per definition by mean over validation instances of (mean seed solution size / degree-greedy size); ties within 1e-12 choose narrower width, then CRA. Never inspect test outcomes to select.",
+  "validation_scores": {
+    "weak": {
+      "w256_cra": 0.9652709033977384,
+      "w256_none": 0.9748339185963413,
+      "w1024_cra": 1.0076955301623194,
+      "w1024_none": 0.9960878880080999
+    },
+    "strong": {
+      "w256_cra": 0.9874753694581281,
+      "w256_none": 0.9656773399014779,
+      "w1024_cra": 0.9989285714285714,
+      "w1024_none": 0.9999876847290641
+    }
+  },
+  "chosen": {
+    "weak": "w1024_cra",
+    "strong": "w1024_none"
+  }
+}
