@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "purpose": "Common fast decoding, fixed-horizon anytime quality curves, and larger weak-MIS instances",
+  "checkpoints_seconds": [5, 15, 30],
+  "candidate_interval_seconds": 1,
+  "model_seeds": [0, 1, 2],
+  "locked_configs": {"weak": "w1024_cra", "strong": "w1024_none"},
+  "selection_source": "results/controlled-validation-20261018/selection.json",
+  "synthetic": [
+    {"n": 500, "k": 3, "density": 2, "seed": 20261023, "definitions": ["weak"]},
+    {"n": 500, "k": 5, "density": 4, "seed": 20261023, "definitions": ["weak"]},
+    {"n": 1000, "k": 3, "density": 2, "seed": 20261024, "definitions": ["weak"]},
+    {"n": 1000, "k": 5, "density": 4, "seed": 20261024, "definitions": ["weak"]},
+    {"n": 2000, "k": 3, "density": 2, "seed": 20261024, "definitions": ["weak"]},
+    {"n": 2000, "k": 5, "density": 4, "seed": 20261024, "definitions": ["weak"]}
+  ],
+  "real": {"datasets": ["cora", "high", "primary"], "definitions": ["weak", "strong"]},
+  "learning": "Same public network and indexed MIS objective as prior controlled evaluation. Adam 1e-4, weight decay 5e-8, penalty 2, uniform features, effective dropout zero; no new hyperparameter selection.",
+  "annealing": "Weak CRA uses fixed 30-second horizon: -1+1.6*min(1,elapsed setup+training+online decoding / 30). Strong coefficient zero. Early checkpoints are not independent runs with compressed schedules.",
+  "neural_selection": "Empty feasible incumbent at time zero. Decode first pre-update training forward, then approximately every 1 second and 0.1s before each cutoff. Only candidates whose complete decoding is available by cutoff may enter that snapshot; first maximum wins ties. All online decoding is charged. Save every candidate plus best/latest prefix indices and initial/terminal roles.",
+  "random_selection": "Single seeded RNG trajectory for 30 seconds with same fast decoder; empty incumbent then first trial and prefix-best. Store per-trial completed time/size and all improving candidate scores. Snapshots use only trials complete by cutoff, with total trials and best trial index.",
+  "scip": "Independent 5/15/30-second targets with event-traced incumbents and past bounds. Single thread, fast equivalent degree warm start, Python construction deducted, minimum solver 1ms. Primary snapshot uses only events complete by cutoff; late terminal solution/optimality excluded and saved as completion diagnostic.",
+  "timing": "Snapshot emission can overshoot a target between operations; save cutoff, actual emitted total_seconds, best_available_seconds, overshoot and deadline_missed. Quality uses strict past-completed prefixes, never future candidates. Complete seed trajectory and its snapshots saved atomically; do not splice resumed trajectories. JSON writes and independent verification excluded.",
+  "scope": "Synthetic seeds are new; previously examined real data are explicitly re-evaluated, not unseen test data. Larger instances focus on weak MIS. Related synthetic structures and repeated seeds are descriptive, not independent statistical replicates. A checkpoint is not an independent training run."
+}
