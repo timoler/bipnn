@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "purpose": "Supplementary sampling-calendar correction for the 15-second horizon contrast; no outcome-based configuration or instance selection",
+  "parent_manifest_binding": "b4fb9524e22f32e9db97a5b17e822a3116049b48c189d4f5cbe52af5dad39e9a",
+  "parent_plan": "experiments/completion-20261020.json",
+  "registration": {
+    "scope": "The parent suite was already running. This supplementary protocol and its source are fixed before this supplement is executed, not a claim of project-wide preregistration.",
+    "decision_basis": "Source review found parent compressed15 targets=[15] omit the 4.9-second candidate and 5-second snapshot present in fixed30 targets=[5,15,30]. The correction follows the nominal calendar mismatch, not favorable or unfavorable scores.",
+    "preserve_all": "Keep all five weak ablation instances and all three seeds; preserve parent unmatched15 results as diagnostics."
+  },
+  "definition": "weak",
+  "model_seeds": [0, 1, 2],
+  "variant": {
+    "annealing": "cra",
+    "penalty": 2,
+    "targets": [5, 15],
+    "sampling_control": "matched_pre15_calendar"
+  },
+  "width": 1024,
+  "candidate_interval_seconds": 1,
+  "comparison_cutoff_seconds": 15,
+  "paired_initial_outputs": {"state_and_feature_hashes": "exact equality", "score_relative_tolerance": 0.00001, "score_absolute_tolerance": 0.00001, "scope": "GPU sparse aggregation can vary numerically; identical optimization trajectories are not claimed"},
+  "calendar_scope": "Nominal candidate due times strictly before 15 seconds and nominal snapshot targets strictly before 15 seconds match parent fixed30. A parent candidate due at 15 seconds cannot complete by the cutoff. Actual candidate times, training epochs and response latency need not match and are retained.",
+  "inputs": [
+    {"name": "n500_k3_d2_s20261023", "parent_instance": "instances/n500_k3_d2_s20261023.json", "fingerprint": "dcfe53efd742f8eb7076c4a604b939c62e8f9ad028a0cd46cc207507548c5fcd"},
+    {"name": "n500_k5_d4_s20261023", "parent_instance": "instances/n500_k5_d4_s20261023.json", "fingerprint": "de609130c4c6306ad659936b3a421d00d71b393d062b998a27956ba1c281e613"},
+    {"name": "cora", "parent_instance": "instances/cora.json", "fingerprint": "33a93fd54d4de0f59720cca8bcdd12ff7b7f69246bb4b1f7fb90ef0e42d809f5"},
+    {"name": "high", "parent_instance": "instances/high.json", "fingerprint": "655e18cc0bd24e282af0fb2e75761c302bba8fa8f1d2c415b81f057046488c0c"},
+    {"name": "primary", "parent_instance": "instances/primary.json", "fingerprint": "ad06272a79a6c086f4f44be5c82c8d74178511d6553609d82880cadb9565aade"}
+  ],
+  "primary_contrasts": {
+    "five_seconds": "Keep parent independent compressed5 targets=[5] versus parent fixed30 targets=[5,15,30].",
+    "fifteen_seconds": "Use this matched15 targets=[5,15] versus parent fixed30 targets=[5,15,30].",
+    "parent_unmatched15": "Retain targets=[15] as diagnostic only; do not drop its raw results.",
+    "child_five_second_snapshot": "Report separately; it does not replace the independent compressed5 contrast."
+  },
+  "expected_counts": {"cases": 5, "neural_runs": 15, "primary_records": 30},
+  "execution": "Run only after the parent runner has exited. GPU warmup and trials are serial; no concurrent GPU benchmark. Warmup uses a six-node problem, three fixed epochs and a short targets=[0.02,0.04] timed run, outside measured trials. Parent summary completion is not required because combined auditing follows child execution.",
+  "binding": "Verify the parent manifest binding and all of its raw source hashes, current selection bytes, actual environment and all five input fingerprints. Bind the new runner, this plan and input file bytes independently. Refuse resume after source, plan, environment or input changes.",
+  "scope": "A bounded methodological correction on already examined weak ablation inputs. No replacement hyperparameter selection, distribution-wide or statistical-significance claim."
+}

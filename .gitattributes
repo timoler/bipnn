@@ -37,3 +37,9 @@ scripts/audit_completion.py text eol=lf
 scripts/plot_completion.py text eol=lf
 scripts/summarize_controlled.py text eol=lf
 scripts/summarize_anytime.py text eol=lf
+scripts/run_schedule_match.py text eol=lf
+experiments/completion-20261020.json text eol=lf
+experiments/schedule-match-20261020.json text eol=lf
+# The matched supplement binds these parent JSON files by their raw byte hashes.
+results/completion-20261020/manifest.json text eol=crlf
+results/completion-20261020/instances/*.json text eol=crlf
