@@ -1,0 +1,1 @@
+Only the transcript identity/host header and shell invocation were removed from this public copy. Execution output is intact. An unredacted local backup is retained outside the repository.

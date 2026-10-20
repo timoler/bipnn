@@ -1,0 +1,5 @@
+Using Python 3.9.23 environment at: .venv-clean-20261020-r3
+Checked 60 packages in 3ms
+Found 1 incompatibility
+The package `dhg` requires `torch>=1.12.1,<2.0`, but `2.8.0+cu128` is installed
+exit_code=1

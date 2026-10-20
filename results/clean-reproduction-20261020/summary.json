@@ -1,0 +1,109 @@
+{
+  "complete": true,
+  "environment_directory": ".venv-clean-20261020-r3",
+  "python": "3.9.23",
+  "installed_distributions": 60,
+  "include_system_site_packages": false,
+  "enable_user_site": false,
+  "all_recorded_modules_inside_environment": true,
+  "unit_tests": {
+    "run": 61,
+    "seconds": 0.875,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0
+  },
+  "installer_source_hashes_still_match": {
+    "scripts/setup_mis.ps1": true,
+    "scripts/reproduce_clean.ps1": true,
+    "scripts/inspect_clean_environment.py": true,
+    "scripts/clean_scip_smoke.py": true,
+    "requirements-mis-support.txt": true
+  },
+  "dependency_check": {
+    "exit_code": 1,
+    "incompatibilities": 1,
+    "known_override": "dhg requires torch>=1.12.1,<2.0; installed torch 2.8.0+cu128"
+  },
+  "scip_version": {
+    "printVersion": "9.2.1",
+    "Model.version": 9.02,
+    "warning_preserved": "linked SCIP 9.02 is not recommended for this version of PySCIPOpt - use version 9.2.1"
+  },
+  "gpu_smoke": {
+    "weak": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "epochs": 200,
+      "sizes": [
+        9,
+        9,
+        9
+      ],
+      "exact_size": 9,
+      "raw_feasible": [
+        true,
+        true,
+        true
+      ],
+      "verified_records": 6,
+      "gpu": "NVIDIA GeForce RTX 5070 Ti"
+    },
+    "strong": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "epochs": 200,
+      "sizes": [
+        6,
+        6,
+        6
+      ],
+      "exact_size": 6,
+      "raw_feasible": [
+        true,
+        true,
+        true
+      ],
+      "verified_records": 6,
+      "gpu": "NVIDIA GeForce RTX 5070 Ti"
+    }
+  },
+  "scip_smoke": {
+    "weak": {
+      "size": 9,
+      "exact_size": 9,
+      "optimality_proven": true,
+      "strict_cutoff_size": 9,
+      "verified_records": 1
+    },
+    "strong": {
+      "size": 6,
+      "exact_size": 6,
+      "optimality_proven": true,
+      "strict_cutoff_size": 6,
+      "verified_records": 1
+    }
+  },
+  "earlier_attempts": [
+    {
+      "directory": "results/clean-reproduction-20261020-attempt1",
+      "status": "failed_at_unit_tests",
+      "cause": "Original support list missed upstream initialization imports.",
+      "native_transcript_complete": false
+    },
+    {
+      "directory": "results/clean-reproduction-20261020-attempt2",
+      "status": "prepare_and_smoke_passed",
+      "superseded_because": "Transcript did not capture native commands; final run explicitly tees each command.",
+      "native_transcript_complete": false
+    }
+  ],
+  "scope": "One-machine clean install and correctness smoke; not a clean-environment rerun of formal performance batches.",
+  "verified_solution_records_total": 14
+}

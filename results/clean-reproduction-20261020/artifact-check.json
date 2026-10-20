@@ -1,0 +1,27 @@
+{
+  "report_links_checked": 18,
+  "missing_links": [],
+  "installer_source_hashes_match": {
+    "scripts/setup_mis.ps1": true,
+    "scripts/reproduce_clean.ps1": true,
+    "scripts/inspect_clean_environment.py": true,
+    "scripts/clean_scip_smoke.py": true,
+    "requirements-mis-support.txt": true
+  },
+  "tested_file_hashes_match": {
+    "tests/test_anytime.py": true,
+    "tests/test_benchmark.py": true,
+    "tests/test_completion.py": true,
+    "tests/test_controlled.py": true,
+    "tests/test_datasets.py": true,
+    "tests/test_fast_baselines.py": true,
+    "tests/test_fast_decode.py": true,
+    "tests/test_indexed_loss.py": true,
+    "tests/test_neural.py": true,
+    "tests/test_problem.py": true,
+    "tests/test_reference.py": true
+  },
+  "final_environment_exists": true,
+  "original_environment_exists": true,
+  "superseded_environments_removed": true
+}

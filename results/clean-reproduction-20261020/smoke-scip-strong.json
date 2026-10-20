@@ -1,0 +1,185 @@
+{
+  "purpose": "clean-environment SCIP pipeline verification, not a performance comparison",
+  "definition": "strong",
+  "instance": {
+    "name": "toy_overlap.json",
+    "n": 12,
+    "edges": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        8,
+        9
+      ],
+      [
+        1,
+        4,
+        7,
+        9
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        7,
+        8
+      ]
+    ],
+    "sha256": "58db78be833a2bbb2cac55519b7b94106882cc685af69eca6bf964f9a805993f"
+  },
+  "pyscipopt_version": "5.3.0",
+  "source_sha256": {
+    "mis/fast_baselines.py": "c630644a608cc268edee3f506b2ac0c488575be85b9a161b16584b517a512d6b",
+    "mis/fast_decode.py": "d999e0a6b9133cb0a1655c136cb762dac782ffbf2f1181ece04a8778bc2a1f94",
+    "mis/problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61"
+  },
+  "records": [
+    {
+      "method": "scip_milp_greedy_start",
+      "implementation": "incidence_counts_degree_warm_start_total_budget",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "status": "optimal",
+      "optimality_proven": true,
+      "upper_bound": 6.0,
+      "bound_kind": "scip_dual_bound",
+      "raw_upper_bound": 6.0,
+      "raw_upper_bound_flag": "finite",
+      "raw_upper_bound_is_infinite": false,
+      "raw_upper_bound_infinity_sign": null,
+      "mip_gap": 0.0,
+      "mip_gap_flag": "finite",
+      "mip_gap_is_infinite": false,
+      "mip_gap_infinity_sign": null,
+      "time_limit_seconds": 2.0,
+      "solver_time_limit_seconds": 1.9981888,
+      "build_seconds": 0.001811199999999999,
+      "solver_seconds": 0.0,
+      "warm_start": "degree_greedy",
+      "warm_start_implementation": "incidence_counts_exact_same_order",
+      "warm_start_size": 6,
+      "threads": 1,
+      "random_seed_shift": 0,
+      "budget_policy": "total target minus Python model and warm-start construction; minimum 1ms solver; cleanup included in actual total",
+      "terminal_observed_seconds": 0.003933000000000006,
+      "event_callback_count": 0,
+      "event_callback_seconds": 0.0,
+      "total_seconds": 0.004112699999999997,
+      "incumbent_events": [
+        {
+          "source": "initial_empty",
+          "selected": [],
+          "size": 0,
+          "feasible": true,
+          "available_seconds": 0.0
+        },
+        {
+          "source": "degree_greedy_warm_start",
+          "selected": [
+            0,
+            3,
+            5,
+            7,
+            10,
+            11
+          ],
+          "size": 6,
+          "feasible": true,
+          "available_seconds": 0.0017884999999999984
+        },
+        {
+          "source": "terminal_after_cleanup",
+          "selected": [
+            0,
+            3,
+            5,
+            7,
+            10,
+            11
+          ],
+          "size": 6,
+          "feasible": true,
+          "status": "optimal",
+          "optimality_proven": true,
+          "available_seconds": 0.004112699999999997
+        }
+      ],
+      "bound_events": [
+        {
+          "source": "trivial_node_count",
+          "upper_bound": 12.0,
+          "bound_kind": "trivial_node_count_bound",
+          "available_seconds": 0.0,
+          "raw_upper_bound": null,
+          "raw_upper_bound_flag": "not_observed"
+        },
+        {
+          "upper_bound": 6.0,
+          "bound_kind": "scip_dual_bound",
+          "raw_upper_bound": 6.0,
+          "raw_upper_bound_flag": "finite",
+          "raw_upper_bound_is_infinite": false,
+          "raw_upper_bound_infinity_sign": null,
+          "source": "terminal_after_cleanup",
+          "available_seconds": 0.004112699999999997
+        }
+      ],
+      "terminal_available_seconds": 0.004112699999999997,
+      "completion_available_seconds": 0.004112699999999997,
+      "cutoff": {
+        "selected": [
+          0,
+          3,
+          5,
+          7,
+          10,
+          11
+        ],
+        "size": 6,
+        "feasible": true,
+        "available_seconds": 0.0017884999999999984,
+        "source": "degree_greedy_warm_start",
+        "upper_bound": 6.0,
+        "bound_kind": "scip_dual_bound",
+        "upper_bound_available_seconds": 0.004112699999999997,
+        "raw_upper_bound": 6.0,
+        "raw_upper_bound_flag": "finite",
+        "mip_gap": 0.0,
+        "mip_gap_kind": "derived_from_cutoff_incumbent_and_recorded_upper_bound",
+        "mip_gap_flag": "finite",
+        "optimality_proven": true,
+        "status": "optimal",
+        "deadline_seconds": 2.0,
+        "time_limit_seconds": 2.0,
+        "total_seconds": 0.004112699999999997,
+        "completion_total_seconds": 0.004112699999999997,
+        "solver_completed_before_deadline": true,
+        "overshoot": false,
+        "overshoot_seconds": 0.0,
+        "deadline_missed": false,
+        "policy": "first largest complete incumbent and latest bound available by deadline; terminal evidence requires cleanup completion"
+      },
+      "report_assembly_seconds": 1.180000000000625e-05
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "Only environments created by this reproduction task",
+  "protected_original_environment_exists": true,
+  "final_environment": ".venv-clean-20261020-r3",
+  "final_environment_exists": true,
+  "uv_cache_preserved": true,
+  "removed": [
+    {
+      "environment": ".venv-clean-20261020",
+      "exact_resolved_path_verified": true,
+      "immediate_repo_child": true,
+      "removed": true
+    },
+    {
+      "environment": ".venv-clean-20261020-r2",
+      "exact_resolved_path_verified": true,
+      "immediate_repo_child": true,
+      "removed": true
+    }
+  ]
+}

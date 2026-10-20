@@ -1,0 +1,345 @@
+{
+  "purpose": "small-instance pipeline verification, not a formal benchmark",
+  "created_at_utc": "2026-10-20T03:25:11.046204+00:00",
+  "definition": "strong",
+  "instance": {
+    "name": "toy_overlap.json",
+    "n": 12,
+    "edges": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        8,
+        9
+      ],
+      [
+        1,
+        4,
+        7,
+        9
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        7,
+        8
+      ]
+    ],
+    "sha256": "58db78be833a2bbb2cac55519b7b94106882cc685af69eca6bf964f9a805993f"
+  },
+  "environment": {
+    "python": "3.9.23",
+    "torch": "2.8.0+cu128",
+    "torch_cuda": "12.8",
+    "dhg": "0.9.5",
+    "cpu_threads": 1,
+    "gpu": "NVIDIA GeForce RTX 5070 Ti"
+  },
+  "git_commit": "e00699aecebe5bb1e9417bdb696cfa012d563a63",
+  "git_dirty": true,
+  "source_sha256": {
+    "__init__.py": "718a72f9661c7d859f7f850ee73a35d1a3a8aa9bdda89ad062f388a3a02a1f66",
+    "anytime.py": "ddf70a15d14645252107bd722268c7836d29799dce6622965e05b36fa456043f",
+    "benchmark.py": "7d2b745b1ce14542663fda99be12b6e7eed153ee9aca82ba6ee4a6ce70475a10",
+    "completion.py": "a867cbe9781aaf7d4265db221968babbf949cbe9914d71a74bbbb73807addf7d",
+    "controlled.py": "03f5906d16707ead676f729f457744c27508304626aa94bb8d1cdd6238d7f3a9",
+    "datasets.py": "d83557abd969bec00c524916f121752ce1355b365ea85901bca96d994d1b34af",
+    "fast_baselines.py": "c630644a608cc268edee3f506b2ac0c488575be85b9a161b16584b517a512d6b",
+    "fast_decode.py": "d999e0a6b9133cb0a1655c136cb762dac782ffbf2f1181ece04a8778bc2a1f94",
+    "indexed_loss.py": "9f0ce92bd3002d1d9243dd21a2ac959a0b7d1845636e1fccbc74d1b6f31e66d3",
+    "neural.py": "79a61d59047f487dabee4934b9fa1fb488a004992bcfb5daeabbf92ae9d3d16b",
+    "problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61",
+    "reference.py": "41f7161a91ee002a51fc99a8ed19950b0a05cf65e03a0f43dc4c6d0694600953",
+    "run.py": "62409dad7f3c1a487a9676e8572121f4c4ab69a9ccb067448d25d92c2354c0de",
+    "verify_report.py": "af7c80abdc784165464a0c79b241b367c1d9722022bcf5f59ebd2d9a36c51997"
+  },
+  "records": [
+    {
+      "method": "degree_greedy",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "total_seconds": 6.269999999997111e-05
+    },
+    {
+      "method": "exact_enumeration",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "total_seconds": 0.006455700000000064
+    },
+    {
+      "method": "highs_milp",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "total_seconds": 0.0019079999999997987,
+      "status": 0,
+      "optimality_proven": true,
+      "upper_bound": 6.0,
+      "mip_gap": 0.0,
+      "time_limit_seconds": 30.0
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 0,
+      "definition": "strong",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "raw_selected": [
+        0,
+        5,
+        10,
+        11
+      ],
+      "raw_size": 4,
+      "raw_feasible": true,
+      "scores": [
+        0.999934196472168,
+        3.895124245900661e-05,
+        8.074441575445235e-05,
+        4.736925802717451e-06,
+        7.681097713430063e-07,
+        0.9999547004699707,
+        1.8755485143628903e-05,
+        1.6036253214224416e-08,
+        2.9128157621016726e-05,
+        2.11931110243313e-05,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -3.999704122543335,
+      "total_seconds": 3.3374981999999997,
+      "build_seconds": 1.1517841999999998,
+      "training_seconds": 2.1835443999999997,
+      "decode_seconds": 0.002173700000000167,
+      "epochs_completed": 200,
+      "peak_allocated_bytes": 18155008,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cuda",
+        "time_limit_seconds": null
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": 3.9963607788085938
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -3.760444402694702
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -3.999188184738159
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -3.999450445175171
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -3.9995789527893066
+        }
+      ]
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 1,
+      "definition": "strong",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "raw_selected": [
+        0,
+        3,
+        5,
+        10,
+        11
+      ],
+      "raw_size": 5,
+      "raw_feasible": true,
+      "scores": [
+        0.9999719858169556,
+        2.7592062679104856e-07,
+        2.1153393390704878e-05,
+        0.9999278783798218,
+        7.66608354751952e-06,
+        0.9999678134918213,
+        1.5689389556428068e-06,
+        2.0907817144255603e-10,
+        6.365775789163308e-06,
+        4.303350124246208e-06,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -4.9997687339782715,
+      "total_seconds": 1.7661162,
+      "build_seconds": 0.0009116000000002344,
+      "training_seconds": 1.7613884999999998,
+      "decode_seconds": 0.0038201999999998293,
+      "epochs_completed": 200,
+      "peak_allocated_bytes": 18155008,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cuda",
+        "time_limit_seconds": null
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": 3.255131959915161
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -3.8215930461883545
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -4.999500274658203
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -4.999637126922607
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -4.999698162078857
+        }
+      ]
+    },
+    {
+      "method": "hgnnp_pubo_repair",
+      "seed": 2,
+      "definition": "strong",
+      "selected": [
+        0,
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "size": 6,
+      "feasible": true,
+      "raw_selected": [
+        0,
+        3,
+        5,
+        10,
+        11
+      ],
+      "raw_size": 5,
+      "raw_feasible": true,
+      "scores": [
+        0.9999717473983765,
+        3.027913635378354e-07,
+        5.002718171454035e-05,
+        0.999920129776001,
+        4.3004311578442866e-07,
+        0.9999896287918091,
+        6.894235411891714e-06,
+        3.215055812688661e-07,
+        0.00025521047064103186,
+        1.0377623766544275e-05,
+        1.0,
+        1.0
+      ],
+      "continuous_energy": -4.999457836151123,
+      "total_seconds": 1.8343918000000006,
+      "build_seconds": 0.0008518999999997945,
+      "training_seconds": 1.8312461000000004,
+      "decode_seconds": 0.002298500000000203,
+      "epochs_completed": 200,
+      "peak_allocated_bytes": 18155008,
+      "settings": {
+        "epochs": 200,
+        "width": 32,
+        "lr": 0.01,
+        "penalty": 2.0,
+        "annealing": 0.1,
+        "device": "cuda",
+        "time_limit_seconds": null
+      },
+      "trace": [
+        {
+          "epoch": 1,
+          "loss_before_update": 6.046647548675537
+        },
+        {
+          "epoch": 50,
+          "loss_before_update": -3.3715574741363525
+        },
+        {
+          "epoch": 100,
+          "loss_before_update": -4.996181488037109
+        },
+        {
+          "epoch": 150,
+          "loss_before_update": -4.9988179206848145
+        },
+        {
+          "epoch": 200,
+          "loss_before_update": -4.999274253845215
+        }
+      ]
+    }
+  ]
+}

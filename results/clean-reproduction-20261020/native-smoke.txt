@@ -1,0 +1,15 @@
+> C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3\Scripts\python.exe -I scripts/inspect_clean_environment.py --output C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\results\clean-reproduction-20261020/environment-smoke.json
+{"checks_passed": true, "python": "3.9.23", "versions": {"torch": "2.8.0+cu128", "torchvision": "0.23.0+cu128", "dhg": "0.9.5", "numpy": "1.26.4", "scipy": "1.13.1", "matplotlib": "3.9.4", "optuna": "4.9.0", "requests": "2.32.5", "scikit-learn": "1.6.1", "pyscipopt": "5.3.0", "torch-geometric": "2.6.1", "dimod": "0.12.18", "dwave-neal": "0.6.0", "dwave-samplers": "1.6.0", "pyqubo": "1.5.0"}, "output": "C:\\Users\\�¼���\\Documents\\Codex\\2026-10-12\\new-chat\\outputs\\bipnn-public\\results\\clean-reproduction-20261020\\environment-smoke.json"}
+> C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3\Scripts\python.exe -E -s -c import torch; assert torch.cuda.is_available(); x=torch.ones(8,device="cuda",requires_grad=True); x.square().sum().backward(); torch.cuda.synchronize(); print(torch.cuda.get_device_name(), torch.__version__, torch.version.cuda); assert x.grad.tolist()==[2.0]*8
+NVIDIA GeForce RTX 5070 Ti 2.8.0+cu128 12.8
+> C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3\Scripts\python.exe -E -s -m mis.run --instance instances/toy_overlap.json --definition weak --device cuda --epochs 200 --seeds 0 1 2 --output C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\results\clean-reproduction-20261020/smoke-gpu-weak.json
+weak seed=0: size=9 raw_feasible=True seconds=3.271
+weak seed=1: size=9 raw_feasible=True seconds=1.916
+weak seed=2: size=9 raw_feasible=True seconds=1.899
+> C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3\Scripts\python.exe -E -s -m mis.run --instance instances/toy_overlap.json --definition strong --device cuda --epochs 200 --seeds 0 1 2 --output C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\results\clean-reproduction-20261020/smoke-gpu-strong.json
+strong seed=0: size=6 raw_feasible=True seconds=3.337
+strong seed=1: size=6 raw_feasible=True seconds=1.766
+strong seed=2: size=6 raw_feasible=True seconds=1.834
+> C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3\Scripts\python.exe -E -s -m mis.verify_report C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\results\clean-reproduction-20261020/smoke-gpu-weak.json C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\results\clean-reproduction-20261020/smoke-gpu-strong.json
+{"report": "smoke-gpu-weak.json", "definition": "weak", "exact_size": 9, "verified_records": 6}
+{"report": "smoke-gpu-strong.json", "definition": "strong", "exact_size": 6, "verified_records": 6}

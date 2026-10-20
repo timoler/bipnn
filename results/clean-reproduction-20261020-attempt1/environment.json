@@ -1,0 +1,53 @@
+{
+  "created_at_utc": "2026-10-20T03:13:20.120456+00:00",
+  "python": "3.9.23",
+  "executable": "C:\\Users\\陈佳政\\Documents\\Codex\\2026-10-12\\new-chat\\outputs\\bipnn-public\\.venv-clean-20261020\\Scripts\\python.exe",
+  "sys_prefix": "C:\\Users\\陈佳政\\Documents\\Codex\\2026-10-12\\new-chat\\outputs\\bipnn-public\\.venv-clean-20261020",
+  "sys_base_prefix": "E:\\Miniconda3",
+  "include_system_site_packages": false,
+  "enable_user_site": false,
+  "python_isolated_flag": 1,
+  "sys_path": [
+    "E:\\Miniconda3\\python39.zip",
+    "E:\\Miniconda3\\DLLs",
+    "E:\\Miniconda3\\lib",
+    "E:\\Miniconda3",
+    "C:\\Users\\陈佳政\\Documents\\Codex\\2026-10-12\\new-chat\\outputs\\bipnn-public\\.venv-clean-20261020",
+    "C:\\Users\\陈佳政\\Documents\\Codex\\2026-10-12\\new-chat\\outputs\\bipnn-public\\.venv-clean-20261020\\lib\\site-packages"
+  ],
+  "pyvenv_configuration": "home = E:\\Miniconda3\ninclude-system-site-packages = false\nversion = 3.9.23\n",
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "dhg": "0.9.5",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.4",
+    "optuna": "4.9.0",
+    "requests": "2.32.5",
+    "scikit-learn": "1.6.1",
+    "pyscipopt": "5.3.0"
+  },
+  "module_origins_relative_to_environment": {
+    "torch": "Lib\\site-packages\\torch\\__init__.py",
+    "torchvision": "Lib\\site-packages\\torchvision\\__init__.py",
+    "dhg": "Lib\\site-packages\\dhg\\__init__.py",
+    "numpy": "Lib\\site-packages\\numpy\\__init__.py",
+    "scipy": "Lib\\site-packages\\scipy\\__init__.py",
+    "matplotlib": "Lib\\site-packages\\matplotlib\\__init__.py",
+    "optuna": "Lib\\site-packages\\optuna\\__init__.py",
+    "requests": "Lib\\site-packages\\requests\\__init__.py",
+    "scikit-learn": "Lib\\site-packages\\sklearn\\__init__.py",
+    "pyscipopt": "Lib\\site-packages\\pyscipopt\\__init__.py"
+  },
+  "torch_cuda": "12.8",
+  "source_sha256": {
+    "scripts/setup_mis.ps1": "d025ea0459a180167f2305a2f8ed99ae1c0dd9e808edb698ac74e2e24716e350",
+    "scripts/reproduce_clean.ps1": "8a474f1616c5f1db7b396d5d08f8db42e6ce906f34f101b0b4154071e36d4008",
+    "scripts/inspect_clean_environment.py": "e297406182a8deab66acd72661cedff1fe886be307577a1a82565e8cf1495a5a",
+    "scripts/clean_scip_smoke.py": "3cb6aefd9abb6243389574c349f97ff9f0284e7de2dd9b290364f3ba36331c7b",
+    "requirements-mis-support.txt": "b7695364c9d47350966d46d058f6efeca3eb472ffe8f71e5740accc663728d49"
+  },
+  "checks_passed": true,
+  "limitation": "DHG torch<2 metadata is explicitly overridden; only project operations are tested."
+}

@@ -6,3 +6,11 @@ matplotlib==3.9.4
 optuna==4.9.0
 requests==2.32.5
 scikit-learn==1.6.1
+pyscipopt==5.3.0
+# src.models imports src/__init__.py, which imports these upstream utilities.
+# They are required for import compatibility even though MIS uses HGNNPConv.
+torch-geometric==2.6.1
+dimod==0.12.18
+dwave-neal==0.6.0
+dwave-samplers==1.6.0
+pyqubo==1.5.0

@@ -1,0 +1,228 @@
+**********************
+PowerShell transcript start
+Start time: 20261020112122
+**********************
+> E:/Miniconda3/python.exe -I -m venv --without-pip C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3
+> uv --version
+uv 0.10.10 (8c730aaad 2026-03-13)
+> uv pip install --python C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3\Scripts\python.exe --cache-dir C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\work\uv-cache --link-mode copy --constraint C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\requirements-mis-support.txt torch==2.8.0+cu128 torchvision==0.23.0+cu128 --index-url https://download.pytorch.org/whl/cu128
+Using Python 3.9.23 environment at: .venv-clean-20261020-r3
+Resolved 12 packages in 8.53s
+Installed 12 packages in 35.67s
+ + filelock==3.19.1
+ + fsspec==2025.10.0
+ + jinja2==3.1.6
+ + markupsafe==3.0.2
+ + mpmath==1.3.0
+ + networkx==3.2.1
+ + numpy==1.26.4
+ + pillow==11.3.0
+ + sympy==1.14.0
+ + torch==2.8.0+cu128
+ + torchvision==0.23.0+cu128
+ + typing-extensions==4.16.0
+> uv pip install --python C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3\Scripts\python.exe --cache-dir C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\work\uv-cache --link-mode copy -r C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\requirements-mis-support.txt
+Using Python 3.9.23 environment at: .venv-clean-20261020-r3
+Resolved 54 packages in 6.65s
+Installed 47 packages in 4.85s
+ + aiohappyeyeballs==2.6.1
+ + aiohttp==3.13.5
+ + aiosignal==1.4.0
+ + alembic==1.16.5
+ + async-timeout==5.0.1
+ + attrs==26.1.0
+ + certifi==2026.10.19
+ + charset-normalizer==3.5.2
+ + colorama==0.4.6
+ + colorlog==6.12.0
+ + contourpy==1.3.0
+ + cycler==0.12.1
+ + deprecated==1.3.1
+ + dimod==0.12.18
+ + dwave-neal==0.6.0
+ + dwave-samplers==1.6.0
+ + fonttools==4.60.2
+ + frozenlist==1.8.0
+ + idna==3.20
+ + importlib-resources==6.5.2
+ + joblib==1.5.3
+ + kiwisolver==1.4.7
+ + mako==1.3.12
+ + matplotlib==3.9.4
+ + multidict==6.7.1
+ + optuna==4.9.0
+ + packaging==26.3
+ + propcache==0.4.1
+ + psutil==7.2.2
+ + pyparsing==3.3.3
+ + pyqubo==1.5.0
+ + pyscipopt==5.3.0
+ + python-dateutil==2.9.0.post0
+ + pyyaml==6.0.3
+ + requests==2.32.5
+ + scikit-learn==1.6.1
+ + scipy==1.13.1
+ + six==1.17.0
+ + sqlalchemy==2.0.55
+ + threadpoolctl==3.7.0
+ + tomli==2.5.0
+ + torch-geometric==2.6.1
+ + tqdm==4.70.1
+ + urllib3==2.6.3
+ + wrapt==2.5.1
+ + yarl==1.22.0
+ + zipp==3.23.1
+> uv pip install --python C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3\Scripts\python.exe --cache-dir C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\work\uv-cache --link-mode copy --no-deps dhg==0.9.5
+Using Python 3.9.23 environment at: .venv-clean-20261020-r3
+Resolved 1 package in 2ms
+Installed 1 package in 301ms
+ + dhg==0.9.5
+> C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3\Scripts\python.exe -I -c import site,sys; assert sys.prefix != sys.base_prefix; assert not site.ENABLE_USER_SITE; print("Isolated environment:", sys.prefix)
+Isolated environment: C:\Users\�¼���\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3
+Environment prepared at C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3. Run the tests before using it.
+> C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3\Scripts\python.exe -I scripts/inspect_clean_environment.py --output C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\results\clean-reproduction-20261020/environment.json
+{"checks_passed": true, "python": "3.9.23", "versions": {"torch": "2.8.0+cu128", "torchvision": "0.23.0+cu128", "dhg": "0.9.5", "numpy": "1.26.4", "scipy": "1.13.1", "matplotlib": "3.9.4", "optuna": "4.9.0", "requests": "2.32.5", "scikit-learn": "1.6.1", "pyscipopt": "5.3.0", "torch-geometric": "2.6.1", "dimod": "0.12.18", "dwave-neal": "0.6.0", "dwave-samplers": "1.6.0", "pyqubo": "1.5.0"}, "output": "C:\\Users\\�¼���\\Documents\\Codex\\2026-10-12\\new-chat\\outputs\\bipnn-public\\results\\clean-reproduction-20261020\\environment.json"}
+All installed package versions:
+aiohappyeyeballs==2.6.1
+aiohttp==3.13.5
+aiosignal==1.4.0
+alembic==1.16.5
+async-timeout==5.0.1
+attrs==26.1.0
+certifi==2026.10.19
+charset-normalizer==3.5.2
+colorama==0.4.6
+colorlog==6.12.0
+contourpy==1.3.0
+cycler==0.12.1
+deprecated==1.3.1
+dhg==0.9.5
+dimod==0.12.18
+dwave-neal==0.6.0
+dwave-samplers==1.6.0
+filelock==3.19.1
+fonttools==4.60.2
+frozenlist==1.8.0
+fsspec==2025.10.0
+idna==3.20
+importlib-resources==6.5.2
+jinja2==3.1.6
+joblib==1.5.3
+kiwisolver==1.4.7
+mako==1.3.12
+markupsafe==3.0.2
+matplotlib==3.9.4
+mpmath==1.3.0
+multidict==6.7.1
+networkx==3.2.1
+numpy==1.26.4
+optuna==4.9.0
+packaging==26.3
+pillow==11.3.0
+propcache==0.4.1
+psutil==7.2.2
+pyparsing==3.3.3
+pyqubo==1.5.0
+pyscipopt==5.3.0
+python-dateutil==2.9.0.post0
+pyyaml==6.0.3
+requests==2.32.5
+scikit-learn==1.6.1
+scipy==1.13.1
+six==1.17.0
+sqlalchemy==2.0.55
+sympy==1.14.0
+threadpoolctl==3.7.0
+tomli==2.5.0
+torch==2.8.0+cu128
+torch-geometric==2.6.1
+torchvision==0.23.0+cu128
+tqdm==4.70.1
+typing-extensions==4.16.0
+urllib3==2.6.3
+wrapt==2.5.1
+yarl==1.22.0
+zipp==3.23.1
+> C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3\Scripts\python.exe -E -s -m unittest discover -s tests -v
+test_cpu_training_has_valid_monotone_cutoffs (test_anytime.AnytimeTests) ... ok
+test_prefix_never_uses_future_and_retains_earliest_tie (test_anytime.AnytimeTests) ... ok
+test_random_snapshots_are_strict_prefix_bests (test_anytime.AnytimeTests) ... ok
+test_targets_reject_ambiguity (test_anytime.AnytimeTests) ... ok
+test_generator_is_fixed_and_retains_declared_nodes (test_benchmark.BenchmarkTests) ... ok
+test_random_controls_save_their_actual_best_solution (test_benchmark.BenchmarkTests) ... ok
+test_time_budget_stops_and_keeps_valid_output (test_benchmark.BenchmarkTests) ... ok
+test_fixed_checkpoints_schedule_stages_and_first_maximum (test_completion.CompletionTests) ... ok
+test_fixed_equal_size_checkpoints_keep_first_candidate (test_completion.CompletionTests) ... ok
+test_fixed_one_step_no_duplicate_initial_and_none_schedule (test_completion.CompletionTests) ... ok
+test_initial_hashes_match_across_penalty_and_annealing_without_cross_run_reuse (test_completion.CompletionTests) ... ok
+test_invalid_settings_and_nonfinite_training_loss (test_completion.CompletionTests) ... ok
+test_objective_and_message_can_differ_but_decode_uses_original_problem (test_completion.CompletionTests) ... ok
+test_prefix_snapshot_excludes_future_and_keeps_first_tie (test_completion.CompletionTests) ... ok
+test_pruning_preserves_every_binary_weak_assignment_and_explicit_n (test_completion.CompletionTests) ... ok
+test_pruning_singletons_and_large_edges_without_subset_enumeration (test_completion.CompletionTests) ... ok
+test_short_cpu_timed_control_has_complete_prefix_and_late_terminal (test_completion.CompletionTests) ... ok
+test_binding_changes_with_protocol_not_key_order (test_controlled.ControlledTests) ... ok
+test_stages_match_original_decoder_and_expose_initial_violations (test_controlled.ControlledTests) ... ok
+test_training_keeps_first_forward_and_decoder_evidence (test_controlled.ControlledTests) ... ok
+test_duplicate_edges_counted_and_removed (test_datasets.DatasetTests) ... ok
+test_explicit_header_counts_and_reversible_mapping (test_datasets.DatasetTests) ... ok
+test_isolates_require_complete_label_universe (test_datasets.DatasetTests) ... ok
+test_no_header_guessing_invalid_header_and_hash (test_datasets.DatasetTests) ... ok
+test_no_header_keeps_first_pair_and_three_node_edge (test_datasets.DatasetTests) ... ok
+test_pair_redundancy_audit_does_not_remove_higher_edges (test_datasets.DatasetTests) ... ok
+test_pinned_upstream_datasets_and_cora_discrepancy (test_datasets.DatasetTests) ... ok
+test_repeated_vertices_invalid_and_singleton_preserved (test_datasets.DatasetTests) ... ok
+test_cutoff_rejects_future_solutions_bounds_and_optimality_and_keeps_first_tie (test_fast_baselines.FastBaselineTests) ... ok
+test_degree_random_mixed_edges_exact_selected_equivalence (test_fast_baselines.FastBaselineTests) ... ok
+test_degree_singletons_isolates_empty_edges_and_ties (test_fast_baselines.FastBaselineTests) ... ok
+test_invalid_definitions_and_budgets (test_fast_baselines.FastBaselineTests) ... ok
+test_random_restart_retains_best_complete_trial_and_earliest_tie (test_fast_baselines.FastBaselineTests) ... ok
+test_random_single_preserves_actual_score_and_stages (test_fast_baselines.FastBaselineTests) ... ok
+test_scip_event_tiny_deadline_never_backfills_late_warm_or_final_solution (test_fast_baselines.FastBaselineTests) ... C:\Users\�¼���\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\mis\fast_baselines.py:160: UserWarning: linked SCIP 9.02 is not recommended for this version of PySCIPOpt - use version 9.2.1
+  model = Model("hypergraph_mis_fast_warm_start")
+ok
+test_scip_events_capture_complete_improvement_and_optimal_completion (test_fast_baselines.FastBaselineTests) ... ok
+test_scip_infinity_and_nonfinite_values_have_explicit_flags (test_fast_baselines.FastBaselineTests) ... ok
+test_scip_matches_enumeration_and_safe_json_metadata (test_fast_baselines.FastBaselineTests) ... ok
+test_scip_tiny_target_retains_feasible_warm_start (test_fast_baselines.FastBaselineTests) ... ok
+test_all_small_score_assignments_and_per_stage_equivalence (test_fast_decode.FastDecodeTests) ... ok
+test_finite_scores_outside_probability_interval_still_match (test_fast_decode.FastDecodeTests) ... ok
+test_global_repair_priority_and_stale_heap_candidates (test_fast_decode.FastDecodeTests) ... ok
+test_invalid_definition_length_and_nonfinite_scores (test_fast_decode.FastDecodeTests) ... ok
+test_random_mixed_orders_with_ties_and_boundary_scores (test_fast_decode.FastDecodeTests) ... ok
+test_singletons_isolates_and_no_edges (test_fast_decode.FastDecodeTests) ... ok
+test_strong_edge_can_remain_violated_after_several_removals (test_fast_decode.FastDecodeTests) ... ok
+test_all_isolated_vertices (test_indexed_loss.IndexedLossTests) ... ok
+test_gradcheck_nonboundary (test_indexed_loss.IndexedLossTests) ... ok
+test_mixed_orders_values_and_gradients_at_boundaries (test_indexed_loss.IndexedLossTests) ... ok
+test_short_cpu_training (test_neural.NeuralTests) ... ok
+test_values_and_gradients_match_direct_polynomial (test_neural.NeuralTests) ... ok
+test_definitions_differ (test_problem.ProblemTests) ... ok
+test_exhaustive_energy_equivalence_and_repair (test_problem.ProblemTests) ... ok
+test_isolates_and_singleton (test_problem.ProblemTests) ... ok
+test_no_edges (test_problem.ProblemTests) ... ok
+test_strong_clique_equivalence (test_problem.ProblemTests) ... ok
+test_validation (test_problem.ProblemTests) ... ok
+test_larger_disjoint_pairs_with_isolates (test_reference.ReferenceTests) ... ok
+test_matches_enumeration (test_reference.ReferenceTests) ... ok
+test_scip_matches_enumeration_and_preserves_warm_start (test_reference.ReferenceTests) ... C:\Users\�¼���\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\mis\reference.py:52: UserWarning: linked SCIP 9.02 is not recommended for this version of PySCIPOpt - use version 9.2.1
+  model = Model("hypergraph_mis")
+ok
+test_scip_total_budget_retains_feasible_warm_start (test_reference.ReferenceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 61 tests in 0.875s
+
+OK
+> C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3\Scripts\python.exe -E -s scripts/clean_scip_smoke.py --output C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\results\clean-reproduction-20261020
+C:\Users\�¼���\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\mis\fast_baselines.py:160: UserWarning: linked SCIP 9.02 is not recommended for this version of PySCIPOpt - use version 9.2.1
+  model = Model("hypergraph_mis_fast_warm_start")
+{"definition": "weak", "exact_size": 9, "scip_size": 9, "optimality_proven": true}
+{"definition": "strong", "exact_size": 6, "scip_size": 6, "optimality_proven": true}
+> C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\.venv-clean-20261020-r3\Scripts\python.exe -E -s -m mis.verify_report C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\results\clean-reproduction-20261020/smoke-scip-weak.json C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\results\clean-reproduction-20261020/smoke-scip-strong.json
+{"report": "smoke-scip-weak.json", "definition": "weak", "exact_size": 9, "verified_records": 1}
+{"report": "smoke-scip-strong.json", "definition": "strong", "exact_size": 6, "verified_records": 1}
+**********************
+PowerShell transcript end
+End time: 20261020112313
+**********************

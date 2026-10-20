@@ -1,6 +1,8 @@
 # Matplotlib writes multiline SVG path data with insignificant trailing spaces.
 # Preserve generated geometry; source and report whitespace checks stay enabled.
 results/**/figures/*.svg -whitespace
+# Preserve native PowerShell/installer transcript fields verbatim.
+results/clean-reproduction-20261020*/**/*.txt -whitespace
 
 # Frozen manifests bind exact working-file bytes, including line endings.
 # Match the measured checkout on Windows and other platforms.
@@ -24,3 +26,14 @@ results/controlled-validation-20261018/selection.json text eol=crlf
 data/cora_hypergraph.txt text eol=crlf
 data/high_hypergraph.txt text eol=crlf
 data/primary_hypergraph.txt text eol=crlf
+
+# Reproduction evidence and independent-auditor source hashes also bind bytes.
+requirements-mis-support.txt text eol=lf
+scripts/setup_mis.ps1 text eol=lf
+scripts/reproduce_clean.ps1 text eol=lf
+scripts/inspect_clean_environment.py text eol=lf
+scripts/clean_scip_smoke.py text eol=lf
+scripts/audit_completion.py text eol=lf
+scripts/plot_completion.py text eol=lf
+scripts/summarize_controlled.py text eol=lf
+scripts/summarize_anytime.py text eol=lf
