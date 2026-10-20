@@ -1,0 +1,21 @@
+{
+  "question": "Which observed quality changes survive paired controls for annealing, penalty and schedule horizon?",
+  "conclusion": "CRA has positive paired mean changes on six of eight cases under both fixed updates and timed controls, with a negative PrimaryW effect and a zero PrimaryS effect retained; penalty and matched-horizon changes are case-dependent rather than uniformly favorable.",
+  "archetype": "quantitative grid",
+  "backend": "python-matplotlib",
+  "panels": {
+    "a": "Eight cases: CRA minus no annealing after the same 1600 updates, baseline penalty 2.",
+    "b": "The same eight cases: CRA minus no annealing at the strict 30-second cutoff.",
+    "c": "Five weak-MIS cases: penalties 1.1, 2, 4 and 8 relative to penalty 2 after 1600 updates, CRA held fixed.",
+    "d": "Five weak-MIS cases: original matched compressed5 minus fixed30 at cutoff5; sampling-corrected child targets[5,15] minus fixed30 at cutoff15. The original unmatched targets[15] comparison is retained only as a diagnostic."
+  },
+  "pairing": "Pair model seeds 0,1,2 within the same instance and definition only after checking matching initial_state_sha256 and feature_sha256. Report 100*(treatment_size-reference_size)/n in percentage points.",
+  "statistics": "Point is the mean of the three paired differences; error bar is their observed minimum-to-maximum range, not a confidence interval. No hypothesis tests. Repeated model seeds are technical repeats of one case.",
+  "cases": ["S3W", "S5W", "CoraW", "CoraS", "HighW", "HighS", "PrimaryW", "PrimaryS"],
+  "weak_cases": ["S3W", "S5W", "CoraW", "HighW", "PrimaryW"],
+  "data_policy": "All relevant cases and all three seeds retained, including zero and unfavorable results; fixed-step and timed controls are separate panels and are never pooled. Save the complete audited summary rows in source data.",
+  "sampling_correction": "The original compressed15 targets[15] omitted the 4.9s candidate request and 5s snapshot. A separately bound child with targets[5,15] corrects that protocol mismatch; its requested sampling and snapshot calendar before 15s matches fixed30. This is a sampling-protocol correction, not selection by observed outcome. Both original unmatched rows and the child's extra 5s rows remain in source data.",
+  "export": {"width_mm": 180, "height_mm": 155, "formats": ["pdf", "svg", "png"], "png_dpi": 400, "minimum_glyph_pt": 5, "editable_text": true},
+  "qa": "Final rendered alignment, glyph-size, source and collision checks; inspect each panel and whole figure.",
+  "limits": ["Fixed 1600 updates are not equal wall time.", "Timed variants are independent executions with matched initial hashes; different schedules may complete different numbers of updates.", "All ablation cases were previously examined and do not select a new configuration."]
+}

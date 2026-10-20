@@ -1,0 +1,132 @@
+{
+  "parent_manifest_binding": "b4fb9524e22f32e9db97a5b17e822a3116049b48c189d4f5cbe52af5dad39e9a",
+  "parent_manifest_sha256": "15f184c690cd786e8a526af2ed65aef45940ad47f08463158f30e137069d4253",
+  "parent_plan_sha256": "0b478320aea9a093ac2d52f1fa3c5fb2de0cbfd76d60a55b6ea88b853a731426",
+  "plan": {
+    "version": 1,
+    "purpose": "Supplementary sampling-calendar correction for the 15-second horizon contrast; no outcome-based configuration or instance selection",
+    "parent_manifest_binding": "b4fb9524e22f32e9db97a5b17e822a3116049b48c189d4f5cbe52af5dad39e9a",
+    "parent_plan": "experiments/completion-20261020.json",
+    "registration": {
+      "scope": "The parent suite was already running. This supplementary protocol and its source are fixed before this supplement is executed, not a claim of project-wide preregistration.",
+      "decision_basis": "Source review found parent compressed15 targets=[15] omit the 4.9-second candidate and 5-second snapshot present in fixed30 targets=[5,15,30]. The correction follows the nominal calendar mismatch, not favorable or unfavorable scores.",
+      "preserve_all": "Keep all five weak ablation instances and all three seeds; preserve parent unmatched15 results as diagnostics."
+    },
+    "definition": "weak",
+    "model_seeds": [
+      0,
+      1,
+      2
+    ],
+    "variant": {
+      "annealing": "cra",
+      "penalty": 2,
+      "targets": [
+        5,
+        15
+      ],
+      "sampling_control": "matched_pre15_calendar"
+    },
+    "width": 1024,
+    "candidate_interval_seconds": 1,
+    "comparison_cutoff_seconds": 15,
+    "paired_initial_outputs": {
+      "state_and_feature_hashes": "exact equality",
+      "score_relative_tolerance": 1e-05,
+      "score_absolute_tolerance": 1e-05,
+      "scope": "GPU sparse aggregation can vary numerically; identical optimization trajectories are not claimed"
+    },
+    "calendar_scope": "Nominal candidate due times strictly before 15 seconds and nominal snapshot targets strictly before 15 seconds match parent fixed30. A parent candidate due at 15 seconds cannot complete by the cutoff. Actual candidate times, training epochs and response latency need not match and are retained.",
+    "inputs": [
+      {
+        "name": "n500_k3_d2_s20261023",
+        "parent_instance": "instances/n500_k3_d2_s20261023.json",
+        "fingerprint": "dcfe53efd742f8eb7076c4a604b939c62e8f9ad028a0cd46cc207507548c5fcd"
+      },
+      {
+        "name": "n500_k5_d4_s20261023",
+        "parent_instance": "instances/n500_k5_d4_s20261023.json",
+        "fingerprint": "de609130c4c6306ad659936b3a421d00d71b393d062b998a27956ba1c281e613"
+      },
+      {
+        "name": "cora",
+        "parent_instance": "instances/cora.json",
+        "fingerprint": "33a93fd54d4de0f59720cca8bcdd12ff7b7f69246bb4b1f7fb90ef0e42d809f5"
+      },
+      {
+        "name": "high",
+        "parent_instance": "instances/high.json",
+        "fingerprint": "655e18cc0bd24e282af0fb2e75761c302bba8fa8f1d2c415b81f057046488c0c"
+      },
+      {
+        "name": "primary",
+        "parent_instance": "instances/primary.json",
+        "fingerprint": "ad06272a79a6c086f4f44be5c82c8d74178511d6553609d82880cadb9565aade"
+      }
+    ],
+    "primary_contrasts": {
+      "five_seconds": "Keep parent independent compressed5 targets=[5] versus parent fixed30 targets=[5,15,30].",
+      "fifteen_seconds": "Use this matched15 targets=[5,15] versus parent fixed30 targets=[5,15,30].",
+      "parent_unmatched15": "Retain targets=[15] as diagnostic only; do not drop its raw results.",
+      "child_five_second_snapshot": "Report separately; it does not replace the independent compressed5 contrast."
+    },
+    "expected_counts": {
+      "cases": 5,
+      "neural_runs": 15,
+      "primary_records": 30
+    },
+    "execution": "Run only after the parent runner has exited. GPU warmup and trials are serial; no concurrent GPU benchmark. Warmup uses a six-node problem, three fixed epochs and a short targets=[0.02,0.04] timed run, outside measured trials. Parent summary completion is not required because combined auditing follows child execution.",
+    "binding": "Verify the parent manifest binding and all of its raw source hashes, current selection bytes, actual environment and all five input fingerprints. Bind the new runner, this plan and input file bytes independently. Refuse resume after source, plan, environment or input changes.",
+    "scope": "A bounded methodological correction on already examined weak ablation inputs. No replacement hyperparameter selection, distribution-wide or statistical-significance claim."
+  },
+  "plan_sha256": "f49f9ce55e1262b15826f9f7add092504842134e30034a06877157db03b5d2d8",
+  "source_sha256": {
+    "mis/completion.py": "a867cbe9781aaf7d4265db221968babbf949cbe9914d71a74bbbb73807addf7d",
+    "mis/anytime.py": "ddf70a15d14645252107bd722268c7836d29799dce6622965e05b36fa456043f",
+    "mis/controlled.py": "03f5906d16707ead676f729f457744c27508304626aa94bb8d1cdd6238d7f3a9",
+    "mis/indexed_loss.py": "9f0ce92bd3002d1d9243dd21a2ac959a0b7d1845636e1fccbc74d1b6f31e66d3",
+    "mis/fast_decode.py": "d999e0a6b9133cb0a1655c136cb762dac782ffbf2f1181ece04a8778bc2a1f94",
+    "mis/fast_baselines.py": "c630644a608cc268edee3f506b2ac0c488575be85b9a161b16584b517a512d6b",
+    "mis/problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61",
+    "mis/benchmark.py": "7d2b745b1ce14542663fda99be12b6e7eed153ee9aca82ba6ee4a6ce70475a10",
+    "mis/datasets.py": "d83557abd969bec00c524916f121752ce1355b365ea85901bca96d994d1b34af",
+    "src/models.py": "9e74af6add5c7940bfd95466543f10085ae49b42060802599da78271b1d29d79",
+    "src/train.py": "2ce090b16f8331a4f2571787846a11fd79b4a44e8d6caecae2b82065e7a37dde",
+    "scripts/run_completion.py": "c7281072af10ef6f28b5685146adc4c31e2bead88dee7eb9f1ef9ce73f44521e",
+    "scripts/check_controlled_protocol.py": "54a7d5bfb516b40615800df553759e27f17b416081fad288f542e02ef07350bc",
+    "scripts/run_controlled.py": "1cd1b42440b60079e0c658403bf4ecd2d618133bb458de30c5cd9f9203bc22dd",
+    "scripts/run_schedule_match.py": "b52e4ef90216a357f2e0cb7e2b6d6d1b538e5cd243b135431acce2b79efc7b08"
+  },
+  "selection_sha256": "92347225938b6b36e8b8e2b0d7dd7cc35873c7ff3b8f5d00f0c19b2f0c8bca30",
+  "environment": {
+    "python": "3.9.23",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "cpu_threads": 1,
+    "packages": {
+      "dhg": "0.9.5",
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "pyscipopt": "5.3.0"
+    },
+    "driver": "595.79"
+  },
+  "inputs": {
+    "schedule_match/n500_k3_d2_s20261023_weak": "dcfe53efd742f8eb7076c4a604b939c62e8f9ad028a0cd46cc207507548c5fcd",
+    "schedule_match/n500_k5_d4_s20261023_weak": "de609130c4c6306ad659936b3a421d00d71b393d062b998a27956ba1c281e613",
+    "schedule_match/cora_weak": "33a93fd54d4de0f59720cca8bcdd12ff7b7f69246bb4b1f7fb90ef0e42d809f5",
+    "schedule_match/high_weak": "655e18cc0bd24e282af0fb2e75761c302bba8fa8f1d2c415b81f057046488c0c",
+    "schedule_match/primary_weak": "ad06272a79a6c086f4f44be5c82c8d74178511d6553609d82880cadb9565aade"
+  },
+  "input_file_sha256": {
+    "instances/n500_k3_d2_s20261023.json": "ac667851835a389779a6860df952439f9d703a05dfbdb629d85740cc03df6853",
+    "instances/n500_k5_d4_s20261023.json": "b0fbf4c3c3476a0d8b28bdbc1495999c3f1e4d74ccec6450102d268460f150e7",
+    "instances/cora.json": "a1288e0415f11087379d0ea922e2aebc5884e340178e1ccfec7cd45528fe5b7c",
+    "instances/high.json": "8dfbb7dd30bb99e987ab2eb1e2196879807066af26de2f7580711f2383ecde8b",
+    "instances/primary.json": "f897648fabb6debb287ae21c47a5678da67e5f7b1afe8adf2df4e782c324935e"
+  },
+  "binding": "5ec98ee411f02c56d1f0f30e59aa1bb1f1dc3483555b26c6f52a714a5c1dd849",
+  "git_commit_at_start": "3338560fc7461948d37c878afc661c9da581a14b",
+  "created_at_utc": "2026-10-20T08:05:12.060316+00:00"
+}

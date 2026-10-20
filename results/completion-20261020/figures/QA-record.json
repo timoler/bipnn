@@ -1,0 +1,149 @@
+{
+  "experiment_date": "2026-10-20",
+  "plot_source": "scripts/plot_completion.py",
+  "plot_source_sha256": "14ab043f6845411d139c39f5bf434ccb534fa282716b1e5c887ad8a7d4b191e8",
+  "summary_source": "../summary.json",
+  "summary_sha256": "af1930ef999001f535f998e402833b5770d5606ac253766288b07b3b0e030d74",
+  "audit_source_sha256": {
+    "scripts/audit_completion.py": "4df1d7be675e46c2d2e644e283a3b416591f92baafa5e1e39ebd5277b7cdb673",
+    "scripts/summarize_controlled.py": "5e1c89fb17d993c55e2a126cec64adaf9e6a7ffa77517b593453bde9060cd990",
+    "scripts/summarize_anytime.py": "4f5eafdc6e864787b85d165fed0900d7ca5da5287f7bc0e91c3dcc6fa0a7b09f"
+  },
+  "manifest_binding": "b4fb9524e22f32e9db97a5b17e822a3116049b48c189d4f5cbe52af5dad39e9a",
+  "formal_training_scope": "207 main + 15 formal child = 222 neural runs; 399 main + 30 formal child = 429 primary records",
+  "excluded_scope": "Interrupted child archive excluded as a whole; its rows are not read into either plotted analysis or primary CSV",
+  "csv_data_rows": {
+    "source-graph-means.csv": 48,
+    "source-main-neural.csv": 303,
+    "source-paired-differences.csv": 138,
+    "source-replication-graphs.csv": 12,
+    "source-schedule-match.csv": 30
+  },
+  "figures": {
+    "ablation-controls": {
+      "width_mm": 179.99999491373697,
+      "height_mm": 155.00000279744467,
+      "page_count": 1,
+      "minimum_glyph_pt": 6.5000000000875975,
+      "alignment_verdict": "PASS",
+      "alignment_summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 4,
+        "exemptions": 0
+      },
+      "collision_audit": {
+        "pdf": "C:\\Users\\陈佳政\\Documents\\Codex\\2026-10-12\\new-chat\\outputs\\bipnn-public\\results\\completion-20261020\\figures\\ablation-controls.pdf",
+        "auditable": true,
+        "verdict": "PASS",
+        "page_count": 1,
+        "visible_text_box_count": 59,
+        "text_trace_count": 59,
+        "stroke_path_count": 274,
+        "filled_region_count": 201,
+        "image_region_count": 0,
+        "summary": {
+          "fail": 0,
+          "warn": 0,
+          "contained_fill_overlays": 0,
+          "contained_image_overlays": 0
+        },
+        "thresholds": {
+          "text_inset_pt": 0.6,
+          "min_overlap_ratio": 0.05,
+          "clipping_tolerance_pt": 0.5
+        },
+        "findings": []
+      },
+      "visual_review": "Both plotting agent and root inspected and accepted final PNG"
+    },
+    "independent-graphs": {
+      "width_mm": 179.99999491373697,
+      "height_mm": 88.00000110202366,
+      "page_count": 1,
+      "minimum_glyph_pt": 7.0,
+      "alignment_verdict": "PASS",
+      "alignment_summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 1,
+        "exemptions": 0
+      },
+      "collision_audit": {
+        "pdf": "C:\\Users\\陈佳政\\Documents\\Codex\\2026-10-12\\new-chat\\outputs\\bipnn-public\\results\\completion-20261020\\figures\\independent-graphs.pdf",
+        "auditable": true,
+        "verdict": "PASS",
+        "page_count": 1,
+        "visible_text_box_count": 20,
+        "text_trace_count": 20,
+        "stroke_path_count": 104,
+        "filled_region_count": 67,
+        "image_region_count": 0,
+        "summary": {
+          "fail": 0,
+          "warn": 0,
+          "contained_fill_overlays": 0,
+          "contained_image_overlays": 0
+        },
+        "thresholds": {
+          "text_inset_pt": 0.6,
+          "min_overlap_ratio": 0.05,
+          "clipping_tolerance_pt": 0.5
+        },
+        "findings": []
+      },
+      "visual_review": "Both plotting agent and root inspected and accepted final PNG"
+    }
+  },
+  "file_sha256": {
+    "ablation-controls.alignment.json": "24a33d064567472b1819f0cdc5a7212ad1018e0129f9b5208e847b77a51e215b",
+    "ablation-controls.alignment.svg": "fd3c9c8a9aee1bc750abcff57594f0696a6cbc5722011e33543cce051b496a96",
+    "ablation-controls.caption.md": "117b85218b3e253f12a240b721b87abe6ee7359fa2e98b5e9b86c3c66bb549ce",
+    "ablation-controls.collision-audit.json": "73a5a050735499c757dc9d072708586590ffd5bffd970902a077cc2464498613",
+    "ablation-controls.collision-audit.pdf": "b5e13bedd0325c28239a96eeb3ad92840e38122511b17a0e3e910bcd65a16877",
+    "ablation-controls.collision-audit.txt": "2b0f63610ee14c88a8f95663dc2af673c0215384e6f168421f98d65e4938ba5f",
+    "ablation-controls.contract.json": "96dd98d5242b9805c1a83e180fcbaa9332b194136c150cede3088a5a2779bde5",
+    "ablation-controls.font-audit.json": "f6cd68c9faac527b42b1200d6a9b78342d33c2674b21696c6b95048be0bf75ff",
+    "ablation-controls.pdf": "a82240e913be8f204cb2ae9b8b4188d0be463501e27db000b2a80a7184439c02",
+    "ablation-controls.png": "489d31162b0d6f551aee03f1a08404b20dce6b454891c2c9449afc71f0802bc1",
+    "ablation-controls.svg": "0faaf2739537218a9c9676f3581447246e135f413bb56e40593f3ffc888602cb",
+    "independent-graphs.alignment.json": "c7c4cc910d3a3dbfd07df9705eddfc2857d1388519bba9d42d052f1eb864a001",
+    "independent-graphs.alignment.svg": "ae20fb5686663cc3eae4467f76e639739d7c476de04debc641df29166e1b7dc0",
+    "independent-graphs.caption.md": "fb8e20c28f3af57dd0b76cdcf2fa4379bedcf4ac9040617d58a86a3e01937a8c",
+    "independent-graphs.collision-audit.json": "f94f21ad8392ab7f3132394ab34b566c3c631b89a98d4ae5344b9f70f64c025a",
+    "independent-graphs.collision-audit.txt": "2e0c70da28b96478b423d05c7ce0127f51719d5439e18e4e2748d7f1e13fbdcd",
+    "independent-graphs.contract.json": "a46954619a68a0fb1921804f2f80cc2b68db2004862c6a1da9b4b310e9532e86",
+    "independent-graphs.font-audit.json": "3cfc00381ef9043c62291456ac8caa7087bfd8a84b36f5c93bb7aa9f6b613b2b",
+    "independent-graphs.pdf": "d55fbae3c6804d6bed30d18830428749a8bbe16eb4986b6edfe8f50381382f07",
+    "independent-graphs.png": "dadb8ba1adc08dc03f317612a6500a46ce8be20565f417ceb51f0181d4e44379",
+    "independent-graphs.svg": "eb03ce7050f9d59d9035c6c840a2f65a5c07c08d89736ae00209522c2f1475a2",
+    "QA.md": "585860b8e41c2ba29276437ab9675f8758046692ef6e11ed49ace9622a3d0340",
+    "source-audit.json": "64b6ce89338ad27045c92945a1fa6c18c7663b86b4d7da19276a7eeada8789e6",
+    "source-data.json": "93a18caeadcf278d3823cd70377fc6180bc598d93ca1df420c99df1cd6ce2980",
+    "source-graph-means.csv": "aef10a24a8152690d237bb76465e560ca70fa4fbc97764d8762fa5c590d8300f",
+    "source-main-neural.csv": "5e2afebb5f7e419f8ddb1f34a52a7fb1b6dc3f046aff40c0205ddbbb3bccbc3a",
+    "source-paired-differences.csv": "807a5b658a164344afffd5b71373ac048bd4e54a944a4e2f6247df56d91974fe",
+    "source-replication-graphs.csv": "c14334caf2f9e99c738df1a4b137146c559c928ef7e04ac7a8cfb88a5de7ca29",
+    "source-schedule-match.csv": "aa1ee8e15583377bfb4812129dad1ffc20cec3b8b8daf7e8f8c3df88986b90ef"
+  },
+  "source_preflight": {
+    "ready": true,
+    "strict": false,
+    "counts": {
+      "PASS": 18,
+      "WARN": 3,
+      "FAIL": 0
+    }
+  },
+  "remaining_warnings": [
+    "No TIFF requested; editable PDF/SVG supplied",
+    "400 dpi PNG matches requested resolution, below default 600 dpi preference",
+    "Static width heuristic cannot resolve variable conversion; exported PDF dimensions measured directly"
+  ],
+  "notes": [
+    "No training source, plans or raw experiment values modified",
+    "No GPU used for plotting",
+    "Graph-seed ranges are conditional and not confidence intervals",
+    "No graphical QA exemptions or relaxed tolerances"
+  ]
+}

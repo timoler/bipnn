@@ -1,0 +1,10 @@
+{
+  "pdf": "C:\\Users\\陈佳政\\Documents\\Codex\\2026-10-12\\new-chat\\outputs\\bipnn-public\\results\\completion-20261020\\figures\\ablation-controls.pdf",
+  "auditable": true,
+  "minimum_required_pt": 5.0,
+  "minimum_found_pt": 6.5000000000875975,
+  "text_run_count": 15,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}

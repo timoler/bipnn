@@ -1,0 +1,600 @@
+{
+  "complete": true,
+  "created_at_utc": "2026-10-20T08:31:25.074475+00:00",
+  "method": "git checkout-index from staged index; NUL-delimited filenames; explicit newline attributes; both core.autocrlf=false and true; exact SHA-256 comparison",
+  "files": 94,
+  "expected_sha256": {
+    "data/cora_hypergraph.txt": "58f8fbc5c7fc0118f6d8f222400f6d61ad3c9467362a2211bd7925441c6a8ae2",
+    "data/high_hypergraph.txt": "34bd8752f971efd1e96339529891a6fd86ed9a7279e95c2e17f63221f7c74595",
+    "data/primary_hypergraph.txt": "4fb1423a5f110aa5462087056769931af3f95cdd1ec17aace5be22eec6c68936",
+    "experiments/completion-20261020.json": "0b478320aea9a093ac2d52f1fa3c5fb2de0cbfd76d60a55b6ea88b853a731426",
+    "experiments/schedule-match-20261020.json": "f49f9ce55e1262b15826f9f7add092504842134e30034a06877157db03b5d2d8",
+    "mis/anytime.py": "ddf70a15d14645252107bd722268c7836d29799dce6622965e05b36fa456043f",
+    "mis/benchmark.py": "7d2b745b1ce14542663fda99be12b6e7eed153ee9aca82ba6ee4a6ce70475a10",
+    "mis/completion.py": "a867cbe9781aaf7d4265db221968babbf949cbe9914d71a74bbbb73807addf7d",
+    "mis/controlled.py": "03f5906d16707ead676f729f457744c27508304626aa94bb8d1cdd6238d7f3a9",
+    "mis/datasets.py": "d83557abd969bec00c524916f121752ce1355b365ea85901bca96d994d1b34af",
+    "mis/fast_baselines.py": "c630644a608cc268edee3f506b2ac0c488575be85b9a161b16584b517a512d6b",
+    "mis/fast_decode.py": "d999e0a6b9133cb0a1655c136cb762dac782ffbf2f1181ece04a8778bc2a1f94",
+    "mis/indexed_loss.py": "9f0ce92bd3002d1d9243dd21a2ac959a0b7d1845636e1fccbc74d1b6f31e66d3",
+    "mis/problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61",
+    "requirements-mis-support.txt": "a3d44e802860aa84ccd4d1a199a28a5abedff37a5e6e4138e0b00574c8bc293a",
+    "results/completion-20261020/figures/QA-record.json": "03fa488cb3e427d82d91e074c6381f7c5b7603853383e7e57b91729f1644c965",
+    "results/completion-20261020/figures/QA.md": "585860b8e41c2ba29276437ab9675f8758046692ef6e11ed49ace9622a3d0340",
+    "results/completion-20261020/figures/ablation-controls.alignment.json": "24a33d064567472b1819f0cdc5a7212ad1018e0129f9b5208e847b77a51e215b",
+    "results/completion-20261020/figures/ablation-controls.alignment.svg": "fd3c9c8a9aee1bc750abcff57594f0696a6cbc5722011e33543cce051b496a96",
+    "results/completion-20261020/figures/ablation-controls.caption.md": "117b85218b3e253f12a240b721b87abe6ee7359fa2e98b5e9b86c3c66bb549ce",
+    "results/completion-20261020/figures/ablation-controls.collision-audit.json": "73a5a050735499c757dc9d072708586590ffd5bffd970902a077cc2464498613",
+    "results/completion-20261020/figures/ablation-controls.collision-audit.pdf": "b5e13bedd0325c28239a96eeb3ad92840e38122511b17a0e3e910bcd65a16877",
+    "results/completion-20261020/figures/ablation-controls.collision-audit.txt": "2b0f63610ee14c88a8f95663dc2af673c0215384e6f168421f98d65e4938ba5f",
+    "results/completion-20261020/figures/ablation-controls.contract.json": "96dd98d5242b9805c1a83e180fcbaa9332b194136c150cede3088a5a2779bde5",
+    "results/completion-20261020/figures/ablation-controls.font-audit.json": "f6cd68c9faac527b42b1200d6a9b78342d33c2674b21696c6b95048be0bf75ff",
+    "results/completion-20261020/figures/ablation-controls.pdf": "a82240e913be8f204cb2ae9b8b4188d0be463501e27db000b2a80a7184439c02",
+    "results/completion-20261020/figures/ablation-controls.png": "489d31162b0d6f551aee03f1a08404b20dce6b454891c2c9449afc71f0802bc1",
+    "results/completion-20261020/figures/ablation-controls.svg": "0faaf2739537218a9c9676f3581447246e135f413bb56e40593f3ffc888602cb",
+    "results/completion-20261020/figures/caption.md": "08ec89ddd881a69a4656dc39785da700705ec968d4836a24b4ab57da54d614e4",
+    "results/completion-20261020/figures/independent-graphs.alignment.json": "c7c4cc910d3a3dbfd07df9705eddfc2857d1388519bba9d42d052f1eb864a001",
+    "results/completion-20261020/figures/independent-graphs.alignment.svg": "ae20fb5686663cc3eae4467f76e639739d7c476de04debc641df29166e1b7dc0",
+    "results/completion-20261020/figures/independent-graphs.caption.md": "fb8e20c28f3af57dd0b76cdcf2fa4379bedcf4ac9040617d58a86a3e01937a8c",
+    "results/completion-20261020/figures/independent-graphs.collision-audit.json": "f94f21ad8392ab7f3132394ab34b566c3c631b89a98d4ae5344b9f70f64c025a",
+    "results/completion-20261020/figures/independent-graphs.collision-audit.txt": "2e0c70da28b96478b423d05c7ce0127f51719d5439e18e4e2748d7f1e13fbdcd",
+    "results/completion-20261020/figures/independent-graphs.contract.json": "a46954619a68a0fb1921804f2f80cc2b68db2004862c6a1da9b4b310e9532e86",
+    "results/completion-20261020/figures/independent-graphs.font-audit.json": "3cfc00381ef9043c62291456ac8caa7087bfd8a84b36f5c93bb7aa9f6b613b2b",
+    "results/completion-20261020/figures/independent-graphs.pdf": "d55fbae3c6804d6bed30d18830428749a8bbe16eb4986b6edfe8f50381382f07",
+    "results/completion-20261020/figures/independent-graphs.png": "dadb8ba1adc08dc03f317612a6500a46ce8be20565f417ceb51f0181d4e44379",
+    "results/completion-20261020/figures/independent-graphs.svg": "eb03ce7050f9d59d9035c6c840a2f65a5c07c08d89736ae00209522c2f1475a2",
+    "results/completion-20261020/figures/source-audit.json": "64b6ce89338ad27045c92945a1fa6c18c7663b86b4d7da19276a7eeada8789e6",
+    "results/completion-20261020/figures/source-data.json": "93a18caeadcf278d3823cd70377fc6180bc598d93ca1df420c99df1cd6ce2980",
+    "results/completion-20261020/figures/source-graph-means.csv": "aef10a24a8152690d237bb76465e560ca70fa4fbc97764d8762fa5c590d8300f",
+    "results/completion-20261020/figures/source-main-neural.csv": "5e2afebb5f7e419f8ddb1f34a52a7fb1b6dc3f046aff40c0205ddbbb3bccbc3a",
+    "results/completion-20261020/figures/source-paired-differences.csv": "807a5b658a164344afffd5b71373ac048bd4e54a944a4e2f6247df56d91974fe",
+    "results/completion-20261020/figures/source-replication-graphs.csv": "c14334caf2f9e99c738df1a4b137146c559c928ef7e04ac7a8cfb88a5de7ca29",
+    "results/completion-20261020/figures/source-schedule-match.csv": "aa1ee8e15583377bfb4812129dad1ffc20cec3b8b8daf7e8f8c3df88986b90ef",
+    "results/completion-20261020/instances/cora.json": "a1288e0415f11087379d0ea922e2aebc5884e340178e1ccfec7cd45528fe5b7c",
+    "results/completion-20261020/instances/high.json": "8dfbb7dd30bb99e987ab2eb1e2196879807066af26de2f7580711f2383ecde8b",
+    "results/completion-20261020/instances/n1000_k3_d2_s20261027.json": "6732596481bad2c951cc7800d4bdffbddfa0d9693db54e7a5b5ed3c0f042bef7",
+    "results/completion-20261020/instances/n1000_k3_d2_s20261028.json": "860e488b7de242484c0f50e4ed5b07f0b3798f59097c3d94d6b75120aaec6c49",
+    "results/completion-20261020/instances/n1000_k3_d2_s20261029.json": "6badeb43a91983cf837aba9a1da896b68b9ecfdaa7c0041852dda060740edb2b",
+    "results/completion-20261020/instances/n1000_k5_d4_s20261027.json": "b93ce30a97fe595c6709b9f5e4ba9eb3e0a0ed1e71a02ef2041e18d13821d5f7",
+    "results/completion-20261020/instances/n1000_k5_d4_s20261028.json": "5c55a641d1ab47ec31c542ae491d271ee4adf1b34345a8419efe613ad8b5d1e4",
+    "results/completion-20261020/instances/n1000_k5_d4_s20261029.json": "b82df9c751a26460686307a341828f119f239b7860cf7860a255bdbdcdc8fc53",
+    "results/completion-20261020/instances/n2000_k3_d2_s20261027.json": "9cc9ff1ef7b5fbbd3140e2a81b825d722426e4c3a4955db4523a28691692ffd2",
+    "results/completion-20261020/instances/n2000_k3_d2_s20261028.json": "7f5c3d803e11127b15e4c152d734c57c57200ee12853928daceb275d220723f0",
+    "results/completion-20261020/instances/n2000_k3_d2_s20261029.json": "56411332e0bce5329f2edf77df2cc2fbc9131c7054f0a4eaaf3e78b0765af33c",
+    "results/completion-20261020/instances/n2000_k5_d4_s20261027.json": "d4d3a403f4f60b549cab0ac7b094253083bcd5d421c97a9203cbf7492c13c7f0",
+    "results/completion-20261020/instances/n2000_k5_d4_s20261028.json": "ce17ccff563c2f0aca8aa8e45032c6059301b1bea696b0379f0ed828755a9014",
+    "results/completion-20261020/instances/n2000_k5_d4_s20261029.json": "0c6630301d1d0416b0a8530fb8c7351a34ba28a1066fcf91a144ff512c6fe23d",
+    "results/completion-20261020/instances/n500_k3_d2_s20261023.json": "ac667851835a389779a6860df952439f9d703a05dfbdb629d85740cc03df6853",
+    "results/completion-20261020/instances/n500_k5_d4_s20261023.json": "b0fbf4c3c3476a0d8b28bdbc1495999c3f1e4d74ccec6450102d268460f150e7",
+    "results/completion-20261020/instances/primary.json": "f897648fabb6debb287ae21c47a5678da67e5f7b1afe8adf2df4e782c324935e",
+    "results/completion-20261020/manifest.json": "15f184c690cd786e8a526af2ed65aef45940ad47f08463158f30e137069d4253",
+    "results/completion-20261020/summary.json": "af1930ef999001f535f998e402833b5770d5606ac253766288b07b3b0e030d74",
+    "results/controlled-validation-20261018/selection.json": "92347225938b6b36e8b8e2b0d7dd7cc35873c7ff3b8f5d00f0c19b2f0c8bca30",
+    "results/schedule-match-20261020-interrupted/interruption.json": "ad367f5ead12bc0e71bae809564052c61e9ce96c996eacd4ba55b9eaff781418",
+    "results/schedule-match-20261020-interrupted/manifest.json": "1d2fd22aa8e933d1f25939dbf0e47eea7e05b03917681cdb48c86603488064ee",
+    "results/schedule-match-20261020/manifest.json": "292a03a804e30000074d1562d7a2129d1575e88a2c35e62c9d1e4b8b1e42844e",
+    "scripts/audit_completion.py": "4df1d7be675e46c2d2e644e283a3b416591f92baafa5e1e39ebd5277b7cdb673",
+    "scripts/check_controlled_protocol.py": "54a7d5bfb516b40615800df553759e27f17b416081fad288f542e02ef07350bc",
+    "scripts/clean_scip_smoke.py": "3cb6aefd9abb6243389574c349f97ff9f0284e7de2dd9b290364f3ba36331c7b",
+    "scripts/inspect_clean_environment.py": "6c92764f9207eba530b6fe23a8494486edfd56279f0c895b07bd65f9e623316f",
+    "scripts/plot_completion.py": "14ab043f6845411d139c39f5bf434ccb534fa282716b1e5c887ad8a7d4b191e8",
+    "scripts/reproduce_clean.ps1": "0165e8c1031cbf56b1b637f5df63d347878c161bf7c97f56e7cb77d85ca903bd",
+    "scripts/run_completion.py": "c7281072af10ef6f28b5685146adc4c31e2bead88dee7eb9f1ef9ce73f44521e",
+    "scripts/run_controlled.py": "1cd1b42440b60079e0c658403bf4ecd2d618133bb458de30c5cd9f9203bc22dd",
+    "scripts/run_schedule_match.py": "b52e4ef90216a357f2e0cb7e2b6d6d1b538e5cd243b135431acce2b79efc7b08",
+    "scripts/setup_mis.ps1": "0ba5e9ee85f4294bc1ccda4968e3c18d358d348ce2cadd0934f6077b7b248475",
+    "scripts/summarize_anytime.py": "4f5eafdc6e864787b85d165fed0900d7ca5da5287f7bc0e91c3dcc6fa0a7b09f",
+    "scripts/summarize_controlled.py": "5e1c89fb17d993c55e2a126cec64adaf9e6a7ffa77517b593453bde9060cd990",
+    "src/models.py": "9e74af6add5c7940bfd95466543f10085ae49b42060802599da78271b1d29d79",
+    "src/train.py": "2ce090b16f8331a4f2571787846a11fd79b4a44e8d6caecae2b82065e7a37dde",
+    "tests/test_anytime.py": "bd704cde9a6adb7fb47b5bc8b4414357d3e79755d83b1db9b690dce8547919da",
+    "tests/test_benchmark.py": "87337162106afd5ddcc4a5c9a86b618cf27e8433176754bcaeccfc254962b930",
+    "tests/test_completion.py": "e21387dbdefa7985c6f7f2a6b47c5fc6d8953f17e886ef788112d8f4145e8096",
+    "tests/test_controlled.py": "b511d07cb6e35ccd854d321523fd7f5e14982a7482449faec2db66e7339a21f6",
+    "tests/test_datasets.py": "d7020d5a22fe9bdeeac93a52719ae79705929d9f66cac300050c1d4d51113081",
+    "tests/test_fast_baselines.py": "a613ee4633abddab5a459d7c39b6376d5152595e93a402c3ca63ffddba61ad62",
+    "tests/test_fast_decode.py": "741fcddd4a65203d85b32b4c84195e7670eaeb2676f2f9079736b215569cc67b",
+    "tests/test_indexed_loss.py": "1c4e27f6773785ea684e28b378098d50fd84b6dc2b173ff8a0c51046e00f91fb",
+    "tests/test_neural.py": "3562d01466470730d5cd8bac62253708cf8cbd6657cc2e1225104aa3c150a487",
+    "tests/test_problem.py": "7b5635bd1b186db1b9c2192298bd42a10b2ebde4be115833398d097aa30105d6",
+    "tests/test_reference.py": "3ba094994b03863e23641d2d253153417e87ccea49e2fab290f16435b0ffef76"
+  },
+  "origins": {
+    "data/cora_hypergraph.txt": [
+      "working byte checkout consistency"
+    ],
+    "data/high_hypergraph.txt": [
+      "working byte checkout consistency"
+    ],
+    "data/primary_hypergraph.txt": [
+      "working byte checkout consistency"
+    ],
+    "experiments/completion-20261020.json": [
+      "supplement bound bytes"
+    ],
+    "experiments/schedule-match-20261020.json": [
+      "supplement bound bytes"
+    ],
+    "mis/anytime.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "mis/benchmark.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "mis/completion.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "mis/controlled.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "mis/datasets.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "mis/fast_baselines.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "mis/fast_decode.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "mis/indexed_loss.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "mis/problem.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "requirements-mis-support.txt": [
+      "clean reproduction/source_sha256"
+    ],
+    "results/completion-20261020/figures/QA-record.json": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/QA.md": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/ablation-controls.alignment.json": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/ablation-controls.alignment.svg": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/ablation-controls.caption.md": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/ablation-controls.collision-audit.json": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/ablation-controls.collision-audit.pdf": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/ablation-controls.collision-audit.txt": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/ablation-controls.contract.json": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/ablation-controls.font-audit.json": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/ablation-controls.pdf": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/ablation-controls.png": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/ablation-controls.svg": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/caption.md": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/independent-graphs.alignment.json": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/independent-graphs.alignment.svg": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/independent-graphs.caption.md": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/independent-graphs.collision-audit.json": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/independent-graphs.collision-audit.txt": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/independent-graphs.contract.json": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/independent-graphs.font-audit.json": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/independent-graphs.pdf": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/independent-graphs.png": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/independent-graphs.svg": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/source-audit.json": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/source-data.json": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/source-graph-means.csv": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/source-main-neural.csv": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/source-paired-differences.csv": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/source-replication-graphs.csv": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/figures/source-schedule-match.csv": [
+      "final figure input/export/QA bytes"
+    ],
+    "results/completion-20261020/instances/cora.json": [
+      "supplement bound input bytes",
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/high.json": [
+      "supplement bound input bytes",
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n1000_k3_d2_s20261027.json": [
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n1000_k3_d2_s20261028.json": [
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n1000_k3_d2_s20261029.json": [
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n1000_k5_d4_s20261027.json": [
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n1000_k5_d4_s20261028.json": [
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n1000_k5_d4_s20261029.json": [
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n2000_k3_d2_s20261027.json": [
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n2000_k3_d2_s20261028.json": [
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n2000_k3_d2_s20261029.json": [
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n2000_k5_d4_s20261027.json": [
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n2000_k5_d4_s20261028.json": [
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n2000_k5_d4_s20261029.json": [
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n500_k3_d2_s20261023.json": [
+      "supplement bound input bytes",
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/n500_k5_d4_s20261023.json": [
+      "supplement bound input bytes",
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/instances/primary.json": [
+      "supplement bound input bytes",
+      "working input checkout consistency"
+    ],
+    "results/completion-20261020/manifest.json": [
+      "supplement bound bytes"
+    ],
+    "results/completion-20261020/summary.json": [
+      "auditor-confirmed final raw summary bytes"
+    ],
+    "results/controlled-validation-20261018/selection.json": [
+      "main selection bytes"
+    ],
+    "results/schedule-match-20261020-interrupted/interruption.json": [
+      "independently audited interruption evidence bytes"
+    ],
+    "results/schedule-match-20261020-interrupted/manifest.json": [
+      "interruption archive original manifest"
+    ],
+    "results/schedule-match-20261020/manifest.json": [
+      "working byte checkout consistency"
+    ],
+    "scripts/audit_completion.py": [
+      "final independent audit source binding"
+    ],
+    "scripts/check_controlled_protocol.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "scripts/clean_scip_smoke.py": [
+      "clean reproduction/source_sha256"
+    ],
+    "scripts/inspect_clean_environment.py": [
+      "clean reproduction/source_sha256"
+    ],
+    "scripts/plot_completion.py": [
+      "final visually reviewed plot source checkout consistency"
+    ],
+    "scripts/reproduce_clean.ps1": [
+      "clean reproduction/source_sha256"
+    ],
+    "scripts/run_completion.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "scripts/run_controlled.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "scripts/run_schedule_match.py": [
+      "matched supplement/source_sha256"
+    ],
+    "scripts/setup_mis.ps1": [
+      "clean reproduction/source_sha256"
+    ],
+    "scripts/summarize_anytime.py": [
+      "final independent audit source binding"
+    ],
+    "scripts/summarize_controlled.py": [
+      "final independent audit source binding"
+    ],
+    "src/models.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "src/train.py": [
+      "main/source_sha256",
+      "matched supplement/source_sha256"
+    ],
+    "tests/test_anytime.py": [
+      "clean reproduction/test_source_sha256"
+    ],
+    "tests/test_benchmark.py": [
+      "clean reproduction/test_source_sha256"
+    ],
+    "tests/test_completion.py": [
+      "clean reproduction/test_source_sha256"
+    ],
+    "tests/test_controlled.py": [
+      "clean reproduction/test_source_sha256"
+    ],
+    "tests/test_datasets.py": [
+      "clean reproduction/test_source_sha256"
+    ],
+    "tests/test_fast_baselines.py": [
+      "clean reproduction/test_source_sha256"
+    ],
+    "tests/test_fast_decode.py": [
+      "clean reproduction/test_source_sha256"
+    ],
+    "tests/test_indexed_loss.py": [
+      "clean reproduction/test_source_sha256"
+    ],
+    "tests/test_neural.py": [
+      "clean reproduction/test_source_sha256"
+    ],
+    "tests/test_problem.py": [
+      "clean reproduction/test_source_sha256"
+    ],
+    "tests/test_reference.py": [
+      "clean reproduction/test_source_sha256"
+    ]
+  },
+  "checkout_matches": {
+    "false": {
+      "data/cora_hypergraph.txt": true,
+      "data/high_hypergraph.txt": true,
+      "data/primary_hypergraph.txt": true,
+      "experiments/completion-20261020.json": true,
+      "experiments/schedule-match-20261020.json": true,
+      "mis/anytime.py": true,
+      "mis/benchmark.py": true,
+      "mis/completion.py": true,
+      "mis/controlled.py": true,
+      "mis/datasets.py": true,
+      "mis/fast_baselines.py": true,
+      "mis/fast_decode.py": true,
+      "mis/indexed_loss.py": true,
+      "mis/problem.py": true,
+      "requirements-mis-support.txt": true,
+      "results/completion-20261020/figures/QA-record.json": true,
+      "results/completion-20261020/figures/QA.md": true,
+      "results/completion-20261020/figures/ablation-controls.alignment.json": true,
+      "results/completion-20261020/figures/ablation-controls.alignment.svg": true,
+      "results/completion-20261020/figures/ablation-controls.caption.md": true,
+      "results/completion-20261020/figures/ablation-controls.collision-audit.json": true,
+      "results/completion-20261020/figures/ablation-controls.collision-audit.pdf": true,
+      "results/completion-20261020/figures/ablation-controls.collision-audit.txt": true,
+      "results/completion-20261020/figures/ablation-controls.contract.json": true,
+      "results/completion-20261020/figures/ablation-controls.font-audit.json": true,
+      "results/completion-20261020/figures/ablation-controls.pdf": true,
+      "results/completion-20261020/figures/ablation-controls.png": true,
+      "results/completion-20261020/figures/ablation-controls.svg": true,
+      "results/completion-20261020/figures/caption.md": true,
+      "results/completion-20261020/figures/independent-graphs.alignment.json": true,
+      "results/completion-20261020/figures/independent-graphs.alignment.svg": true,
+      "results/completion-20261020/figures/independent-graphs.caption.md": true,
+      "results/completion-20261020/figures/independent-graphs.collision-audit.json": true,
+      "results/completion-20261020/figures/independent-graphs.collision-audit.txt": true,
+      "results/completion-20261020/figures/independent-graphs.contract.json": true,
+      "results/completion-20261020/figures/independent-graphs.font-audit.json": true,
+      "results/completion-20261020/figures/independent-graphs.pdf": true,
+      "results/completion-20261020/figures/independent-graphs.png": true,
+      "results/completion-20261020/figures/independent-graphs.svg": true,
+      "results/completion-20261020/figures/source-audit.json": true,
+      "results/completion-20261020/figures/source-data.json": true,
+      "results/completion-20261020/figures/source-graph-means.csv": true,
+      "results/completion-20261020/figures/source-main-neural.csv": true,
+      "results/completion-20261020/figures/source-paired-differences.csv": true,
+      "results/completion-20261020/figures/source-replication-graphs.csv": true,
+      "results/completion-20261020/figures/source-schedule-match.csv": true,
+      "results/completion-20261020/instances/cora.json": true,
+      "results/completion-20261020/instances/high.json": true,
+      "results/completion-20261020/instances/n1000_k3_d2_s20261027.json": true,
+      "results/completion-20261020/instances/n1000_k3_d2_s20261028.json": true,
+      "results/completion-20261020/instances/n1000_k3_d2_s20261029.json": true,
+      "results/completion-20261020/instances/n1000_k5_d4_s20261027.json": true,
+      "results/completion-20261020/instances/n1000_k5_d4_s20261028.json": true,
+      "results/completion-20261020/instances/n1000_k5_d4_s20261029.json": true,
+      "results/completion-20261020/instances/n2000_k3_d2_s20261027.json": true,
+      "results/completion-20261020/instances/n2000_k3_d2_s20261028.json": true,
+      "results/completion-20261020/instances/n2000_k3_d2_s20261029.json": true,
+      "results/completion-20261020/instances/n2000_k5_d4_s20261027.json": true,
+      "results/completion-20261020/instances/n2000_k5_d4_s20261028.json": true,
+      "results/completion-20261020/instances/n2000_k5_d4_s20261029.json": true,
+      "results/completion-20261020/instances/n500_k3_d2_s20261023.json": true,
+      "results/completion-20261020/instances/n500_k5_d4_s20261023.json": true,
+      "results/completion-20261020/instances/primary.json": true,
+      "results/completion-20261020/manifest.json": true,
+      "results/completion-20261020/summary.json": true,
+      "results/controlled-validation-20261018/selection.json": true,
+      "results/schedule-match-20261020-interrupted/interruption.json": true,
+      "results/schedule-match-20261020-interrupted/manifest.json": true,
+      "results/schedule-match-20261020/manifest.json": true,
+      "scripts/audit_completion.py": true,
+      "scripts/check_controlled_protocol.py": true,
+      "scripts/clean_scip_smoke.py": true,
+      "scripts/inspect_clean_environment.py": true,
+      "scripts/plot_completion.py": true,
+      "scripts/reproduce_clean.ps1": true,
+      "scripts/run_completion.py": true,
+      "scripts/run_controlled.py": true,
+      "scripts/run_schedule_match.py": true,
+      "scripts/setup_mis.ps1": true,
+      "scripts/summarize_anytime.py": true,
+      "scripts/summarize_controlled.py": true,
+      "src/models.py": true,
+      "src/train.py": true,
+      "tests/test_anytime.py": true,
+      "tests/test_benchmark.py": true,
+      "tests/test_completion.py": true,
+      "tests/test_controlled.py": true,
+      "tests/test_datasets.py": true,
+      "tests/test_fast_baselines.py": true,
+      "tests/test_fast_decode.py": true,
+      "tests/test_indexed_loss.py": true,
+      "tests/test_neural.py": true,
+      "tests/test_problem.py": true,
+      "tests/test_reference.py": true
+    },
+    "true": {
+      "data/cora_hypergraph.txt": true,
+      "data/high_hypergraph.txt": true,
+      "data/primary_hypergraph.txt": true,
+      "experiments/completion-20261020.json": true,
+      "experiments/schedule-match-20261020.json": true,
+      "mis/anytime.py": true,
+      "mis/benchmark.py": true,
+      "mis/completion.py": true,
+      "mis/controlled.py": true,
+      "mis/datasets.py": true,
+      "mis/fast_baselines.py": true,
+      "mis/fast_decode.py": true,
+      "mis/indexed_loss.py": true,
+      "mis/problem.py": true,
+      "requirements-mis-support.txt": true,
+      "results/completion-20261020/figures/QA-record.json": true,
+      "results/completion-20261020/figures/QA.md": true,
+      "results/completion-20261020/figures/ablation-controls.alignment.json": true,
+      "results/completion-20261020/figures/ablation-controls.alignment.svg": true,
+      "results/completion-20261020/figures/ablation-controls.caption.md": true,
+      "results/completion-20261020/figures/ablation-controls.collision-audit.json": true,
+      "results/completion-20261020/figures/ablation-controls.collision-audit.pdf": true,
+      "results/completion-20261020/figures/ablation-controls.collision-audit.txt": true,
+      "results/completion-20261020/figures/ablation-controls.contract.json": true,
+      "results/completion-20261020/figures/ablation-controls.font-audit.json": true,
+      "results/completion-20261020/figures/ablation-controls.pdf": true,
+      "results/completion-20261020/figures/ablation-controls.png": true,
+      "results/completion-20261020/figures/ablation-controls.svg": true,
+      "results/completion-20261020/figures/caption.md": true,
+      "results/completion-20261020/figures/independent-graphs.alignment.json": true,
+      "results/completion-20261020/figures/independent-graphs.alignment.svg": true,
+      "results/completion-20261020/figures/independent-graphs.caption.md": true,
+      "results/completion-20261020/figures/independent-graphs.collision-audit.json": true,
+      "results/completion-20261020/figures/independent-graphs.collision-audit.txt": true,
+      "results/completion-20261020/figures/independent-graphs.contract.json": true,
+      "results/completion-20261020/figures/independent-graphs.font-audit.json": true,
+      "results/completion-20261020/figures/independent-graphs.pdf": true,
+      "results/completion-20261020/figures/independent-graphs.png": true,
+      "results/completion-20261020/figures/independent-graphs.svg": true,
+      "results/completion-20261020/figures/source-audit.json": true,
+      "results/completion-20261020/figures/source-data.json": true,
+      "results/completion-20261020/figures/source-graph-means.csv": true,
+      "results/completion-20261020/figures/source-main-neural.csv": true,
+      "results/completion-20261020/figures/source-paired-differences.csv": true,
+      "results/completion-20261020/figures/source-replication-graphs.csv": true,
+      "results/completion-20261020/figures/source-schedule-match.csv": true,
+      "results/completion-20261020/instances/cora.json": true,
+      "results/completion-20261020/instances/high.json": true,
+      "results/completion-20261020/instances/n1000_k3_d2_s20261027.json": true,
+      "results/completion-20261020/instances/n1000_k3_d2_s20261028.json": true,
+      "results/completion-20261020/instances/n1000_k3_d2_s20261029.json": true,
+      "results/completion-20261020/instances/n1000_k5_d4_s20261027.json": true,
+      "results/completion-20261020/instances/n1000_k5_d4_s20261028.json": true,
+      "results/completion-20261020/instances/n1000_k5_d4_s20261029.json": true,
+      "results/completion-20261020/instances/n2000_k3_d2_s20261027.json": true,
+      "results/completion-20261020/instances/n2000_k3_d2_s20261028.json": true,
+      "results/completion-20261020/instances/n2000_k3_d2_s20261029.json": true,
+      "results/completion-20261020/instances/n2000_k5_d4_s20261027.json": true,
+      "results/completion-20261020/instances/n2000_k5_d4_s20261028.json": true,
+      "results/completion-20261020/instances/n2000_k5_d4_s20261029.json": true,
+      "results/completion-20261020/instances/n500_k3_d2_s20261023.json": true,
+      "results/completion-20261020/instances/n500_k5_d4_s20261023.json": true,
+      "results/completion-20261020/instances/primary.json": true,
+      "results/completion-20261020/manifest.json": true,
+      "results/completion-20261020/summary.json": true,
+      "results/controlled-validation-20261018/selection.json": true,
+      "results/schedule-match-20261020-interrupted/interruption.json": true,
+      "results/schedule-match-20261020-interrupted/manifest.json": true,
+      "results/schedule-match-20261020/manifest.json": true,
+      "scripts/audit_completion.py": true,
+      "scripts/check_controlled_protocol.py": true,
+      "scripts/clean_scip_smoke.py": true,
+      "scripts/inspect_clean_environment.py": true,
+      "scripts/plot_completion.py": true,
+      "scripts/reproduce_clean.ps1": true,
+      "scripts/run_completion.py": true,
+      "scripts/run_controlled.py": true,
+      "scripts/run_schedule_match.py": true,
+      "scripts/setup_mis.ps1": true,
+      "scripts/summarize_anytime.py": true,
+      "scripts/summarize_controlled.py": true,
+      "src/models.py": true,
+      "src/train.py": true,
+      "tests/test_anytime.py": true,
+      "tests/test_benchmark.py": true,
+      "tests/test_completion.py": true,
+      "tests/test_controlled.py": true,
+      "tests/test_datasets.py": true,
+      "tests/test_fast_baselines.py": true,
+      "tests/test_fast_decode.py": true,
+      "tests/test_indexed_loss.py": true,
+      "tests/test_neural.py": true,
+      "tests/test_problem.py": true,
+      "tests/test_reference.py": true
+    }
+  },
+  "temporary_checkout_directory": "work/checkout-final-20261020T083124"
+}

@@ -1,0 +1,244 @@
+{
+  "plan": {
+    "version": 1,
+    "purpose": "Complete prespecified thesis ablations, independent-graph replication, structural certificates and clean reproduction; no new model selection",
+    "model_seeds": [
+      0,
+      1,
+      2
+    ],
+    "selection_source": "results/controlled-validation-20261018/selection.json",
+    "locked_configs": {
+      "weak": "w1024_cra",
+      "strong": "w1024_none"
+    },
+    "width": 1024,
+    "candidate_interval_seconds": 1,
+    "ablation_inputs": {
+      "synthetic": [
+        {
+          "n": 500,
+          "k": 3,
+          "density": 2,
+          "seed": 20261023,
+          "definitions": [
+            "weak"
+          ]
+        },
+        {
+          "n": 500,
+          "k": 5,
+          "density": 4,
+          "seed": 20261023,
+          "definitions": [
+            "weak"
+          ]
+        }
+      ],
+      "real": {
+        "datasets": [
+          "cora",
+          "high",
+          "primary"
+        ],
+        "definitions": [
+          "weak",
+          "strong"
+        ]
+      }
+    },
+    "fixed": {
+      "epochs": 1600,
+      "checkpoint_every": 100,
+      "annealing": [
+        "cra",
+        "none"
+      ],
+      "baseline_penalty": 2,
+      "weak_additional_penalties": [
+        1.1,
+        4,
+        8
+      ],
+      "schedule": "CRA gamma=-1+1.6*(epoch-1)/(epochs-1), including first -1 and final +0.6; none gamma=0",
+      "selection": "Same prespecified epoch candidates for all variants; save first maximum and latest separately. Fixed update count, not equal wall time."
+    },
+    "timed": {
+      "targets_seconds": [
+        5,
+        15,
+        30
+      ],
+      "annealing": [
+        "cra",
+        "none"
+      ],
+      "penalty": 2,
+      "weak_compressed_horizons_seconds": [
+        5,
+        15
+      ],
+      "schedule": "CRA gamma=-1+1.6*min(1,elapsed/horizon); horizon is the largest target; no annealing coefficient for none",
+      "selection": "Identical fast decoder and candidate timing rules; only fully completed candidates may enter a cutoff. Fixed30 and compressed5/15 are independent runs with matching initial hashes; actual response latency is separate."
+    },
+    "replication": {
+      "sizes": [
+        1000,
+        2000
+      ],
+      "structures": [
+        {
+          "k": 3,
+          "density": 2
+        },
+        {
+          "k": 5,
+          "density": 4
+        }
+      ],
+      "instance_seeds": [
+        20261027,
+        20261028,
+        20261029
+      ],
+      "definition": "weak",
+      "seconds": 30,
+      "neural_annealing": "cra",
+      "penalty": 2,
+      "baselines": [
+        "degree_greedy",
+        "random_score_same_decoder",
+        "random_restart_same_decoder",
+        "scip_milp_greedy_start"
+      ],
+      "scip": "Single-thread seed-zero SCIP; total budget includes fast degree warm start and construction; strict past events for incumbents and upper bounds; late diagnostic retained"
+    },
+    "structural": {
+      "datasets": [
+        "cora",
+        "high",
+        "primary"
+      ],
+      "operation": "Weak-MIS inclusion-minimal antichain with a retained proper-subedge witness for every deleted edge; no pruning in any trained instance, and no claim of continuous-objective or strong-MIS equivalence",
+      "tiny_penalties": [
+        0.5,
+        1,
+        1.1,
+        2,
+        4,
+        8
+      ],
+      "tiny_graph": {
+        "n": 2,
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "tiny_scope": "Exhaustively enumerate binary assignments. Lambda<=1 counterexamples delimit the theorem; sensitivity training only uses lambda>1."
+    },
+    "expected_counts": {
+      "fixed_cases": 8,
+      "fixed_neural_runs": 93,
+      "timed_cases": 8,
+      "timed_neural_runs": 78,
+      "replication_cases": 12,
+      "replication_neural_runs": 36,
+      "random_runs": 36,
+      "scip_runs": 12,
+      "total_neural_runs": 207,
+      "case_files": 28,
+      "primary_records": 399
+    },
+    "execution": "Fixed CPU threads=1; GPU training and timed CPU baselines run serially. Entire run and derived records saved atomically. Pauses only between runs and excluded from each run timer. Source, plan, input, prior selection and environment hashes bound before experiments; changes refuse resume.",
+    "interpretation": "All ablations use already examined data and do not select a replacement configuration. The 12 replication graphs use new seeds; model seeds are technical repeats. Average model seeds within a graph before graph-level summaries. Preserve all seeds, unfavorable outcomes, raw feasibility, repair/extension and best/latest differences. No broad distribution or statistical-significance claims from this bounded suite."
+  },
+  "selection": {
+    "plan_sha256": "12cde06341c6a98f5831544c01137f0579756f03570ed46f6e59c1190264b1a4",
+    "validation_binding": "ea64cd2f389e3b14455b1af42d617cc02e42945f8487f54fcc4a50eb4f025ccc",
+    "criterion": "Select separately per definition by mean over validation instances of (mean seed solution size / degree-greedy size); ties within 1e-12 choose narrower width, then CRA. Never inspect test outcomes to select.",
+    "validation_scores": {
+      "weak": {
+        "w256_cra": 0.9652709033977384,
+        "w256_none": 0.9748339185963413,
+        "w1024_cra": 1.0076955301623194,
+        "w1024_none": 0.9960878880080999
+      },
+      "strong": {
+        "w256_cra": 0.9874753694581281,
+        "w256_none": 0.9656773399014779,
+        "w1024_cra": 0.9989285714285714,
+        "w1024_none": 0.9999876847290641
+      }
+    },
+    "chosen": {
+      "weak": "w1024_cra",
+      "strong": "w1024_none"
+    }
+  },
+  "selection_sha256": "92347225938b6b36e8b8e2b0d7dd7cc35873c7ff3b8f5d00f0c19b2f0c8bca30",
+  "source_sha256": {
+    "mis/completion.py": "a867cbe9781aaf7d4265db221968babbf949cbe9914d71a74bbbb73807addf7d",
+    "mis/anytime.py": "ddf70a15d14645252107bd722268c7836d29799dce6622965e05b36fa456043f",
+    "mis/controlled.py": "03f5906d16707ead676f729f457744c27508304626aa94bb8d1cdd6238d7f3a9",
+    "mis/indexed_loss.py": "9f0ce92bd3002d1d9243dd21a2ac959a0b7d1845636e1fccbc74d1b6f31e66d3",
+    "mis/fast_decode.py": "d999e0a6b9133cb0a1655c136cb762dac782ffbf2f1181ece04a8778bc2a1f94",
+    "mis/fast_baselines.py": "c630644a608cc268edee3f506b2ac0c488575be85b9a161b16584b517a512d6b",
+    "mis/problem.py": "66b448d05d2c578d71229ecb6951777262dc0ca42b96502430f22bc15f9a6f61",
+    "mis/benchmark.py": "7d2b745b1ce14542663fda99be12b6e7eed153ee9aca82ba6ee4a6ce70475a10",
+    "mis/datasets.py": "d83557abd969bec00c524916f121752ce1355b365ea85901bca96d994d1b34af",
+    "src/models.py": "9e74af6add5c7940bfd95466543f10085ae49b42060802599da78271b1d29d79",
+    "src/train.py": "2ce090b16f8331a4f2571787846a11fd79b4a44e8d6caecae2b82065e7a37dde",
+    "scripts/run_completion.py": "c7281072af10ef6f28b5685146adc4c31e2bead88dee7eb9f1ef9ce73f44521e",
+    "scripts/check_controlled_protocol.py": "54a7d5bfb516b40615800df553759e27f17b416081fad288f542e02ef07350bc",
+    "scripts/run_controlled.py": "1cd1b42440b60079e0c658403bf4ecd2d618133bb458de30c5cd9f9203bc22dd"
+  },
+  "environment": {
+    "python": "3.9.23",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "cpu_threads": 1,
+    "packages": {
+      "dhg": "0.9.5",
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "pyscipopt": "5.3.0"
+    },
+    "driver": "595.79"
+  },
+  "inputs": {
+    "fixed/n500_k3_d2_s20261023_weak": "dcfe53efd742f8eb7076c4a604b939c62e8f9ad028a0cd46cc207507548c5fcd",
+    "fixed/n500_k5_d4_s20261023_weak": "de609130c4c6306ad659936b3a421d00d71b393d062b998a27956ba1c281e613",
+    "fixed/cora_weak": "33a93fd54d4de0f59720cca8bcdd12ff7b7f69246bb4b1f7fb90ef0e42d809f5",
+    "fixed/cora_strong": "33a93fd54d4de0f59720cca8bcdd12ff7b7f69246bb4b1f7fb90ef0e42d809f5",
+    "fixed/high_weak": "655e18cc0bd24e282af0fb2e75761c302bba8fa8f1d2c415b81f057046488c0c",
+    "fixed/high_strong": "655e18cc0bd24e282af0fb2e75761c302bba8fa8f1d2c415b81f057046488c0c",
+    "fixed/primary_weak": "ad06272a79a6c086f4f44be5c82c8d74178511d6553609d82880cadb9565aade",
+    "fixed/primary_strong": "ad06272a79a6c086f4f44be5c82c8d74178511d6553609d82880cadb9565aade",
+    "timed/n500_k3_d2_s20261023_weak": "dcfe53efd742f8eb7076c4a604b939c62e8f9ad028a0cd46cc207507548c5fcd",
+    "timed/n500_k5_d4_s20261023_weak": "de609130c4c6306ad659936b3a421d00d71b393d062b998a27956ba1c281e613",
+    "timed/cora_weak": "33a93fd54d4de0f59720cca8bcdd12ff7b7f69246bb4b1f7fb90ef0e42d809f5",
+    "timed/cora_strong": "33a93fd54d4de0f59720cca8bcdd12ff7b7f69246bb4b1f7fb90ef0e42d809f5",
+    "timed/high_weak": "655e18cc0bd24e282af0fb2e75761c302bba8fa8f1d2c415b81f057046488c0c",
+    "timed/high_strong": "655e18cc0bd24e282af0fb2e75761c302bba8fa8f1d2c415b81f057046488c0c",
+    "timed/primary_weak": "ad06272a79a6c086f4f44be5c82c8d74178511d6553609d82880cadb9565aade",
+    "timed/primary_strong": "ad06272a79a6c086f4f44be5c82c8d74178511d6553609d82880cadb9565aade",
+    "replication/n1000_k3_d2_s20261027_weak": "dd12f0885766bdee6a8b566908ac0e0784e7b851756df3659b7ac530ec16af4b",
+    "replication/n1000_k3_d2_s20261028_weak": "2891ec7cbf70ccf9eac2a2edfa7651a02f98ff5b5b079cf67a75036e9324afd5",
+    "replication/n1000_k3_d2_s20261029_weak": "5f334d9fc3ca1e94bb153c68569dc427f5fdc9a2a831f16c08e0921064c013ce",
+    "replication/n1000_k5_d4_s20261027_weak": "1bd5a72d92ad5cf87e91171b0ca2f6575208e8e4413903ab0c545450f395d240",
+    "replication/n1000_k5_d4_s20261028_weak": "ca07e2a05f8432cf048ed12c216ebe21142fa264d435561ac09f2700fcadb43f",
+    "replication/n1000_k5_d4_s20261029_weak": "0423ec399f7d648658d43cc22495995fd782755527927e3e001e87aa6860aa66",
+    "replication/n2000_k3_d2_s20261027_weak": "89ba51aa59c69353f4a5e11923eb3bc1d53ce4a70c8780678215a05e457a582d",
+    "replication/n2000_k3_d2_s20261028_weak": "9f14da60ef4ad94e23177a135c2dc575d0aa028a65737f5ab12351bf5a0b83ef",
+    "replication/n2000_k3_d2_s20261029_weak": "486f48b47a3f0cb92b2f745f25a25e2c295194cdf24dc6bb4ac49a8910e35fb2",
+    "replication/n2000_k5_d4_s20261027_weak": "bc0fea25bdeadd5646b38173a9f14cfcfc97ae0fab79e0aca05c4e3a45893e7e",
+    "replication/n2000_k5_d4_s20261028_weak": "fb62aa340f23ca6d172b5e0b5d4cc52a2fd9d2392bcfcc3f461dd88960fb670a",
+    "replication/n2000_k5_d4_s20261029_weak": "0e9e35786a9e44bdbfed9644e5ce6d953288782dac691dfbd05b12a088832979"
+  },
+  "binding": "b4fb9524e22f32e9db97a5b17e822a3116049b48c189d4f5cbe52af5dad39e9a",
+  "git_commit_at_start": "e00699aecebe5bb1e9417bdb696cfa012d563a63"
+}

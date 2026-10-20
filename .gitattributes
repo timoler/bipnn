@@ -35,7 +35,7 @@ scripts/inspect_clean_environment.py text eol=lf
 scripts/clean_scip_smoke.py text eol=lf
 scripts/audit_completion.py text eol=lf
 scripts/plot_completion.py text eol=lf
-scripts/summarize_controlled.py text eol=lf
+scripts/summarize_controlled.py text eol=crlf
 scripts/summarize_anytime.py text eol=lf
 scripts/run_schedule_match.py text eol=lf
 experiments/completion-20261020.json text eol=lf
@@ -43,3 +43,13 @@ experiments/schedule-match-20261020.json text eol=lf
 # The matched supplement binds these parent JSON files by their raw byte hashes.
 results/completion-20261020/manifest.json text eol=crlf
 results/completion-20261020/instances/*.json text eol=crlf
+# Clean-reproduction evidence records exact test bytes; interruption notes bind
+# the original supplement manifest bytes as well.
+tests/test_*.py text eol=lf
+results/schedule-match-20261020*/manifest.json text eol=crlf
+results/schedule-match-20261020-interrupted/interruption.json text eol=lf
+# Figure QA binds exact input/export bytes. Preserve generated artifacts,
+# including mixed native newlines, without checkout conversion.
+results/completion-20261020/summary.json -text whitespace=trailing-space,space-before-tab,cr-at-eol
+results/completion-20261020/figures/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+results/completion-20261020/figures/*.svg -whitespace

@@ -1,0 +1,15 @@
+{
+  "question": "Do the bounded weak-MIS comparisons persist on 12 new graphs, using three graph seeds per size/structure?",
+  "conclusion": "The neural graph-mean quality exceeds SCIP in three of four bounded size/structure conditions, while the dense 2000-node condition is slightly lower; every graph and its conditional range is retained without a universal scale or speed claim.",
+  "archetype": "quantitative grid",
+  "backend": "python-matplotlib",
+  "panels": {"a": "k=3,m/n=2: n1000 and n2000, strict 30-second quality for four methods.", "b": "k=5,m/n=4: the same sizes, cutoff and four methods."},
+  "metric": "Feasible independent-set size divided by explicit n, including isolated vertices.",
+  "aggregation": "First average model seeds 0,1,2 within each graph for neural and random restart; then average the three graph means within each size/structure condition only. For SCIP and degree greedy use each graph's single value. Error bars are min-to-max across the three graph values in that condition, not across model seeds and not a confidence interval.",
+  "graphs": {"n": [1000, 2000], "structures": [{"k": 3, "density_m_over_n": 2}, {"k": 5, "density_m_over_n": 4}], "generator_seeds": [20261027, 20261028, 20261029], "total": 12},
+  "data_policy": "Use exactly the 12 new prespecified graphs; do not mix in earlier graphs or drop unfavorable seeds. Save all graph values and full audited summary rows.",
+  "timing": "Use only strict past-completed cutoff solutions, not terminal or late optimality diagnostics. GPU neural training and single-thread CPU baselines are serial experiments under the recorded 30-second target.",
+  "export": {"width_mm": 180, "height_mm": 88, "formats": ["pdf", "svg", "png"], "png_dpi": 400, "minimum_glyph_pt": 5, "editable_text": true},
+  "qa": "Final rendered alignment, glyph-size, source and collision checks; inspect both panels and whole figure.",
+  "limits": ["The same three graph seeds are reused across sizes and structures; graphs across conditions may be dependent. Do not treat all 12 as globally unrelated IID samples.", "Three graphs per bounded size/structure are descriptive replications, not broad distribution coverage.", "No p-values, universal scaling claim or overall solver-speed superiority claim.", "Graph min-max range is distinct from the earlier one-graph technical model-seed ranges."]
+}

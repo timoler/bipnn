@@ -1,0 +1,96 @@
+{
+  "event": "extended_execution_interruption",
+  "detected_utc": "2026-10-20T08:02:11Z",
+  "archive_created_utc": "2026-10-20T08:05:02.702094+00:00",
+  "reason": "A nominal 15-second trajectory took 10724 seconds during an extended interruption. Specific OS cause not established.",
+  "original_directory": "results/schedule-match-20261020",
+  "included_in_primary_analysis": false,
+  "exclusion_scope": "Entire first 15-run, 30-snapshot supplement, irrespective of scores. All original records retained.",
+  "retry_policy": "Repeat all 15 supplement trajectories using unchanged frozen source, plan, parent, inputs and environment.",
+  "parent_main_suite": "Finished normally before interruption; inspect its timing fields independently.",
+  "original_manifest_sha256": "1d2fd22aa8e933d1f25939dbf0e47eea7e05b03917681cdb48c86603488064ee",
+  "runs": [
+    {
+      "case": "cora_weak",
+      "run_key": "cra_p2_h15_matched_seed0",
+      "run_total_seconds": 15.005280499999571
+    },
+    {
+      "case": "cora_weak",
+      "run_key": "cra_p2_h15_matched_seed1",
+      "run_total_seconds": 15.004631300000256
+    },
+    {
+      "case": "cora_weak",
+      "run_key": "cra_p2_h15_matched_seed2",
+      "run_total_seconds": 15.039574800000992
+    },
+    {
+      "case": "high_weak",
+      "run_key": "cra_p2_h15_matched_seed0",
+      "run_total_seconds": 15.066346700001304
+    },
+    {
+      "case": "high_weak",
+      "run_key": "cra_p2_h15_matched_seed1",
+      "run_total_seconds": 15.01289480000014
+    },
+    {
+      "case": "high_weak",
+      "run_key": "cra_p2_h15_matched_seed2",
+      "run_total_seconds": 15.06080160000056
+    },
+    {
+      "case": "n500_k3_d2_s20261023_weak",
+      "run_key": "cra_p2_h15_matched_seed0",
+      "run_total_seconds": 15.045535299999997
+    },
+    {
+      "case": "n500_k3_d2_s20261023_weak",
+      "run_key": "cra_p2_h15_matched_seed1",
+      "run_total_seconds": 15.013804
+    },
+    {
+      "case": "n500_k3_d2_s20261023_weak",
+      "run_key": "cra_p2_h15_matched_seed2",
+      "run_total_seconds": 10724.1225284
+    },
+    {
+      "case": "n500_k5_d4_s20261023_weak",
+      "run_key": "cra_p2_h15_matched_seed0",
+      "run_total_seconds": 15.008795899999313
+    },
+    {
+      "case": "n500_k5_d4_s20261023_weak",
+      "run_key": "cra_p2_h15_matched_seed1",
+      "run_total_seconds": 15.005533400000786
+    },
+    {
+      "case": "n500_k5_d4_s20261023_weak",
+      "run_key": "cra_p2_h15_matched_seed2",
+      "run_total_seconds": 15.008811499999865
+    },
+    {
+      "case": "primary_weak",
+      "run_key": "cra_p2_h15_matched_seed0",
+      "run_total_seconds": 15.089206499998909
+    },
+    {
+      "case": "primary_weak",
+      "run_key": "cra_p2_h15_matched_seed1",
+      "run_total_seconds": 15.125631599999906
+    },
+    {
+      "case": "primary_weak",
+      "run_key": "cra_p2_h15_matched_seed2",
+      "run_total_seconds": 15.125526400001036
+    }
+  ],
+  "outliers_over_60_seconds": [
+    {
+      "case": "n500_k3_d2_s20261023_weak",
+      "run_key": "cra_p2_h15_matched_seed2",
+      "run_total_seconds": 10724.1225284
+    }
+  ]
+}

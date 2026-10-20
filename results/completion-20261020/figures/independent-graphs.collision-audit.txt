@@ -1,0 +1,10 @@
+Nature Figure Rendered Collision Audit
+pdf: C:\Users\陈佳政\Documents\Codex\2026-10-12\new-chat\outputs\bipnn-public\results\completion-20261020\figures\independent-graphs.pdf
+pages: 1
+visible text boxes: 20
+stroke paths: 104
+
+
+summary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays
+verdict: PASS
+note: contained overlays can be intentional; WARN findings need final-size visual review
