@@ -7,6 +7,7 @@ results/**/figures/*.svg -whitespace
 mis/anytime.py text eol=lf
 mis/benchmark.py text eol=lf
 mis/controlled.py text eol=lf
+mis/completion.py text eol=lf
 mis/datasets.py text eol=lf
 mis/fast_baselines.py text eol=lf
 mis/fast_decode.py text eol=lf
@@ -16,6 +17,7 @@ mis/reference.py text eol=lf
 scripts/check_controlled_protocol.py text eol=lf
 scripts/run_anytime.py text eol=lf
 scripts/run_controlled.py text eol=lf
+scripts/run_completion.py text eol=lf
 src/models.py text eol=crlf
 src/train.py text eol=crlf
 results/controlled-validation-20261018/selection.json text eol=crlf

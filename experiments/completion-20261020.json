@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "purpose": "Complete prespecified thesis ablations, independent-graph replication, structural certificates and clean reproduction; no new model selection",
+  "model_seeds": [0, 1, 2],
+  "selection_source": "results/controlled-validation-20261018/selection.json",
+  "locked_configs": {"weak": "w1024_cra", "strong": "w1024_none"},
+  "width": 1024,
+  "candidate_interval_seconds": 1,
+  "ablation_inputs": {
+    "synthetic": [
+      {"n": 500, "k": 3, "density": 2, "seed": 20261023, "definitions": ["weak"]},
+      {"n": 500, "k": 5, "density": 4, "seed": 20261023, "definitions": ["weak"]}
+    ],
+    "real": {"datasets": ["cora", "high", "primary"], "definitions": ["weak", "strong"]}
+  },
+  "fixed": {
+    "epochs": 1600,
+    "checkpoint_every": 100,
+    "annealing": ["cra", "none"],
+    "baseline_penalty": 2,
+    "weak_additional_penalties": [1.1, 4, 8],
+    "schedule": "CRA gamma=-1+1.6*(epoch-1)/(epochs-1), including first -1 and final +0.6; none gamma=0",
+    "selection": "Same prespecified epoch candidates for all variants; save first maximum and latest separately. Fixed update count, not equal wall time."
+  },
+  "timed": {
+    "targets_seconds": [5, 15, 30],
+    "annealing": ["cra", "none"],
+    "penalty": 2,
+    "weak_compressed_horizons_seconds": [5, 15],
+    "schedule": "CRA gamma=-1+1.6*min(1,elapsed/horizon); horizon is the largest target; no annealing coefficient for none",
+    "selection": "Identical fast decoder and candidate timing rules; only fully completed candidates may enter a cutoff. Fixed30 and compressed5/15 are independent runs with matching initial hashes; actual response latency is separate."
+  },
+  "replication": {
+    "sizes": [1000, 2000],
+    "structures": [{"k": 3, "density": 2}, {"k": 5, "density": 4}],
+    "instance_seeds": [20261027, 20261028, 20261029],
+    "definition": "weak",
+    "seconds": 30,
+    "neural_annealing": "cra",
+    "penalty": 2,
+    "baselines": ["degree_greedy", "random_score_same_decoder", "random_restart_same_decoder", "scip_milp_greedy_start"],
+    "scip": "Single-thread seed-zero SCIP; total budget includes fast degree warm start and construction; strict past events for incumbents and upper bounds; late diagnostic retained"
+  },
+  "structural": {
+    "datasets": ["cora", "high", "primary"],
+    "operation": "Weak-MIS inclusion-minimal antichain with a retained proper-subedge witness for every deleted edge; no pruning in any trained instance, and no claim of continuous-objective or strong-MIS equivalence",
+    "tiny_penalties": [0.5, 1, 1.1, 2, 4, 8],
+    "tiny_graph": {"n": 2, "edges": [[0, 1]]},
+    "tiny_scope": "Exhaustively enumerate binary assignments. Lambda<=1 counterexamples delimit the theorem; sensitivity training only uses lambda>1."
+  },
+  "expected_counts": {
+    "fixed_cases": 8,
+    "fixed_neural_runs": 93,
+    "timed_cases": 8,
+    "timed_neural_runs": 78,
+    "replication_cases": 12,
+    "replication_neural_runs": 36,
+    "random_runs": 36,
+    "scip_runs": 12,
+    "total_neural_runs": 207,
+    "case_files": 28,
+    "primary_records": 399
+  },
+  "execution": "Fixed CPU threads=1; GPU training and timed CPU baselines run serially. Entire run and derived records saved atomically. Pauses only between runs and excluded from each run timer. Source, plan, input, prior selection and environment hashes bound before experiments; changes refuse resume.",
+  "interpretation": "All ablations use already examined data and do not select a replacement configuration. The 12 replication graphs use new seeds; model seeds are technical repeats. Average model seeds within a graph before graph-level summaries. Preserve all seeds, unfavorable outcomes, raw feasibility, repair/extension and best/latest differences. No broad distribution or statistical-significance claims from this bounded suite."
+}
